@@ -1,0 +1,11 @@
+{% extends 'welcome.twig' %}
+
+{% block content %}
+    <ul>
+        {% for entity in entities %}
+            <li>
+                {{entity.password}}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
