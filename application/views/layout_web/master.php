@@ -5,13 +5,13 @@
 </head>
 
 <body>
-		<!-- Header -->
-		<?php $this->load->view('layout_web/include/header');?>
-		
 		<!-- Content -->
 		<?php echo $the_view_content;?>
-    <!-- End Content -->
-    
+		<!-- End Content -->
+		
+    <!-- Header -->
+		<?php $this->load->view('layout_web/include/header');?>
+		
     <!-- Footer -->
 	<?php $this->load->view('layout_web/include/footer');?>
 </body>

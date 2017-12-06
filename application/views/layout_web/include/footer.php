@@ -1,4 +1,11 @@
+<footer>
+    <div class="rowfoot2">
+      <p>© 2016. Công ty cổ phần LST. Văn phòng: Lầu 5 Etown 2, 364 Cộng Hòa, Q.Tân Bình, TP.Hồ Chí Minh. GP số 22/GP-ICP-STTTT
+        do Sở TTTT TP HCM cấp ngày 20/03/2012. Chịu trách nhiệm nội dung: Điêu Chính Hải Triều.
+      </p>
+    </div>
 
+</footer>
 <!-- Vendor JS -->
 <script type="text/javascript"
 	src="<?= public_url()?>vendor/jquery/jquery-1.12.3.min.js"></script>
