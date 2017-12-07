@@ -6,6 +6,7 @@
     </div>
 
 </footer>
+
 <!-- Vendor JS -->
 <script type="text/javascript"
 	src="<?= public_url()?>vendor/jquery/jquery-1.12.3.min.js"></script>
@@ -53,5 +54,5 @@
 <!-- Shop JS -->
 <script type="text/javascript" src="<?= public_url()?>js/app.js"></script>
 <script type="text/javascript" src="<?= public_url()?>js/demo.js"></script>
-<script type="text/javascript"
-	src="<?= public_url()?>js/index.js"></script>
+<script type="text/javascript" src="<?= public_url()?>js/index.js"></script>
+<script defer="defer" async="async"  src="https://cdn4.tgdd.vn/v2015/Scripts/desktop/V4/home.min.v201711060430.js"></script>
