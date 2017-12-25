@@ -1,592 +1,2298 @@
-<link rel="stylesheet" href="<?= public_url()?>css/home.css">
-<section>
-  <aside class="homebanner">
-    <div id="sync1" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-      <div class="owl-wrapper-outer">
-        <div class="owl-wrapper" style="width: 11060px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d(-790px, 0px, 0px);">
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/man-hinh-tran" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17192&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img src="//cdn2.tgdd.vn/qcao/02_12_2017_12_02_01_big-ky-nguyen-800-300.jpg" alt="2017 - T12 - Big Campaign">
-              </a>
+<section class="awe-section-1">
+  <section class="section-privacy">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="owl-carousel owl-theme owl-loaded owl-drag" data-lg-items="4" data-md-items="4" data-sm-items="2" data-xs-items="1"
+            data-xxs-items="1" data-auto-play="true" data-margin="0">
+            <div class="owl-stage-outer">
+              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1140px;">
+                <div class="owl-item active" style="width: 285px;">
+                  <div class="item">
+                    <span class="privacy-icon">
+                      <i class="fa fa-truck"></i>
+                    </span>
+                    <span class="privacy-detail">
+                      Miễn phí vận chuyển
+                    </span>
+                  </div>
+                </div>
+                <div class="owl-item active" style="width: 285px;">
+                  <div class="item">
+                    <span class="privacy-icon">
+                      <i class="fa fa-comments-o"></i>
+                    </span>
+                    <span class="privacy-detail">
+                      Hỗ trợ 24/7
+                    </span>
+                  </div>
+                </div>
+                <div class="owl-item active" style="width: 285px;">
+                  <div class="item">
+                    <span class="privacy-icon">
+                      <i class="fa fa-money"></i>
+                    </span>
+                    <span class="privacy-detail">
+                      Hoàn tiền trong 15 ngày
+                    </span>
+                  </div>
+                </div>
+                <div class="owl-item active" style="width: 285px;">
+                  <div class="item">
+                    <span class="privacy-icon">
+                      <i class="fa fa-star"></i>
+                    </span>
+                    <span class="privacy-detail">
+                      Giảm giá theo đơn hàng
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/man-hinh-tran#oppo-f5" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17215&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T12 - Oppo F5" style="display: inline;" src="//cdn.tgdd.vn/qcao/01_12_2017_09_26_16_big-oppo-800-300.png">
-              </a>
+            <div class="owl-nav disabled">
+              <div class="owl-prev">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="owl-next">
+                <i class="fa fa-angle-right"></i>
+              </div>
             </div>
+            <div class="owl-dots disabled"></div>
           </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/dtdd/iphone-x-64gb" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=16891&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T12 - iPhone X - Preorder" style="display: inline;" src="//cdn1.tgdd.vn/qcao/28_11_2017_11_07_28_iphoneX-800-300.png">
-              </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="awe-section-2">
+  <section class="section_slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 index-slider">
+          <div class="owl-carousel owl-theme owl-loaded owl-drag" data-lg-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1"
+            data-margin="0" data-auto-play="true" data-nav="true">
+            <div class="owl-stage-outer">
+              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 2250px;">
+                <div class="owl-item active" style="width: 750px;">
+                  <div class="item banner-item">
+                    <a href="#" class="clearfix" title="MobileShop123">
+                      <figure>
+                        <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/slider_1_image.png?1514103963009" alt="MobileShop123">
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="owl-item" style="width: 750px;">
+                  <div class="item banner-item">
+                    <a href="#" class="clearfix" title="MobileShop123">
+                      <figure>
+                        <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/slider_2_image.png?1514103963009" alt="MobileShop123">
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="owl-item" style="width: 750px;">
+                  <div class="item banner-item">
+                    <a href="#" class="clearfix" title="MobileShop123">
+                      <figure>
+                        <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/slider_3_image.png?1514103963009" alt="MobileShop123">
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/dtdd/samsung-galaxy-note8" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=16928&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T12 - Big Samsung - Note 8" style="display: inline;" src="//cdn3.tgdd.vn/qcao/01_12_2017_10_25_40_Samsung-Big-Note-8-800-300-GIF-1.gif">
-              </a>
+            <div class="owl-nav">
+              <div class="owl-prev">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="owl-next">
+                <i class="fa fa-angle-right"></i>
+              </div>
             </div>
+            <div class="owl-dots disabled"></div>
           </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/phu-kien-gia-soc" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17172&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T12 - PK Chung" style="display: inline;" src="//cdn2.tgdd.vn/qcao/30_11_2017_18_48_15_Le-hoi-phu-kien-800-300.png">
-              </a>
+        </div>
+        <div class="hidden-xs col-sm-12 col-md-4 col-lg-4">
+          <div class="row">
+            <div class="hidden-xs col-sm-6 col-md-12 col-lg-12 index-banner">
+              <div class="item banner-item">
+                <a href="#" title="">
+                  <figure>
+                    <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/slide_banner_1_image.png?1514103963009" alt="MobileShop123">
+                  </figure>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/dtdd/vivo-v7" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17046&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T12 - Vivo V7" style="display: inline;" src="//cdn1.tgdd.vn/qcao/30_11_2017_11_14_05_vivo-v7-800-300.png">
-              </a>
-            </div>
-          </div>
-          <div class="owl-item" style="width: 790px;">
-            <div class="item">
-              <a href="https://www.thegioididong.com/tra-gop/home-credit" onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=15964&amp;r='+ (new Date).getTime(),   async: true, cache: false });">
-                <img class="lazyOwl" alt="2017 - T11 - Tra Gop HC" style="display: inline;" src="//cdn4.tgdd.vn/qcao/30_10_2017_10_00_40_HC-Tra-Gop-800-300.png">
-              </a>
+            <div class="hidden-xs col-sm-6 col-md-12 col-lg-12 index-banner">
+              <div class="item banner-item">
+                <a href="#" title="">
+                  <figure>
+                    <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/slide_banner_2_image.png?1514103963009" alt="MobileShop123">
+                  </figure>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="owl-controls clickable">
-        <div class="owl-buttons">
-          <div class="owl-prev">‹</div>
-          <div class="owl-next">›</div>
+    </div>
+  </section>
+</section>
+<section class="awe-section-3">
+  <section class="section-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-md-push-3 col-md-push-3">
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 module_new_products">
+              <div class="module-header">
+                <div class="module-title title-style-3">
+                  <a href="frontpage" title="Sản phẩm mới">
+                    <span>Sản phẩm mới</span>
+                  </a>
+                </div>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme nav-enable nav-top lg4 owl-loaded owl-drag" data-lg-items="4" data-md-items="3" data-sm-items="3"
+                  data-xs-items="2" data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <div class="owl-stage-outer owl-height" style="height: 302px;">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 2120px;">
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                    alt="lg-g-pro-lite-dual">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                  Lg g pro lite dual
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450253" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082636">
+                                  <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm" type="button"
+                                    onclick="window.location.href='/lg-g-pro-lite-dual'">
+                                    <span>
+                                      <i class="fa fa-cog"></i> Tuỳ chọn</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/lg-g-pro-2" title="LG G Pro 2">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370"
+                                    alt="lg-g-pro-2">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/lg-g-pro-2" title="LG G Pro 2">
+                                  Lg g pro 2
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">14.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.800.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450252" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082635">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/lg-l70" title="LG L70">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540" alt="lg-l70">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/lg-l70" title="LG L70">
+                                  Lg l70
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">5.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    5.200.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450251" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082633">
+                                  <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm" type="button"
+                                    onclick="window.location.href='/lg-l70'">
+                                    <span>
+                                      <i class="fa fa-cog"></i> Tuỳ chọn</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                  Nokia x6 8gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.490.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.600.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450250" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082632">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/iphone-4-16gb" title="iPhone 4 16GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137" alt="iphone-4-16gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/iphone-4-16gb" title="iPhone 4 16GB">
+                                  Iphone 4 16gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">5.990.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450249" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082631">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/iphone-4s-32-gb" title="iPhone 4s 32GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/54115944s-1.jpg?v=1514102699253" alt="iphone-4s-32gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/iphone-4s-32-gb" title="iPhone 4s 32GB">
+                                  Iphone 4s 32gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">9.790.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    10.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450248" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082630">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767" alt="ipad-wifi-3g-16gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                  Ipad wifi 3g 16gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.850.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450247" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082629">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/ipad-2-wifi-64gb" title="iPad 2 Wifi 64GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5810839ipad-2-wifi-1-1.jpg?v=1514102697737" alt="ipad-2-wifi-64gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/ipad-2-wifi-64gb" title="iPad 2 Wifi 64GB">
+                                  Ipad 2 wifi 64gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">22.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    22.500.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450246" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082628">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780"
+                                    alt="samsung-galaxy-tab-10-1-3g">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                  Samsung galaxy tab 10.1 3g
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.500.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450245" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082627">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/acer-aspire-5745g-382g50mn" title="Acer Aspire 5745G 382G50Mn">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0413707acer-aspire-5745-450px-4-1.jpg?v=1514102695857"
+                                    alt="acer-aspire-5745g-382g50mn">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/acer-aspire-5745g-382g50mn" title="Acer Aspire 5745G 382G50Mn">
+                                  Acer aspire 5745g 382g50mn
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">12.799.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    12.800.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450244" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082626">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav">
+                    <div class="owl-prev">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div class="owl-next">
+                      <i class="fa fa-angle-right"></i>
+                    </div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 module_feature_products">
+              <div class="module-header">
+                <div class="module-title title-style-3">
+                  <a href="san-pham-noi-bat" title="Sản phẩm nổi bật">
+                    <span>Sản phẩm nổi bật</span>
+                  </a>
+                </div>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme nav-enable nav-top lg4 owl-loaded owl-drag" data-lg-items="4" data-md-items="3" data-sm-items="3"
+                  data-xs-items="2" data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <div class="owl-stage-outer owl-height" style="height: 302px;">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1272px;">
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                    alt="lg-g-pro-lite-dual">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                  Lg g pro lite dual
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450253" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082636">
+                                  <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm" type="button"
+                                    onclick="window.location.href='/lg-g-pro-lite-dual'">
+                                    <span>
+                                      <i class="fa fa-cog"></i> Tuỳ chọn</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                  Nokia x6 8gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.490.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.600.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450250" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082632">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767" alt="ipad-wifi-3g-16gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                  Ipad wifi 3g 16gb
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.850.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450247" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082629">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item active" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780"
+                                    alt="samsung-galaxy-tab-10-1-3g">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                  Samsung galaxy tab 10.1 3g
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.500.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450245" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082627">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213"
+                                    alt="lenovo-ideapad-z360-049390">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                                  Lenovo ideapad z360 (049390)
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.999.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450243" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082625">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 212px;">
+                        <div class="item">
+                          <div class="product-box product-grid-item">
+                            <div class="product-thumbnail">
+                              <div class="sale-flash">SALE</div>
+                              <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/503903915-1-1.jpg?v=1514102691450" alt="samsung-ec-wb50fzbdbvn">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text1line">
+                                <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                                  Samsung ec-wb50fzbdbvn
+                                </a>
+                              </h3>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">3.700.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    4.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="product-action-btn product-action">
+                                <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450239" enctype="multipart/form-data">
+                                  <input class="hidden" type="hidden" name="variantId" value="15082621">
+                                  <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                    <span>
+                                      <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav">
+                    <div class="owl-prev">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div class="owl-next">
+                      <i class="fa fa-angle-right"></i>
+                    </div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Giới hạn hiển thị 2 cột bằng nhau -->
+            <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+            <!-- end kiểm tra -->
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 small_module_gallery">
+              <div class="module-header">
+                <h2 class="module-title title-style-4">
+                  <a href="frontpage" title="Bộ sưu tập Laptop">
+                    <span>Bộ sưu tập Laptop</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme nav-enable nav-top owl-loaded owl-drag" data-lg-items="1" data-md-items="1" data-sm-items="1"
+                  data-xs-items="1" data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <!-- ADD DIV -->
+                  <div class="owl-stage-outer owl-height" style="height: 306px;">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 818px;">
+                      <div class="owl-item active" style="width: 409px;">
+                        <div class="item">
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                    alt="lg-g-pro-lite-dual">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                  Lg g pro lite dual
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thiết kế gọn gàng, sang trọng LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn
+                                hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp
+                                máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/lg-g-pro-2" title="LG G Pro 2">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5323595lg-optimus-g-pro-1.jpg?v=1514102702370"
+                                    alt="lg-g-pro-2">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/lg-g-pro-2" title="LG G Pro 2">
+                                  Lg g pro 2
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thiết kế gọn gàng, sang trọng LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn
+                                hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp
+                                máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">14.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.800.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/lg-l70" title="LG L70">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5131967lg-l70-1.jpg?v=1514102701540" alt="lg-l70">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/lg-l70" title="LG L70">
+                                  Lg l70
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Tính năng bảo mật thông minh Knock Code Điện thoại LG L70 là dòng smartphone thời trang hiện đại có cấu hình mạnh mẽ trong
+                                một thiết kế nhỏ gọn tiện dụng. Bên cạnh đó, L70 còn có nhiều ứng dụng hữu ích sẽ mang
+                                đến nhiều trải nghiệm công nghệ đầy thú vị cho người sử dụng. Tính năng bảo ...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">5.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    5.200.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 409px;">
+                        <div class="item">
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                  Nokia x6 8gb
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Được Nokia giới thiệu tại Nokia Connection 2010, chiếc Nokia X6 phiên bản bộ nhớ trong 8GB đã chính thức được phân phối tại
+                                Việt Nam vào cuối tuần qua. Tuy vẫn giữ nguyên cấu hình và thiết kế như các phiên bản 16GB
+                                và 32GB, nhưng X6 8GB có một điểm mới hơn nằm ở màu vỏ. Nó sở hữu 2 màu vỏ mới là...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.490.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.600.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/iphone-4-16gb" title="iPhone 4 16GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5425773apple-iphone-4-1.jpg?v=1514102700137" alt="iphone-4-16gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/iphone-4-16gb" title="iPhone 4 16GB">
+                                  Iphone 4 16gb
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                iPhone 4 ngày càng được nhiều người tin tưởng và sử dụng, với một cấu hình mạnh mẽ, hệ điều hành iOS 5, cảm ứng mượt mà,
+                                bộ nhớ trong lên tới 16GB.. iPhone 4 chắc chắn sẽ khiến bạn cảm thấy hài lòng, với thiết
+                                kế tính tế đến từng chi tiết. “Với thiết kế vuông vức, nhưng iPhone 4 vẫn có những né...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">5.990.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- chan le = true -->
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/iphone-4s-32-gb" title="iPhone 4s 32GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/54115944s-1.jpg?v=1514102699253">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/54115944s-1.jpg?v=1514102699253" alt="iphone-4s-32gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/iphone-4s-32-gb" title="iPhone 4s 32GB">
+                                  Iphone 4s 32gb
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Với kích thước 3,5 in, chiếc iPhone 4S có kích thước rất vừa tay, bạn có thể sử dụng một cách thoải mái nhất. Phiên bản này
+                                máy có bộ nhớ trong 32GB, màu đen và là bản quốc tế.Được thiết kế không khác gì mấy so
+                                với người anh em tiền nhiệm iPhone 4, iPhone 4S với những nâng cấp đáng giá như CPU A...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">9.790.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    10.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav">
+                    <div class="owl-prev">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div class="owl-next">
+                      <i class="fa fa-angle-right"></i>
+                    </div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Giới hạn hiển thị 2 cột bằng nhau -->
+            <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+            <!-- end kiểm tra -->
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 small_module_gallery">
+              <div class="module-header">
+                <h2 class="module-title title-style-4">
+                  <a href="san-pham-noi-bat" title="Bộ sưu tập Điện thoại">
+                    <span>Bộ sưu tập Điện thoại</span>
+                  </a>
+                </h2>
+              </div>
+              <div class="module-content">
+                <div class="owl-carousel owl-theme nav-enable nav-top owl-loaded owl-drag" data-lg-items="1" data-md-items="1" data-sm-items="1"
+                  data-xs-items="1" data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                  <!-- ADD DIV -->
+                  <div class="owl-stage-outer owl-height" style="height: 306px;">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 818px;">
+                      <div class="owl-item active" style="width: 409px;">
+                        <div class="item">
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                    alt="lg-g-pro-lite-dual">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                  Lg g pro lite dual
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thiết kế gọn gàng, sang trọng LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn
+                                hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp
+                                máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.000.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                  Nokia x6 8gb
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Được Nokia giới thiệu tại Nokia Connection 2010, chiếc Nokia X6 phiên bản bộ nhớ trong 8GB đã chính thức được phân phối tại
+                                Việt Nam vào cuối tuần qua. Tuy vẫn giữ nguyên cấu hình và thiết kế như các phiên bản 16GB
+                                và 32GB, nhưng X6 8GB có một điểm mới hơn nằm ở màu vỏ. Nó sở hữu 2 màu vỏ mới là...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">6.490.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    6.600.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767" alt="ipad-wifi-3g-16gb">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                  Ipad wifi 3g 16gb
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thông số kỹ thuật: - Màn hình: TFT LCD, 9.7 inch - Hệ điều hành: iOS - Vi xử lí CPU: A4, 1 GHz - Kết nối: Wifi chuẩn 802.11
+                                a/b/g/n - Trọng lượng: 730 Thông tin chung: - Hệ điều hành: iOS - Ngôn ngữ: Tiếng Anh Màn
+                                hình: - Loại màn hình: TFT LCD - Màn hình rộng: 9.7 in...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.850.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-item" style="width: 409px;">
+                        <div class="item">
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780"
+                                    alt="samsung-galaxy-tab-10-1-3g">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                  Samsung galaxy tab 10.1 3g
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thiết kế tốt hơn Phiên bản máy tính bảng Samsung Galaxy Tab 10.1 đem đến một trải nghiệm tuyệt vời hơn hẳn, là tablet có
+                                kích thước mỏng nhất và nhẹ nhất hiện nay. Tiện dụng tối đa với thiết kế thời trang, chắn
+                                chắn trong kích thước mỏng nhất, nhẹ nhất của thế giới tablet: trọng lượng chỉ c...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.500.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213"
+                                    alt="lenovo-ideapad-z360-049390">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                                  Lenovo ideapad z360 (049390)
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Thông số kỹ thuật: - Hãng sản xuất: Lenovo - Xuất xứ: Chính hãng - Bảo hành: 12 Tháng - Tên sản phẩm: IdeaPad Z360 P/N: 59-049390
+                                - Bộ vi xử lý: Intel® Core™ i3-380M 2.53GHz/1066MHz/ 3MB L3 Cache - Bộ nhớ - RAM: 2048
+                                DDR3 - Ổ đĩa cứng: 500GB - Ổ đĩa...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">13.999.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    14.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- chan le = true -->
+                          <div class="product-box product-list-item item-small">
+                            <div class="product-thumbnail">
+                              <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                                <picture class="dp-flex">
+                                  <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                  <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/503903915-1-1.jpg?v=1514102691450" alt="samsung-ec-wb50fzbdbvn">
+                                </picture>
+                              </a>
+                            </div>
+                            <div class="product-info">
+                              <h3 class="product-name text2line">
+                                <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                                  Samsung ec-wb50fzbdbvn
+                                </a>
+                              </h3>
+                              <div class="product-summary text3line">
+                                Những chuyến du lịch hay những khoảnh khắc đẹp trong cuộc sống hằng ngày sẽ được lưu giữ nhanh chóng nhờ vào chiếc máy ảnh
+                                Samsung WB50F. Sản phẩm có thiết kế nhỏ gọn hợp thời trang, cảm biến ảnh CCD 16.2MP, zoom
+                                quang 12x, màn hình LCD 3.0” hiển thị sắc nét cùng khả năng quay phim HD720p. Hơn n...
+                              </div>
+                              <div class="price-box price-loop-style">
+                                <span class="special-price">
+                                  <span class="price">3.700.000₫</span>
+                                </span>
+                                <span class="old-price">
+                                  <span class="price">
+                                    4.000.000₫
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-nav">
+                    <div class="owl-prev">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div class="owl-next">
+                      <i class="fa fa-angle-right"></i>
+                    </div>
+                  </div>
+                  <div class="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-pull-9 col-md-pull-9">
+          <div class="aside-item sidebar_support">
+            <div class="module-header">
+              <h2 class="module-title title-style-3 padding-right-0">
+                <span>Hỗ trợ trực tuyến</span>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="item">
+                <div class="item_image">
+                  <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/item_1_image.png?1514103963009" class="img-responsive" alt="tu-van-ban-hang-1">
+                </div>
+                <div class="item_desc">
+                  <div class="item_title">
+                    Tư vấn bán hàng 1
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mrs. Dung:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      (04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_image">
+                  <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/item_2_image.png?1514103963009" class="img-responsive" alt="tu-van-ban-hang-2">
+                </div>
+                <div class="item_desc">
+                  <div class="item_title">
+                    Tư vấn bán hàng 2
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                      Mr. Tuấn:
+                    </label>
+                    <a class="item_check" href="tel:0437868904" title="(04) 3786 8904">
+                      (04) 3786 8904
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_image">
+                  <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/item_3_image.png?1514103963009" class="img-responsive" alt="email-lien-he">
+                </div>
+                <div class="item_desc">
+                  <div class="item_title">
+                    Email liên hệ
+                  </div>
+                  <div class="item_sum">
+                    <label class="item_detail">
+                    </label>
+                    <a class="item_check" href="mailto:support@bizweb.vn" title="support@bizweb.vn">
+                      support@bizweb.vn
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kiểm tra số sản phẩm trong collection hiển thị -->
+          <!-- end kiểm tra -->
+          <div class="aside-item sidebar_feature_products">
+            <div class="module-header">
+              <h2 class="module-title title-style-3">
+                <a href="san-pham-noi-bat" title="Sản phẩm nổi bật">
+                  <span>Sản phẩm nổi bật</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme nav-enable nav-top owl-loaded owl-drag" data-lg-items="1" data-md-items="1" data-sm-items="1"
+                data-xs-items="1" data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                <!-- ADD DIV -->
+                <div class="owl-stage-outer owl-height" style="height: 306px;">
+                  <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 526px;">
+                    <div class="owl-item active" style="width: 263px;">
+                      <div class="item">
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                  alt="lg-g-pro-lite-dual">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                                Lg g pro lite dual
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Thiết kế gọn gàng, sang trọng LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn
+                              hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp
+                              máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">6.000.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                                Nokia x6 8gb
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Được Nokia giới thiệu tại Nokia Connection 2010, chiếc Nokia X6 phiên bản bộ nhớ trong 8GB đã chính thức được phân phối tại
+                              Việt Nam vào cuối tuần qua. Tuy vẫn giữ nguyên cấu hình và thiết kế như các phiên bản 16GB
+                              và 32GB, nhưng X6 8GB có một điểm mới hơn nằm ở màu vỏ. Nó sở hữu 2 màu vỏ mới là...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">6.490.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                  6.600.000₫
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767" alt="ipad-wifi-3g-16gb">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                                Ipad wifi 3g 16gb
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Thông số kỹ thuật: - Màn hình: TFT LCD, 9.7 inch - Hệ điều hành: iOS - Vi xử lí CPU: A4, 1 GHz - Kết nối: Wifi chuẩn 802.11
+                              a/b/g/n - Trọng lượng: 730 Thông tin chung: - Hệ điều hành: iOS - Ngôn ngữ: Tiếng Anh Màn
+                              hình: - Loại màn hình: TFT LCD - Màn hình rộng: 9.7 in...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">13.850.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                  14.000.000₫
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 263px;">
+                      <div class="item">
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780"
+                                  alt="samsung-galaxy-tab-10-1-3g">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                                Samsung galaxy tab 10.1 3g
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Thiết kế tốt hơn Phiên bản máy tính bảng Samsung Galaxy Tab 10.1 đem đến một trải nghiệm tuyệt vời hơn hẳn, là tablet có
+                              kích thước mỏng nhất và nhẹ nhất hiện nay. Tiện dụng tối đa với thiết kế thời trang, chắn
+                              chắn trong kích thước mỏng nhất, nhẹ nhất của thế giới tablet: trọng lượng chỉ c...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">13.500.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                  14.000.000₫
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213"
+                                  alt="lenovo-ideapad-z360-049390">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                                Lenovo ideapad z360 (049390)
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Thông số kỹ thuật: - Hãng sản xuất: Lenovo - Xuất xứ: Chính hãng - Bảo hành: 12 Tháng - Tên sản phẩm: IdeaPad Z360 P/N: 59-049390
+                              - Bộ vi xử lý: Intel® Core™ i3-380M 2.53GHz/1066MHz/ 3MB L3 Cache - Bộ nhớ - RAM: 2048 DDR3
+                              - Ổ đĩa cứng: 500GB - Ổ đĩa...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">13.999.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                  14.000.000₫
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- chan le = true -->
+                        <div class="product-box product-list-item item-small">
+                          <div class="product-thumbnail">
+                            <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                              <picture class="dp-flex">
+                                <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <source media="(min-width: 543px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                                <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/503903915-1-1.jpg?v=1514102691450" alt="samsung-ec-wb50fzbdbvn">
+                              </picture>
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name text2line">
+                              <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                                Samsung ec-wb50fzbdbvn
+                              </a>
+                            </h3>
+                            <div class="product-summary text3line">
+                              Những chuyến du lịch hay những khoảnh khắc đẹp trong cuộc sống hằng ngày sẽ được lưu giữ nhanh chóng nhờ vào chiếc máy ảnh
+                              Samsung WB50F. Sản phẩm có thiết kế nhỏ gọn hợp thời trang, cảm biến ảnh CCD 16.2MP, zoom
+                              quang 12x, màn hình LCD 3.0” hiển thị sắc nét cùng khả năng quay phim HD720p. Hơn n...
+                            </div>
+                            <div class="price-box price-loop-style">
+                              <span class="special-price">
+                                <span class="price">3.700.000₫</span>
+                              </span>
+                              <span class="old-price">
+                                <span class="price">
+                                  4.000.000₫
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="owl-next">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+            </div>
+          </div>
+          <div class="aside-item sidebar_news">
+            <div class="module-header">
+              <h2 class="module-title title-style-3">
+                <a href="tin-tuc" title="Tin tức">
+                  <span>Tin tức</span>
+                </a>
+              </h2>
+            </div>
+            <div class="module-content">
+              <div class="owl-carousel owl-theme nav-enable nav-top owl-loaded owl-drag" data-lg-items="1" data-md-items="1" data-sm-items="2"
+                data-xs-items="2" data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
+                <div class="owl-stage-outer owl-height" style="height: 361px;">
+                  <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 789px;">
+                    <div class="owl-item active" style="width: 263px;">
+                      <div class="item">
+                        <div class="article-thumbnail">
+                          <a href="/bai-viet-mau-3" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
+                            <picture>
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/articles/xa1-1.jpg?v=1514102684720" alt="sony-xperia-xa1-va-xa1-ultra-nang-cap-cau-hinh-thiet-ke-vuong-van-camera-23mp">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="article-info">
+                          <h3 class="article-name">
+                            <a href="/bai-viet-mau-3" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
+                              <span>Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP</span>
+                            </a>
+                          </h3>
+                          <p class="article-detail">
+                            <span>
+                              <i class="fa fa-user"></i> Bizweb
+                            </span>
+                            <span>
+                              <i class="fa fa-calendar"></i> 24/12/2017
+                            </span>
+                          </p>
+                          <div class="article-summary">
+                            <div class="article-summary-or-content text3line">
+                              Ngoài hai mẫu điện thoại XZ, Sony còn đem đến MWC 2017 hai phiên bản nâng cấp của dòng XA là XA1 và XA1 Ultra. Thừa hưởng
+                              phong cách thiết kế của dòng XZ, hai phiên bản XA mới được nâng cấp cấu hì...
+                            </div>
+                            <p class="margin-0">
+                              <a class="text-danger" href="/bai-viet-mau-3" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
+                                [Đọc tiếp...]
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 263px;">
+                      <div class="item">
+                        <div class="article-thumbnail">
+                          <a href="/bai-viet-mau-2" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
+                            <picture>
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243" alt="sony-xperia-xzs-giong-xz-premium-nho-hon-camera-giong-nhau-man-hinh-1080p">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="article-info">
+                          <h3 class="article-name">
+                            <a href="/bai-viet-mau-2" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
+                              <span>Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p</span>
+                            </a>
+                          </h3>
+                          <p class="article-detail">
+                            <span>
+                              <i class="fa fa-user"></i> Bizweb
+                            </span>
+                            <span>
+                              <i class="fa fa-calendar"></i> 24/12/2017
+                            </span>
+                          </p>
+                          <div class="article-summary">
+                            <div class="article-summary-or-content text3line">
+                              Sony có thói quen giới thiệu phiên bản "mini" của những chiếc điện thoại mạnh nhất và hôm nay cũng không ngoại lệ. Sony Xperia
+                              XZs chính là phiên bản thu nhỏ của Xperia XZ Premium, vốn là chiếc má...
+                            </div>
+                            <p class="margin-0">
+                              <a class="text-danger" href="/bai-viet-mau-2" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
+                                [Đọc tiếp...]
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 263px;">
+                      <div class="item">
+                        <div class="article-thumbnail">
+                          <a href="/bai-viet-mau" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
+                            <picture>
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/articles/galaxy-s8.jpg?v=1514102685737" alt="galaxy-s8-se-duoc-trang-bi-cong-nghe-cam-ung-3d-tren-nut-home-ao">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="article-info">
+                          <h3 class="article-name">
+                            <a href="/bai-viet-mau" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
+                              <span>Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo</span>
+                            </a>
+                          </h3>
+                          <p class="article-detail">
+                            <span>
+                              <i class="fa fa-user"></i> Nguyen Van Son
+                            </span>
+                            <span>
+                              <i class="fa fa-calendar"></i> 24/12/2017
+                            </span>
+                          </p>
+                          <div class="article-summary">
+                            <div class="article-summary-or-content text3line">
+                              Galaxy S8 đang cận kề ngày ra mắt và hôm nay (15/3), thêm một thông tin rò rỉ thú vị về mẫu smartphone này đã xuất hiện.
+                              Báo cáo từ The Korea Herald cho hay, Samsung sẽ trang bị tính năng 3D To...
+                            </div>
+                            <p class="margin-0">
+                              <a class="text-danger" href="/bai-viet-mau" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
+                                [Đọc tiếp...]
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev">
+                    <i class="fa fa-angle-left"></i>
+                  </div>
+                  <div class="owl-next">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="sync2" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-      <div class="owl-wrapper-outer">
-        <div class="owl-wrapper" style="width: 2212px; left: 0px; display: block; transition: all 200ms ease; transform: translate3d(0px, 0px, 0px);">
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <h3>Kỷ Nguyên Màn Hình Tràn
-                <br>Quà Ngập Tràn</h3>
-              <i class="arrowbar"></i>
-            </div>
+  </section>
+</section>
+<section class="awe-section-4">
+  <section class="section-banner banner-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="module-content">
+            <a href="#" title="">
+              <figure>
+                <img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/index_large_banner.png?1514103963009" class="img-responsive"
+                  alt="MobileShop123">
+              </figure>
+            </a>
           </div>
-          <div class="owl-item synced" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>Oppo F5 | 6.990.000đ
-                <br> Trả Góp 0%</h3>
-              <i class="arrowbar"></i>
-            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="awe-section-5">
+  <section class="section-recommend-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="module-header">
+            <h2 class="module-title title-style-3">
+              <a href="san-pham-noi-bat" title="Sản phẩm giới thiệu">
+                <span>Sản phẩm giới thiệu</span>
+              </a>
+            </h2>
           </div>
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>iPhone X Trả Góp 0%
-                <br>Bảo Hành 2 Năm</h3>
-              <i class="arrowbar"></i>
-            </div>
-          </div>
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>Galaxy Note 8 Trả Góp 0%
-                <br>Tặng Gear VR</h3>
-              <i class="arrowbar"></i>
-            </div>
-          </div>
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>Lễ Hội Phụ Kiện
-                <br>Giảm Đến 49%</h3>
-              <i class="arrowbar"></i>
-            </div>
-          </div>
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>Vivo V7 Trả Góp 0%
-                <br>Tặng PMH 300 Ngàn</h3>
-              <i class="arrowbar"></i>
-            </div>
-          </div>
-          <div class="owl-item" style="width: 158px;">
-            <div class="item">
-              <i class="arrowbarleft"></i>
-              <h3>Lễ Hội Trả Góp 0%
-                <br>Duyệt Nhanh 10 Phút</h3>
+          <div class="module-content lg6">
+            <div class="owl-carousel owl-theme nav-enable nav-top owl-loaded owl-drag" data-lg-items="6" data-md-items="4" data-sm-items="3"
+              data-xs-items="2" data-xxs-items="2" data-nav="true" data-margin="0">
+              <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1140px;">
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1514102703313"
+                                alt="lg-g-pro-lite-dual">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+                              Lg g pro lite dual
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">6.000.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450253" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082636">
+                              <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm" type="button"
+                                onclick="window.location.href='/lg-g-pro-lite-dual'">
+                                <span>
+                                  <i class="fa fa-cog"></i> Tuỳ chọn</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <div class="sale-flash">SALE</div>
+                          <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0010687nokiax6-8gb-1.jpg?v=1514102700810" alt="nokia-x6-8gb">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/nokia-x6-8gb" title="Nokia X6 8GB">
+                              Nokia x6 8gb
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">6.490.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                                6.600.000₫
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450250" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082632">
+                              <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                <span>
+                                  <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <div class="sale-flash">SALE</div>
+                          <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5829839ipad-3g-2-1.jpg?v=1514102698767" alt="ipad-wifi-3g-16gb">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/ipad-wifi-3g-16gb" title="iPad Wifi 3G 16GB">
+                              Ipad wifi 3g 16gb
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">13.850.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                                14.000.000₫
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450247" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082629">
+                              <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                <span>
+                                  <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <div class="sale-flash">SALE</div>
+                          <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/5755708samsung-galaxy-tab-4-101-2-1.jpg?v=1514102696780"
+                                alt="samsung-galaxy-tab-10-1-3g">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/samsung-galaxy-tab-10-1-3g" title="Samsung Galaxy Tab 10.1 3G">
+                              Samsung galaxy tab 10.1 3g
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">13.500.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                                14.000.000₫
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450245" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082627">
+                              <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                <span>
+                                  <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <div class="sale-flash">SALE</div>
+                          <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/0513889lenovo-ideapad-z360-049390-1.jpg?v=1514102695213"
+                                alt="lenovo-ideapad-z360-049390">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/lenovo-ideapad-z360-049390" title="Lenovo IdeaPad Z360 (049390)">
+                              Lenovo ideapad z360 (049390)
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">13.999.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                                14.000.000₫
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450243" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082625">
+                              <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                <span>
+                                  <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item active" style="width: 190px;">
+                    <div class="item">
+                      <div class="product-box product-grid-item">
+                        <div class="product-thumbnail">
+                          <div class="sale-flash">SALE</div>
+                          <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                            <picture class="dp-flex">
+                              <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/products/503903915-1-1.jpg?v=1514102691450">
+                              <img class="img-responsive" src="//bizweb.dktcdn.net/100/285/622/products/503903915-1-1.jpg?v=1514102691450" alt="samsung-ec-wb50fzbdbvn">
+                            </picture>
+                          </a>
+                        </div>
+                        <div class="product-info">
+                          <h3 class="product-name text1line">
+                            <a href="/samsung-ec-wb50fzbdbvn" title="Samsung EC-WB50FZBDBVN">
+                              Samsung ec-wb50fzbdbvn
+                            </a>
+                          </h3>
+                          <div class="price-box price-loop-style">
+                            <span class="special-price">
+                              <span class="price">3.700.000₫</span>
+                            </span>
+                            <span class="old-price">
+                              <span class="price">
+                                4.000.000₫
+                              </span>
+                            </span>
+                          </div>
+                          <div class="product-action-btn product-action">
+                            <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450239" enctype="multipart/form-data">
+                              <input class="hidden" type="hidden" name="variantId" value="15082621">
+                              <button class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart btn-accent" title="Mua hàng">
+                                <span>
+                                  <i class="fa fa-shopping-cart"></i> Mua hàng</span>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <div class="owl-prev">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="owl-next">
+                  <i class="fa fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="owl-dots disabled"></div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </div>
-  </aside>
-
-  <aside class="homenews">
-    <figure>
-      <h2>
-        <a href="/tin-tuc">Tin công nghệ</a>
-      </h2>
-      <b></b>
-      <a href="/tin-tuc" class="readmore">Đọc thêm</a>
-    </figure>
-    <ul>
-      <li>
-        <a href="/tin-tuc/galaxy-x-co-the-ra-mat-nam-toi-mo-ra-ky-nguyen-man-hinh-gap-1046788">
-          <img width="100" height="70" src="https://cdn3.tgdd.vn/Files/2017/12/02/1046788/galaxy-x_800x451-100x100.jpg">
-          <h3>Galaxy X c&#243; thể ra mắt năm tới, mở ra kỷ nguy&#234;n smartphone m&#224;n h&#236;nh gập
-          </h3>
-          <span>9 ph&#250;t trước</span>
-        </a>
-      </li>
-      <li>
-        <a href="/tin-tuc/quen-di-noi-lo-khong-tien-tieu-tet-voi-cong-viec-ctv-tai-dmx-1046893">
-          <img width="100" height="70" src="https://cdn3.tgdd.vn/Files/2017/12/02/1046893/dienmayxanhctv_800x450-100x100.jpg">
-          <h3>Qu&#234;n đi nỗi lo kh&#244;ng tiền ti&#234;u Tết với c&#244;ng việc CTV tại Điện M&#225;y Xanh
-          </h3>
-          <span>39 ph&#250;t trước</span>
-        </a>
-      </li>
-      <li>
-        <a href="/tin-tuc/day-la-top-7-game-android-mien-phi-tot-nhat-2017-1046902">
-          <img width="100" height="70" src="https://cdn2.tgdd.vn/Files/2017/12/03/1046902/shadow-fight-3-s8_800x450-100x100.jpg">
-          <h3>Đ&#226;y l&#224; top 7 game Android miễn ph&#237; tốt nhất 2017
-          </h3>
-          <span>1 giờ trước</span>
-        </a>
-      </li>
-    </ul>
-    <div class="twobanner">
-      <a href='https://www.thegioididong.com/samsung' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=16926&r='+ (new Date).getTime(),   async: true, cache: false });">
-        <img src='//cdn1.tgdd.vn/qcao/28_11_2017_15_44_51_195-75.png' alt='2017 - T12 - Big Samsung' />
-      </a>
-      <a href='https://www.thegioididong.com/dtdd-sony' onclick="jQuery.ajax({ url: '//www.thegioididong.com/bannertracking?bid=17155&r='+ (new Date).getTime(),   async: true, cache: false });">
-        <img src='//cdn.tgdd.vn/qcao/30_11_2017_16_38_31_Sony-Big-195-75.png' alt='2017 - T12 - Big Sony' />
-      </a>
-    </div>
-
-  </aside>
-
-  <div class="clr"></div>
-  <!-- home products -->
-
-  <ul class="homeproduct">
-    <li>
-      <a href="/dtdd/samsung-galaxy-j7-plus">
-        <img width="388" height="180" src="https://cdn.tgdd.vn/Products/Images/42/112970/Feature/samsung-galaxy-j7-plus-ft-400x400.jpg">
-        <h3>Samsung Galaxy J7+</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>8.690.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Samsung Galaxy J7+</span>
-        <strong>8.690.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Tai nghe Bluetooth Awei A620BL khi mua online (chỉ &#225;p dụng cho c&#225;c đơn h&#224;ng đặt v&#224; nhận h&#224;ng
-            trong ng&#224;y 01/12 - 03/12)</span>
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.5&quot;, Full HD</span>
-        <span>HĐH: Android 7.0</span>
-        <span>CPU: MediaTek Helio P25 8 nh&#226;n</span>
-        <span>RAM: 4 GB, ROM: 32 GB</span>
-        <span>Camera: 13 MP v&#224; 5 MP (2 camera), Selfie: 16 MP</span>
-        <span>PIN: 3000 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('112970','42','Samsung Galaxy J7+')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/iphone-x-64gb">
-        <img width="388" height="180" src="https://cdn.tgdd.vn/Products/Images/42/114115/Feature/iphone-x-64gb-1-400x400.jpg">
-        <h3>iPhone X 64GB</h3>
-        <label class="new">Mới ra mắt</label>
-        <strong>29.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">iPhone X 64GB</span>
-        <strong>29.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng khu vực H&#224; Nội).</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.8&quot;, Super Retina</span>
-        <span>HĐH: iOS 11</span>
-        <span>CPU: Apple A11 Bionic 6 nh&#226;n</span>
-        <span>RAM: 3 GB, ROM: 64 GB</span>
-        <span>Camera: 2 camera 12 MP, Selfie: 7 MP</span>
-        <span>PIN: 2716 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('114115','42','iPhone X 64GB')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/vivo-v7">
-        <img width="388" height="180" src="https://cdn4.tgdd.vn/Products/Images/42/138399/Feature/vivo-v7-ft-400x400.jpg">
-        <h3>Vivo V7</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>6.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Vivo V7</span>
-        <strong>6.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Cơ hội tr&#250;ng Tivi Sony 4K 55 inch.</span>
-          <span> Phiếu mua h&#224;ng trị gi&#225; 1 triệu</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.7&quot;, HD+</span>
-        <span>HĐH: Android 7.1 </span>
-        <span>CPU: Snapdragon 450</span>
-        <span>RAM: 4 GB, ROM: 32 GB</span>
-        <span>Camera: 16 MP, Selfie: 24 MP</span>
-        <span>PIN: 3000 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('138399','42','Vivo V7')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/oppo-f5">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn.tgdd.vn/Products/Images/42/131915/Feature/oppo-f5-600-277-400x400.jpg" class="lazy">
-        <h3>Oppo F5</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>6.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Oppo F5</span>
-        <strong>6.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Ốp lưng (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 50.000đ)</span>
-          <span> Bộ gậy selfie 3 trong 1 ZP203 khi mua online (chỉ &#225;p dụng cho c&#225;c đơn h&#224;ng đặt v&#224; nhận h&#224;ng
-            trong ng&#224;y 01/12 - 10/12)</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 6&quot;, FullHD+</span>
-        <span>HĐH: ColorOS 3.2 (Android 7.1)</span>
-        <span>CPU: Helio P23 8 nh&#226;n</span>
-        <span>RAM: 4 GB, ROM: 32 GB</span>
-        <span>Camera: 16 MP, Selfie: 20 MP</span>
-        <span>PIN: 3200 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('131915','42','Oppo F5')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/huawei-nova-2i">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn3.tgdd.vn/Products/Images/42/118143/Feature/huawei-nova-2i-600-277-400x400.jpg" class="lazy">
-        <h3>Huawei Nova 2i</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>5.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Huawei Nova 2i</span>
-        <strong>5.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> 250 cơ hội tr&#250;ng loa Harman cao cấp (mua h&#224;ng từ 11/11 - 11/12)</span>
-          <span> Hai b&#236;nh giữ nhiệt inox DMX-002 500ml (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 100.000đ)</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.9&quot;, FullHD+</span>
-        <span>HĐH: Android 7.0</span>
-        <span>CPU: HiSilicon Kirin 659 8 nh&#226;n</span>
-        <span>RAM: 4 GB, ROM: 64 GB</span>
-        <span>Camera: 16 MP v&#224; 2 MP ,Selfie: 13 MP v&#224; 2 MP</span>
-        <span>PIN: 3340 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('118143','42','Huawei Nova 2i')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/samsung-galaxy-j7-pro">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn4.tgdd.vn/Products/Images/42/103404/Feature/samsung-galaxy-j7-pro-ft-5-400x400.jpg" class="lazy">
-        <h3>Samsung Galaxy J7 Pro</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>6.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Samsung Galaxy J7 Pro</span>
-        <strong>6.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 500.000đ</span>
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.5&quot;, Full HD</span>
-        <span>HĐH: Android 7.0</span>
-        <span>CPU: Exynos, 8 nh&#226;n</span>
-        <span>RAM: 3 GB, ROM: 32 GB</span>
-        <span>Camera: 13 MP, Selfie: 13 MP</span>
-        <span>PIN: 3600mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('103404','42','Samsung Galaxy J7 Pro')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/sony-xperia-l1">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn3.tgdd.vn/Products/Images/42/106538/Feature/sony-xperia-l1-dual-g3312-600-277-2-400x400.jpg"
-          class="lazy">
-        <h3>Sony Xperia L1</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>3.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Sony Xperia L1</span>
-        <strong>3.990.000₫</strong>
-
-
-        <span>M&#224;n h&#236;nh: 5.5&quot;, HD</span>
-        <span>HĐH: Android 7.0</span>
-        <span>CPU: MT6737T, 4 nh&#226;n</span>
-        <span>RAM: 2 GB, ROM: 16 GB</span>
-        <span>Camera: 13 MP, Selfie: 5 MP</span>
-        <span>PIN: 2620 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('106538','42','Sony Xperia L1')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/dtdd/samsung-galaxy-note-fe">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn4.tgdd.vn/Products/Images/42/103244/Feature/samsung-galaxy-note-fe-600-277-400x400.jpg"
-          class="lazy">
-        <h3>Samsung Galaxy Note FE</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>13.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Samsung Galaxy Note FE</span>
-        <strong>13.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
-          <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 400.000đ</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 5.7&quot;, Quad HD (2K)</span>
-        <span>HĐH: Android 7.0</span>
-        <span>CPU: Exynos 8890 8 nh&#226;n 64-bit</span>
-        <span>RAM: 4 GB, ROM: 64 GB</span>
-        <span>Camera: 12 MP, Selfie: 5 MP</span>
-        <span>PIN: 3200 mAh</span>
-        <label class="compr" onclick="qcp_addProdQcp('103244','42','Samsung Galaxy Note FE')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/may-tinh-bang/ipad-pro-97-inch">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn.tgdd.vn/Products/Images/522/75490/Feature/ipad-pro-97-inch--400x400.png" class="lazy">
-        <h3>iPad Pro 9.7 inch Wifi 32GB</h3>
-
-        <strong>11.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">iPad Pro 9.7 inch Wifi 32GB</span>
-        <strong>11.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng khu vực H&#224; Nội).</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 9.7&quot;, Retina</span>
-        <span>HDH: IOS 10, CPU: 2 nh&#226;n</span>
-        <span>RAM: 2 GB, ROM: 32 GB</span>
-        <span>Camera: 12 MP v&#224; 5 MP</span>
-        <span>Kết Nối: WiFi</span>
-        <span>Pin: 27.5 Wh</span>
-        <label class="compr" onclick="qcp_addProdQcp('75490','522','iPad Pro 9.7 inch Wifi 32GB')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/may-tinh-bang/samsung-galaxy-book-106-inch">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn2.tgdd.vn/Products/Images/522/92067/Feature/samsung-galaxy-book-106-inch-3-400x400.png"
-          class="lazy">
-        <h3>Samsung Galaxy Book 10.6 inch</h3>
-        <label class="installment">Trả góp 0%</label>
-        <strong>19.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Samsung Galaxy Book 10.6 inch</span>
-        <strong>19.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Phiếu mua h&#224;ng Samsung trị gi&#225; 2 triệu</span>
-          <span> Cơ hội tr&#250;ng xe SH 150i (&#225;p dụng H&#224; Nội v&#224; một số tỉnh miền Bắc).</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 10.6&quot;, TFT</span>
-        <span>CPU: Intel Core M3, Windows 10</span>
-        <span>RAM: 4 GB, Bộ nhớ: 128 GB</span>
-        <span>Camera: Kh&#244;ng, Selfie 5 MP</span>
-        <span>Kết nối: Wifi</span>
-        <span>PIN: 30.4 Wh, SIM: Kh&#244;ng</span>
-        <label class="compr" onclick="qcp_addProdQcp('92067','522','Samsung Galaxy Book 10.6 inch')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/laptop/apple-macbook-air-mqd32sa-a-i5-5350u">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn.tgdd.vn/Products/Images/44/106875/Feature/apple-macbook-air-mqd32sa-a-i5-5350u-1-400x400.png"
-          class="lazy">
-        <h3>Apple Macbook Air MQD32SA/A i5 1.8GHz/8GB/128GB (2017)</h3>
-
-        <strong>22.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Apple Macbook Air MQD32SA/A i5 1.8GHz/8GB/128GB (2017)</span>
-        <strong>22.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Office 365 Personal</span>
-          <span> Chuột kh&#244;ng d&#226;y Microsoft 1850 (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 280.000đ)</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 13.3”, 1440x900</span>
-        <span>CPU: Intel Core i5, 1.8GHz</span>
-        <span>RAM: 8GB/ SSD: 128GB</span>
-        <span>VGA: Intel HD Graphics 6000</span>
-        <span>HĐH: MAC OS X</span>
-        <span>Pin: Khoảng 12 tiếng/ DVD: Kh&#244;ng</span>
-        <label class="compr" onclick="qcp_addProdQcp('106875','44','Apple Macbook Air MQD32SA/A i5 1.8GHz/8GB/128GB (2017)')">So sánh với</label>
-      </figure>
-    </li>
-    <li>
-      <a href="/laptop/asus-tp203nah-n4200-bp052t">
-        <img width="388" height="180" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-          data-original="https://cdn1.tgdd.vn/Products/Images/44/113871/Feature/asus-tp203nah-n4200-bp052t-1-400x400.png"
-          class="lazy">
-        <h3>Asus TP203NAH N4200/4GB/500GB/Win10/(BP052T)</h3>
-
-        <strong>9.990.000₫</strong>
-      </a>
-      <figure class="bginfo">
-        <span class="name">Asus TP203NAH N4200/4GB/500GB/Win10/(BP052T)</span>
-        <strong>9.990.000₫</strong>
-
-
-        <div class="promotion">
-          <span> Chuột kh&#244;ng d&#226;y (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 160.000đ)</span>
-          <span> Balo Laptop Asus (Nếu kh&#244;ng c&#243; qu&#224; sẽ ho&#224;n 100.000đ)</span>
-        </div>
-        <span>M&#224;n h&#236;nh: 11.6 inch, HD</span>
-        <span>CPU: Pentium, 1.1GHz</span>
-        <span>RAM: 4GB, Ổ cứng HDD: 500GB</span>
-        <span>Đồ họa: Intel&#174; HD Graphics</span>
-        <span>HĐH: Windows 10, DVD: Kh&#244;ng</span>
-        <span>Nặng 1.1 kg, PIN 2 cell</span>
-        <label class="compr" onclick="qcp_addProdQcp('113871','44','Asus TP203NAH N4200/4GB/500GB/Win10/(BP052T)')">So sánh với</label>
-      </figure>
-    </li>
-  </ul>
-  <!-- phu kien -->
-  <div class="acchome">
-    <div class="naviacc">
-      <h2>Phụ kiện giá rẻ</h2>
-      <a href="/op-lung-dien-thoai">Ốp lưng, bao da</a>
-      <a href="/sac-dtdd">Pin sạc dự phòng</a>
-      <a href="/cap-dien-thoai">Cáp sạc</a>
-      <a href="/the-nho">Thẻ nhớ</a>
-      <a href="/tai-nghe">Tai nghe</a>
-      <a href="/gay-tu-suong">Gậy tự sướng</a>
-      <a href="/usb">USB</a>
-      <a href="/chuot-may-tinh">Chuột, bàn phím</a>
-      <a href="/loa-laptop">Loa</a>
-      <a href="/phu-kien-khac">Phụ kiện khác</a>
-    </div>
-    <ul>
-      <li>
-        <a href="/sac-dtdd/combo-sac-du-phong-10000-mah-cap-micro-usb-20-cm-a">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn.tgdd.vn/Products/Images/57/134185/combo-sac-du-phong-10000-mah-cap-micro-usb-20-cm-a-18-200x200.jpg"
-            class="lazy" alt="Combo Sạc dự ph&#242;ng 10.000 mAh - C&#225;p Micro USB 20 cm - Adapter sạc 1 cổng">
-          <h3>Combo Sạc dự ph&#242;ng 10.000 mAh - C&#225;p Micro USB 20 cm - Adapter sạc 1 cổng</h3>
-          <strong>396.000₫</strong>
-          <span>440.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/sac-dtdd/pin-sac-du-phong-5000mah-evalu-roller-2">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn2.tgdd.vn/Products/Images/57/86937/pin-sac-du-phong-5000mah-evalu-roller-2-200x200.jpg"
-            class="lazy" alt="Pin sạc dự ph&#242;ng 5.000 mAh eValu Roller 2">
-          <h3>Pin sạc dự ph&#242;ng 5.000 mAh eValu Roller 2</h3>
-          <strong>130.000₫</strong>
-          <span>200.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/loa-laptop/loa-bluetooth-cloud-fox-bs7">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn3.tgdd.vn/Products/Images/382/81183/loa-bluetooth-cloud-fox-bs7-7-1-200x200.jpg" class="lazy"
-            alt="Loa Bluetooth Cloud Fox BS7">
-          <h3>Loa Bluetooth Cloud Fox BS7</h3>
-          <strong>510.000₫</strong>
-          <span>850.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/loa-laptop/fenda-u213a">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn4.tgdd.vn/Products/Images/382/57859/fenda-u213a-anhava-200x200.jpg" class="lazy" alt="Loa vi t&#237;nh Fenda U213A - 2.0">
-          <h3>Loa vi t&#237;nh Fenda U213A - 2.0</h3>
-          <strong>150.000₫</strong>
-          <span>220.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/the-nho-dien-thoai/the-nho-microsd-16gb-class-10">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn3.tgdd.vn/Products/Images/55/69973/the-nho-microsd-16gb-class-10-7-200x200.jpg" class="lazy"
-            alt="Thẻ nhớ Micro SD 16 GB Class 10">
-          <h3>Thẻ nhớ Micro SD 16 GB Class 10</h3>
-          <strong>165.000₫</strong>
-          <span>280.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/tai-nghe/tai-nghe-ep-awei-q7vi">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn2.tgdd.vn/Products/Images/54/82697/tai-nghe-ep-awei-q7vi-11-200x200.jpg" class="lazy"
-            alt="Tai nghe nh&#233;t trong Awei Q7Vi">
-          <h3>Tai nghe nh&#233;t trong Awei Q7Vi</h3>
-          <strong>75.000₫</strong>
-          <span>150.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/tai-nghe/tai-nghe-day-ep-the-thao-kanen-s40">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn3.tgdd.vn/Products/Images/54/74183/tai-nghe-day-ep-the-thao-kanen-s40-11-1-200x200.jpg"
-            class="lazy" alt="Tai nghe nh&#233;t trong Kanen S40">
-          <h3>Tai nghe nh&#233;t trong Kanen S40</h3>
-          <strong>120.000₫</strong>
-          <span>200.000₫</span>
-        </a>
-      </li>
-      <li>
-        <a href="/cap-dien-thoai/cap-cao-cap-iwalk-iphone-5">
-          <img width="120" height="120" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX6+vqsEtnpAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg=="
-            data-original="https://cdn3.tgdd.vn/Products/Images/58/61258/cap-cao-cap-iwalk-iphone-5-1-1-200x200.jpg" class="lazy"
-            alt="D&#226;y c&#225;p Lightning MFI 1 m iWalk">
-          <h3>D&#226;y c&#225;p Lightning MFI 1 m iWalk</h3>
-          <strong>150.000₫</strong>
-          <span>250.000₫</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="clr"></div>
+  </section>
 </section>
