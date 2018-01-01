@@ -66,19 +66,19 @@
 						</a>
 					</li>
 					<li class="nav-item-lv2">
-						<a class="nav-link" href="<?= site_url('frontpage')?>" title="Sản phẩm mới">
+						<a class="nav-link" href="<?= site_url('collections/new')?>" title="Sản phẩm mới">
 							<i class="fa fa-angle-right"></i>
 							<span>Sản phẩm mới</span>
 						</a>
 					</li>
 					<li class="nav-item-lv2">
-						<a class="nav-link" href="<?= site_url('san-pham-noi-bat')?>" title="Sản phẩm nổi bật">
+						<a class="nav-link" href="<?= site_url('collections/hot')?>" title="Sản phẩm nổi bật">
 							<i class="fa fa-angle-right"></i>
 							<span>Sản phẩm nổi bật</span>
 						</a>
 					</li>
 					<li class="nav-item-lv2">
-						<a class="nav-link" href="<?= site_url('san-pham-khuyen-mai')?>" title="Sản phẩm khuyến mãi">
+						<a class="nav-link" href="<?= site_url('collections/discount')?>" title="Sản phẩm khuyến mãi">
 							<i class="fa fa-angle-right"></i>
 							<span>Sản phẩm khuyến mãi</span>
 						</a>
