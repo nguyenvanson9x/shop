@@ -23,7 +23,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="collection-template">
 	
 	
@@ -557,16 +556,6 @@
 								
 							</ul>
 						</div>
-					</div>
-				</div>
-				
-				<div class="aside-item aside-banner banner-item hidden-sm">
-					<div class="module-content">
-						<a href="#" title="MobileShop123">
-							<figure>
-								<img src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/aside_banner.png?1514103963009" alt="MobileShop123" class="img-responsive">
-							</figure>
-						</a>
 					</div>
 				</div>
 			</aside>

@@ -86,17 +86,17 @@
 				</ul>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?= site_url('tin-tuc')?>" title="Blog">
+				<a class="nav-link" href="<?= site_url('news')?>" title="Blog">
 					Blog
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?= site_url('gioi-thieu')?>" title="Giới thiệu">
+				<a class="nav-link" href="<?= site_url('about')?>" title="Giới thiệu">
 					Giới thiệu
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?= site_url('lien-he')?>" title="Liên hệ">
+				<a class="nav-link" href="<?= site_url('contact')?>" title="Liên hệ">
 					Liên hệ
 				</a>
 			</li>
@@ -176,34 +176,34 @@
 								</a>
 							</li>
 							<li>
-								<a class="ajaxLayer a_lv2" href="<?= site_url('frontpage')?>" title="Sản phẩm mới">
+								<a class="ajaxLayer a_lv2" href="<?= site_url('collections/new')?>" title="Sản phẩm mới">
 									<span>Sản phẩm mới</span>
 								</a>
 							</li>
 							<li>
-								<a class="ajaxLayer a_lv2" href="<?= site_url('san-pham-noi-bat')?>" title="Sản phẩm nổi bật">
+								<a class="ajaxLayer a_lv2" href="<?= site_url('collections/hot')?>" title="Sản phẩm nổi bật">
 									<span>Sản phẩm nổi bật</span>
 								</a>
 							</li>
 							<li>
-								<a class="ajaxLayer a_lv2" href="<?= site_url('san-pham-khuyen-mai')?>" title="Sản phẩm khuyến mãi">
+								<a class="ajaxLayer a_lv2" href="<?= site_url('collections/discount')?>" title="Sản phẩm khuyến mãi">
 									<span>Sản phẩm khuyến mãi</span>
 								</a>
 							</li>
 						</ul>
 					</li>
 					<li class="sidebar-menu-list menu-item collection-sidebar-menu">
-						<a class="ajaxLayer" href="<?= site_url('tin-tuc')?>" title="Blog">
+						<a class="ajaxLayer" href="<?= site_url('news')?>" title="Blog">
 							<span>Blog</span>
 						</a>
 					</li>
 					<li class="sidebar-menu-list menu-item collection-sidebar-menu">
-						<a class="ajaxLayer" href="<?= site_url('gioi-thieu')?>" title="Giới thiệu">
+						<a class="ajaxLayer" href="<?= site_url('about')?>" title="Giới thiệu">
 							<span>Giới thiệu</span>
 						</a>
 					</li>
 					<li class="sidebar-menu-list menu-item collection-sidebar-menu">
-						<a class="ajaxLayer" href="<?= site_url('lien-he')?>" title="Liên hệ">
+						<a class="ajaxLayer" href="<?= site_url('contact')?>" title="Liên hệ">
 							<span>Liên hệ</span>
 						</a>
 					</li>
