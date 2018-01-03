@@ -5,7 +5,7 @@ class MY_Controller extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $controller = $this->uri->segment(1);
-        // $this->session->set_userdata(array('login' => 'comment this line to go Login page'));
+        $this->session->set_userdata(array('login' => 'comment this line to go Login page'));
         switch ($controller) {
             case 'admin':
             {
