@@ -86,8 +86,8 @@
 				</ul>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?= site_url('news')?>" title="Blog">
-					Blog
+				<a class="nav-link" href="<?= site_url('news')?>" title="Tin tức">
+					Tin tức
 				</a>
 			</li>
 			<li class="nav-item">
@@ -193,8 +193,8 @@
 						</ul>
 					</li>
 					<li class="sidebar-menu-list menu-item collection-sidebar-menu">
-						<a class="ajaxLayer" href="<?= site_url('news')?>" title="Blog">
-							<span>Blog</span>
+						<a class="ajaxLayer" href="<?= site_url('news')?>" title="Tin tức">
+							<span>Tin tức</span>
 						</a>
 					</li>
 					<li class="sidebar-menu-list menu-item collection-sidebar-menu">

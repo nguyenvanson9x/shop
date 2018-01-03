@@ -97,8 +97,7 @@
 						<img class="img-responsive" src="" alt="Logo" />
 					</a>
 					<p class="store-description">
-						Accent đã và đang tiếp tục khẳng định vị trí của người dẫn đầu thị trường cung cấp sản phẩm thiết bị điện tử và thiết bị
-						di động liên tục cho thị trường trong nhiều năm qua.
+						MobileShop mới được tạo nhưng đảm bảo tất cả những sản phẩm hot là không bao giờ thiếu. Chỉ có vấn đề là có trên web nhưng chưa chắc đã có trong tay. LoL
 					</p>
 					<div class="foo-content payment-methods">
 						<ul class="list-menu">
@@ -124,31 +123,31 @@
 					<div class="foo-content foo-menu">
 						<ul class="list-menu">
 							<li class="foo-list-item">
-								<a href="/" title="Trang chủ">
+								<a href="<?= site_url()?>" title="Trang chủ">
 									<i class="fa fa-angle-right"></i>
 									<span>Trang chủ</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/collections/all" title="Sản phẩm">
+								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
 									<i class="fa fa-angle-right"></i>
 									<span>Sản phẩm</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/tin-tuc" title="Blog">
+								<a href="<?= site_url('news')?>" title="Tin tức">
 									<i class="fa fa-angle-right"></i>
-									<span>Blog</span>
+									<span>Tin tức</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/gioi-thieu" title="Giới thiệu">
+								<a href="<?= site_url('about')?>" title="Giới thiệu">
 									<i class="fa fa-angle-right"></i>
 									<span>Giới thiệu</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/lien-he" title="Liên hệ">
+								<a href="<?= site_url('contact')?>" title="Liên hệ">
 									<i class="fa fa-angle-right"></i>
 									<span>Liên hệ</span>
 								</a>
@@ -163,31 +162,31 @@
 					<div class="foo-content foo-menu">
 						<ul class="list-menu">
 							<li class="foo-list-item">
-								<a href="/" title="Trang chủ">
+								<a href="<?= site_url()?>" title="Trang chủ">
 									<i class="fa fa-angle-right"></i>
 									<span>Trang chủ</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/collections/all" title="Sản phẩm">
+								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
 									<i class="fa fa-angle-right"></i>
 									<span>Sản phẩm</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/tin-tuc" title="Blog">
+								<a href="<?= site_url('news')?>" title="Tin tức">
 									<i class="fa fa-angle-right"></i>
-									<span>Blog</span>
+									<span>Tin tức</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/gioi-thieu" title="Giới thiệu">
+								<a href="<?= site_url('about')?>" title="Giới thiệu">
 									<i class="fa fa-angle-right"></i>
 									<span>Giới thiệu</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/lien-he" title="Liên hệ">
+								<a href="<?= site_url('contact')?>" title="Liên hệ">
 									<i class="fa fa-angle-right"></i>
 									<span>Liên hệ</span>
 								</a>
@@ -202,31 +201,31 @@
 					<div class="foo-content foo-menu">
 						<ul class="list-menu">
 							<li class="foo-list-item">
-								<a href="/" title="Trang chủ">
+								<a href="<?= site_url()?>" title="Trang chủ">
 									<i class="fa fa-angle-right"></i>
 									<span>Trang chủ</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/collections/all" title="Sản phẩm">
+								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
 									<i class="fa fa-angle-right"></i>
 									<span>Sản phẩm</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/tin-tuc" title="Blog">
+								<a href="<?= site_url('news')?>" title="Tin tức">
 									<i class="fa fa-angle-right"></i>
-									<span>Blog</span>
+									<span>Tin tức</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/gioi-thieu" title="Giới thiệu">
+								<a href="<?= site_url('about')?>" title="Giới thiệu">
 									<i class="fa fa-angle-right"></i>
 									<span>Giới thiệu</span>
 								</a>
 							</li>
 							<li class="foo-list-item">
-								<a href="/lien-he" title="Liên hệ">
+								<a href="<?= site_url('contact')?>" title="Liên hệ">
 									<i class="fa fa-angle-right"></i>
 									<span>Liên hệ</span>
 								</a>
@@ -244,14 +243,14 @@
 								<span class="foo-icon">
 									<i class="fa fa-map-marker"></i>
 								</span>
-								<span class="foo-detail foo-address">Tầng 4, tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội.</span>
+								<span class="foo-detail foo-address">Ở một nơi xa xôi mà phải dùng cánh cửa thần kỳ của Doraemon mới tới được.</span>
 							</li>
 							<li>
 								<span class="foo-icon">
 									<i class="fa fa-phone"></i>
 								</span>
 								<span class="foo-detail">
-									<a href="tel:0466742332">04.6674.2332</a>
+									<a href="tel:84999999999">+84.999.999.999</a>
 								</span>
 							</li>
 							<li>
@@ -259,7 +258,7 @@
 									<i class="fa fa-envelope"></i>
 								</span>
 								<span class="foo-detail">
-									<a href="mailto:support@bizweb.vn">support@bizweb.vn</a>
+									<a href="mailto:anonymous@mail.vn">anonymous@mail.vn</a>
 								</span>
 							</li>
 						</ul>

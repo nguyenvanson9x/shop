@@ -1,5 +1,4 @@
 <?php
-
 class Contact extends Public_Controller
 {
   function index() {
@@ -7,3 +6,4 @@ class Contact extends Public_Controller
         $this->view('web/contact');
     }
 }
+?>
