@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 31, 2017 lúc 02:46 PM
+-- Thời gian đã tạo: Th1 06, 2018 lúc 07:54 AM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -53,6 +53,20 @@ CREATE TABLE `category` (
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `content` longtext NOT NULL,
+  `create_at` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `coupon`
 --
 
@@ -60,8 +74,8 @@ CREATE TABLE `coupon` (
   `id` int(11) NOT NULL,
   `code` varchar(255) NOT NULL,
   `discount` int(11) NOT NULL,
-  `begin_at` datetime NOT NULL,
-  `expire_at` datetime NOT NULL
+  `begin_at` int(20) NOT NULL,
+  `expire_at` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -77,7 +91,7 @@ CREATE TABLE `news` (
   `image` varchar(255) NOT NULL,
   `content` longtext NOT NULL,
   `view` int(11) NOT NULL,
-  `create_at` datetime NOT NULL
+  `create_at` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -91,7 +105,7 @@ CREATE TABLE `orders` (
   `transaction_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -109,7 +123,7 @@ CREATE TABLE `product` (
   `content` longtext NOT NULL,
   `type` int(11) NOT NULL,
   `discount` int(11) NOT NULL,
-  `expire_discount` datetime NOT NULL
+  `expire_discount` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -120,8 +134,8 @@ CREATE TABLE `product` (
 
 CREATE TABLE `supplier` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -135,12 +149,19 @@ CREATE TABLE `transaction` (
   `user_name` varchar(255) NOT NULL,
   `user_phone` varchar(20) NOT NULL,
   `user_address` longtext NOT NULL,
-  `order_date` datetime NOT NULL,
+  `order_date` int(11) NOT NULL,
   `money` int(20) NOT NULL,
   `payment_status` int(11) NOT NULL,
   `delivery_status` int(11) NOT NULL,
   `note` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `transaction`
+--
+
+INSERT INTO `transaction` (`id`, `user_email`, `user_name`, `user_phone`, `user_address`, `order_date`, `money`, `payment_status`, `delivery_status`, `note`) VALUES
+(2, 'aaa', 's', 's', 's', 0, 0, 0, 0, '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -157,6 +178,12 @@ ALTER TABLE `account`
 -- Chỉ mục cho bảng `category`
 --
 ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `contact`
+--
+ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -218,6 +245,11 @@ ALTER TABLE `account`
 ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT cho bảng `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT cho bảng `coupon`
 --
 ALTER TABLE `coupon`
@@ -246,7 +278,7 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT cho bảng `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Các ràng buộc cho các bảng đã đổ
 --
