@@ -74,7 +74,7 @@
 								<div class="product-box product-grid-item">
 									<div class="product-thumbnail">
 										
-										<a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+										<a href="/#" title="<?php echo $row->name; ?>">
 											<picture class="dp-flex">
 												
 											
@@ -84,7 +84,7 @@
 									</div>
 									<div class="product-info">
 										<h3 class="product-name text1line">
-										<a href="/# title="<?php echo $row->name; ?>">
+										<a href="/# title="<?php echo $row->name; ?> ">
 											<?php echo $row->name; ?>
 										</a>
 										</h3>

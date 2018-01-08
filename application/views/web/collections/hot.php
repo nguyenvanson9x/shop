@@ -60,25 +60,6 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						$(document).ready(function() {
-							Bizweb.queryParams = {};
-							if (location.search.length) {
-								for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
-									aKeyValue = aCouples[i].split('=');
-									if (aKeyValue.length > 1) {
-										Bizweb.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
-									}
-								}
-							}
-							$('.sort-by-script')
-							.val('created-desc')
-							.bind('change', function() {
-								Bizweb.queryParams.sortby = jQuery(this).val();
-								location.search = jQuery.param(Bizweb.queryParams).replace(/\+/g, '%20');
-							});
-						});
-					</script>
 					<section class="products-view products-view-grid">
 						<div class="products">
 						<?php foreach ($product_hot as $row): ?>	
@@ -92,7 +73,7 @@
 								<div class="product-box product-grid-item">
 									<div class="product-thumbnail">
 										
-										<a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+										<a href="/#" title="<?php echo $row->name; ?>">
 											<picture class="dp-flex">
 												
 											

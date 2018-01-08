@@ -892,8 +892,8 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 small_module_gallery">
               <div class="module-header">
                 <h2 class="module-title title-style-4">
-                  <a href="frontpage" title="Bộ sưu tập Laptop">
-                    <span>Bộ sưu tập Laptop</span>
+                  <a href="frontpage" title="Bộ sưu tập phụ kiện">
+                    <span>Bộ sưu tập phụ kiện</span>
                   </a>
                 </h2>
               </div>

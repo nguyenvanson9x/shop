@@ -104,7 +104,7 @@
 								<div class="product-box product-grid-item">
 									<div class="product-thumbnail">
 										
-										<a href="/lg-g-pro-lite-dual" title="LG G Pro Lite Dual">
+										<a href="/#" title="<?php echo $row->name; ?>">
 											<picture class="dp-flex">
 												
 											
