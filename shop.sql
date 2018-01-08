@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 08, 2018 lúc 12:12 PM
+-- Thời gian đã tạo: Th1 08, 2018 lúc 01:41 PM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -240,11 +240,19 @@ CREATE TABLE `transaction` (
   `user_phone` varchar(20) NOT NULL,
   `user_address` longtext NOT NULL,
   `order_date` int(11) NOT NULL,
+  `update_at` int(11) NOT NULL,
   `money` int(20) NOT NULL,
   `payment_status` int(11) NOT NULL,
   `delivery_status` int(11) NOT NULL,
   `note` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `transaction`
+--
+
+INSERT INTO `transaction` (`id`, `product_id`, `user_email`, `user_name`, `user_phone`, `user_address`, `order_date`, `update_at`, `money`, `payment_status`, `delivery_status`, `note`) VALUES
+(3, 31, 'a@gmail.com', 'a', '01234567980', 'sdffdsfdsfdsf', 0, 0, 100000, 1, 1, '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -348,7 +356,7 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT cho bảng `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Các ràng buộc cho các bảng đã đổ
 --
