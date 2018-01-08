@@ -23,13 +23,8 @@ class Product extends MY_controller
     {
     	$id = $this->uri->rsegment(3);
     	$product = $this->product_model->get_info($id);
-    	if(!$product) redirect;
+    	if(!$product) redirect();
     	$this->data['product'] = $product;
-
-    	$supplier = $this->supplier_model->get_info($product->supplier_id);
-    	$this->data['supplier'] = $supplier;
-
-    	$this->data['temp'] = '/product/index';
-    	$this->load->view('/layout_web/master',$this->data);
+    	$this->view('/web/product/index');
     }
 }

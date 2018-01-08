@@ -10,7 +10,6 @@ class Collections extends Public_Controller
   function all() {
     $this->load->model('product_model');
     $input = array();
-    //$input['limit'] = array(3, 0);
     $product = $this->product_model->get_list($input);
     $this->data['product'] = $product;
     $this->view("web/collections/all");

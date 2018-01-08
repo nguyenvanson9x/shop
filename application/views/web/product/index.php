@@ -13,14 +13,14 @@
 						
 						<li>
 							<a itemprop="url" href="/san-pham-noi-bat">
-								<span itemprop="title">Sản phẩm nổi bật</span>
+								<span itemprop="title">Sản phẩm</span>
 							</a>
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 						</li>
 						
 						<li>
 							<strong>
-								<span itemprop="title">LG G Pro Lite Dual</span>
+								<span itemprop="title"><?php echo $product->name; ?></span>
 							</strong>
 						<li>
 						
@@ -43,10 +43,8 @@
 <section class="product-template product" itemscope itemtype="http://schema.org/Product">
 	<meta itemprop="url" content="//mobilestore123.bizwebvietnam.net/lg-g-pro-lite-dual">
 	<meta itemprop="image" content="//bizweb.dktcdn.net/thumb/grande/100/289/080/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1515399087833">
-	<meta itemprop="description" content=" Thiết kế gọn gàng, sang trọng 
-
- LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...">
-	<meta itemprop="name" content="LG G Pro Lite Dual">
+	<meta itemprop="description" content="">
+	<meta itemprop="name" content="<?php echo $product->name; ?>">
 	
 	<div class="container">
 		<div class="row">
@@ -82,7 +80,7 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 details-pro">
-					<h1 class="title-head">Lg g pro lite dual</h1>
+					<h1 class="title-head"><?php echo $product->name; ?></h1>
 
 					
 
@@ -109,16 +107,6 @@
 					<meta itemprop="priceCurrency" content="VND">
 				</span>
 			
-		
-	
-
-	<span class="availability in-stock" itemscope itemtype="http://schema.org/ItemAvailability">
-		<span itemprop="supersededBy">
-			
-			Còn hàng
-			
-		</span>
-	</span>
 </div>
 
 					
@@ -128,9 +116,7 @@
 					<div class="product-summary product_description">
 						<div class="rte description">
 							
-							 Thiết kế gọn gàng, sang trọng 
-
- LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính...
+							 <?php echo $product->content; ?>
 							
 						</div>
 					</div>
@@ -143,9 +129,9 @@
 								 
 								<select id="product-selectors" name="variantId" style="display:none">
 									
-									<option  selected="selected"  value="15300050">Đen - 6.000.000₫</option>
+									<option  selected="selected"  value="15300050"><?php echo $product->price; ?></option>
 									
-									<option  value="15300051">Trắng - 6.000.000₫</option>
+									<option  value="15300051"><?php echo $product->price; ?></option>
 									
 								</select>
 								
@@ -256,41 +242,7 @@
 					
 					<div id="tab-1" class="tab-content">
 						<div class="rte">
-							<p>Thiết kế gọn gàng, sang trọng</p>
-
-<p>LG G Pro Lite Dual tuy có kích thước màn hình 5,5 inch rất lớn nhưng với thiết kế viền màn hình siêu mỏng, chiếc máy vẫn gọn gàng khi cầm trong tay. Mặt lưng làm bằng nhựa nhám giúp máy khó bám bẩn và dấu vân tay, trong khi đó viền hợp kim vòng quanh thân chính là điểm nhấn trong thiết kế. Thân máy mỏng 9,4 mm và trọng lượng nhẹ chỉ 161 gram cũng là một điểm cộng của smartphone “bé bự” này.</p>
-
-<p>Màn hình lớn 5,5 inch IPS LCD</p>
-
-<p>Một màn hình lớn luôn mang đến những trải nghiệm thú vị kể cả trong khi làm việc lẫn những lúc giải trí. Bạn sẽ được tha hồ lướt web, xem phim, chơi game trên màn hình lớn 5,5 inch của LG G Pro Lite Dual. Để tiết kiệm chi phí, độ phân giải trên màn hình G Pro Lite Dual đã được cắt giảm so với người đàn anh, chỉ còn 540 x 960 (qHD). Tuy nhiên, công nghệ IPS LCD vẫn giúp cho hình ảnh sáng, đẹp, màu sắc rực rỡ, góc nhìn rộng và hoàn toàn khiến bạn hài lòng.</p>
-
-<p>Bút Stylus Pen là một điểm mới của G Pro Lite Dual so với người đàn anh LG Optimus G Pro. Bạn sẽ thoải mái ghi chép, vẽ vời lên màn hình lớn 5,5 inch tiện lợi cùng tính năng QuickMemo&nbsp; thông minh.</p>
-
-<p>Knock On: mở màn hình thông minh</p>
-
-<p>Bạn từng lo lắng phím nguồn của mình bị liệt khi sử dụng smartphone, giờ đây nỗi lo đó không còn khi bạn chỉ cần gõ nhẹ vào màn hình LG G Pro LITE để bắt đầu sử dụng điện thoại hoặc tắt màn hình mà không cần dùng đến phím bấm. Với các cảm biến được tích hợp, LG G Pro LITE sẽ tự động nhận biết để mở/tắt màn hình ngay từ mặt trước hoặc mặt sau của điện thoại LG, quá tiện lợi và hữu dụng.</p>
-
-<p style="text-align: center;"><img src="https://bizweb.dktcdn.net/thumb/large/100/004/439/products/5341643lg_g_pro_lite_dual_01%5B1%5D.jpg?v=1437378651420" /></p>
-
-<p>Bộ loa kép stereo sống động</p>
-
-<p>Không cần phải cắm thêm dàn loa cồng kềnh, bạn có thể thoải mái thưởng thức những bài hát hay đoạn phim yêu thích ngay trên chiếc smartphone của mình với LG G Pro Lite Dual. Hệ thống âm thanh trên G Pro LITE được tích hợp loa kép cùng bộ lọc âm thanh tích hợp sẵn tạo ra chất lượng âm thanh sống động. Bạn có thể nghe nhạc mọi lúc mọi nơi theo cách thoải mái nhất.</p>
-
-<p>Cấu hình ổn định tăng cường khả năng đa nhiệm</p>
-
-<p>LG G Pro Lite Dual được trang bị bộ vi xử lý lõi kép MT6577 xung nhịp 1GHz và Ram 1GB, cho khả năng đa nhiệm mượt mà. Kết hợp với một màn hình lớn và tính năng Q-Slide, LG G Pro Lite Dual có thể chạy hai ứng dụng cùng lúc trên hai cửa sổ khác nhau. Bạn sẽ được trải nghiệm hệ điều hành đa nhiệm một cách đúng nghĩa.</p>
-
-<p>Ngoài ra, nhân đồ họa PowerVR 531SGX cũng giúp cho LG G Pro Lite Dual có thể chơi các game phổ biến hiện nay như Plant vs Zombies 2, Where is my Water 2, Angry Birds, …</p>
-
-<p>Hai sim tiện lợi</p>
-
-<p>Ngoài sự tiện lợi của một chiếc máy hai sim, tính năng độc đáo tiết kiệm chi phí cuộc gọi chỉ có trên LG G Pro Lite Dual. Khi chế độ tiết kiệm chi phí được bật, mỗi số liên lạc có thể được ấn định với một SIM cụ thể trong danh bạ. Khi cuộc gọi được thực hiện đến số liên lạc được ấn định với SIM có sẵn, SIM đó được sử dụng cho cuộc gọi ngay cả khi một SIM khác đang hoạt động. &nbsp;</p>
-
-<p>Pin dung lượng cao 3140 mAh</p>
-
-<p>LG G Pro LITE dual được trang bị pin dung lượng cao 3140 mAh - tốt nhất trong các sản phẩm cùng phân khúc, khi kết hợp cùng khả năng quản lý điện năng thông minh của bộ vi xử lý giúp smartphone duy trì liên tục hiệu suất hoạt động cũng như thời gian sử dụng lâu dài mà không còn phải lo lắng.</p>
-
-<p style="text-align: center;"><img src="https://bizweb.dktcdn.net/thumb/large/100/004/439/products/5850350lg_g_pro_lite_dual%5B1%5D.jpg?v=1437378651457" /></p>
+							<?php echo $product->content; ?>
 						</div>	
 					</div>	
 					
