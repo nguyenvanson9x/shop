@@ -118,7 +118,7 @@ class MY_Model extends CI_Model {
         $this->db->where($where);
         $this->db->from($this->table);
         
-        $row = $this->db->get->row();
+        $row = $this->db->get()->row();
         
         foreach ($row as $f => $v)
             $sum = $v;
