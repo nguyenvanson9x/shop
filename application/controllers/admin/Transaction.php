@@ -144,7 +144,7 @@ Class Transaction extends MY_Controller
     /**
      * Xem chi tiet giao dich
      */
-    function viewTrans()
+    function detail()
     {
         //lay id cua giao dịch ma ta muon xoa
         $id = $this->uri->rsegment('3');
@@ -184,13 +184,13 @@ Class Transaction extends MY_Controller
             $product = $this->product_model->get_info($row->product_id);
             $product->image = public_url('upload/product/'.$product->image_link);
             $product->_url_view = site_url('product/view/'.$product->id);
-            	
+                
             $row->_price = number_format($product->price);
             $row->_amount = number_format($row->amount);
             $row->product = $product;
             $row->_can_active = true;//có thể thực hiện kích hoạt đơn hàng này hay không
             $row->_can_cancel = TRUE;//có thể hủy đơn hàng hay không
-           
+        
             if($row->status == 0)
             {
                 $row->_status     = 'pending';//đợi xử lý
@@ -209,10 +209,10 @@ Class Transaction extends MY_Controller
             $row->_url_cancel = admin_url('transaction/cancel/'.$row->id);
             $row->_url_active = admin_url('transaction/active/'.$row->id);//link kích hoạt đơn hàng
         }
-    
+
         $this->data['info']   = $info;
         $this->data['orders'] = $orders;
-        // Tai file thanh phan
+                // Tai file thanh phan
         $this->load->view('admin/transaction/view', $this->data);
     }
     
