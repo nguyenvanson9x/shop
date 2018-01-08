@@ -104,7 +104,7 @@
 								<div class="product-box product-grid-item">
 									<div class="product-thumbnail">
 										
-										<a href="/#" title="<?php echo $row->name; ?>">
+										<a href="<?= site_url('product/detail')?>" title="<?php echo $row->name; ?>">
 											<picture class="dp-flex">
 												
 											
@@ -114,7 +114,7 @@
 									</div>
 									<div class="product-info">
 										<h3 class="product-name text1line">
-										<a href="/# title="<?php echo $row->name; ?>">
+										<a href="<?= site_url('product/detail')?> title="<?php echo $row->name; ?>">
 											<?php echo $row->name; ?>
 										</a>
 										</h3>
@@ -140,7 +140,7 @@
 											<form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450253" enctype="multipart/form-data">
 												<input class="hidden" type="hidden" name="variantId" value="15082636" />
 												
-												<button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='/lg-g-pro-lite-dual'" >
+												<button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='<?= site_url('product/detail')?>'" >
 												<span><i class="fa fa-cog"></i> Tuỳ chọn</span>
 												</button>
 												
