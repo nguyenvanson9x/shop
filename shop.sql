@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 08, 2018 lúc 11:17 AM
+-- Thời gian đã tạo: Th1 08, 2018 lúc 12:12 PM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -91,22 +91,23 @@ CREATE TABLE `coupon` (
   `code` varchar(255) NOT NULL,
   `discount` int(11) NOT NULL,
   `begin_at` int(20) NOT NULL,
-  `expire_at` int(20) NOT NULL
+  `expire_at` int(20) NOT NULL,
+  `used` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `coupon`
 --
 
-INSERT INTO `coupon` (`id`, `code`, `discount`, `begin_at`, `expire_at`) VALUES
-(1, 'D17125', 5, 0, 0),
-(2, 'D180110', 10, 0, 0),
-(3, 'D180115', 15, 0, 0),
-(4, 'D180120', 20, 0, 0),
-(5, 'D180130', 30, 0, 0),
-(6, 'D180140', 40, 0, 0),
-(7, 'D180145', 45, 0, 0),
-(8, 'D180150', 50, 0, 0);
+INSERT INTO `coupon` (`id`, `code`, `discount`, `begin_at`, `expire_at`, `used`) VALUES
+(1, 'D17125', 5, 0, 0, 0),
+(2, 'D180110', 10, 0, 0, 0),
+(3, 'D180115', 15, 0, 0, 0),
+(4, 'D180120', 20, 0, 0, 0),
+(5, 'D180130', 30, 0, 0, 0),
+(6, 'D180140', 40, 0, 0, 0),
+(7, 'D180145', 45, 0, 0, 0),
+(8, 'D180150', 50, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -141,19 +142,6 @@ INSERT INTO `news` (`id`, `account_id`, `title`, `image`, `content`, `view`, `cr
 (10, 1, 'CES 2018: Acer trình làng Swift 7, chiếc laptop mỏng nhất thế giới.', 'anh10.jpg', 'Acer đã khởi đầu năm 2018 bằng cách ra mắt một trong những chiếc laptop mỏng nhất thế giới tại CES 2018. Nó có tên gọi Swift 7 (SF714-51) và chỉ dày 8.98 mm.\r\n\r\nTheo Cnet, Acer tuyên bố rằng đây là chiếc laptop mỏng nhất thế giới và nó sẽ được bán ra trong tháng 4 với giá 1.699 USD (khoảng 38 triệu đồng).\r\n\r\nKhông thể phủ nhận Acer Swift 7 có thiết kế đẹp mắt, khung vỏ nhôm màu đen sang trọng và chắc chắn, màn hình 14 inch với viền cạnh mỏng. Ngoài ra, nó cũng hỗ trợ kết nối mạng 4G LTE.\r\n\r\nAcer Swift 7 có nhiều lợi thế cạnh tranh nhờ vào thiết kế siêu mỏng nhẹ, kết nối mọi lúc mọi nơi. Tuy nhiên nó chỉ dùng vi xử lý Intel thế hệ 7, nhưng giá cả vẫn khá cao.\r\n\r\nCấu hình cụ thể:\r\n\r\nVi xử lý Intel Core i7 thế hệ 7.\r\nỔ SSD 256 GB.\r\nRAM 8 GB LPDDR3.\r\nHỗ trợ 4G LTE.\r\nMàn hình cảm ứng 14 inch độ phân giải Full HD.\r\nThời lượng pin 10 giờ.\r\nHỗ trợ cảm biến vân tay.', 622, 0),
 (11, 1, 'Mẹo tạo mọi bài hát yêu thích làm nhạc chuông, làm 100% trên iPhone', 'anh11.jpg', 'Đổi nhạc chuông là việc mà người dùng iPhone nào cũng muốn, nhưng để làm được thì không dễ dàng như trên các nền tảng khác. Hôm nay, mình sẽ hướng dẫn các bạn cách làm đơn giản nhất, thao tác trực tiếp 100% trên iPhone và chỉ dẫn các bước cụ thể nhất. Đảm bảo bạn nào xem xong cũng có thể làm được ngay, chúng ta cùng bắt đầu nhé!\r\n\r\nĐầu tiên, các bạn tải về ứng dụng Documents TẠI ĐÂY.\r\nMở app lên, bấm vào tab Trình duyệt \r\nTruy cập địa chỉ: https://www.onlinevideoconverter.com/video-converter\r\n\r\nCác bạn quay ra màn hình chính, mở ứng dụng YouTube lên, tìm video yêu thích muốn cài làm nhạc chuông.\r\n\r\nBấm vào nút chia sẻ video yêu thích, chọn Sao chép liên kết của video.\r\n\r\nNOTE: Ngoài YouTube thì các bạn có thể sao chép mọi link bài hát yêu thích tại các trang nghe nhạc phổ biến như ZingMP3, NCT, Chia sẻ nhạc, ...\r\n\r\nCác bạn dán liên kết video vào ô bên dưới, chọn định dạng nhạc tải về là .m4a hoặc mp3. \r\n\r\nBấm Tải xuống > Save.\r\nChờ tải bài nhạc về và hoàn tất.\r\nMở ứng dụng GarageBand lên:\r\n\r\n1: Chọn mục BỘ THU ÂM THANH > Bấm vào phần Giọng.\r\n2: Tích vào icon như hình dưới.\r\n3: Bấm vào icon chọn bài hát.\r\nXuất hiện cửa sổ danh sách bài hát > Chọn phần Tệp âm thanh > Duyệt các mục từ ứng dụng tệp.\r\n5: Chọn mục Documents.\r\n6: Bấm chọn bài hát vừa tải về ở bước trên.\r\n7: Xuất hiện bài nhạc đã chọn.\r\n8: Nhấn giữ bài nhạc đó kéo vào giao diện hình chiếc Micro. Tại đây các bạn điều chỉnh độ dài nhạc chuông (dưới 30s) và cắt đoạn yêu thích của bài hát làm nhạc chuông.\r\n9: Các bạn bấm icon hình tam giác góc trái > Bấm Bài hát của tôi.\r\n10: Phần mềm sẽ tiến hành lưu lại đoạn nhạc chuông.\r\n11: Các bạn nhấn giữ vào nhạc chuông vừa tạo > Chọn Chia sẻ > Chọn Nhạc chuông.\r\nLúc này các bạn có thể chọn bài hát đó làm Nhạc chuông, Âm báo, Gán nhạc chuông cho từng liên hệ.\r\nSau khi chọn xong, các bạn ra ngoài màn hình chính, vào phần Cài đặt > Âm thanh & cảm ứng > Nhạc chuông > Kiếm tra và tận hưởng thành quả nhé!\r\nNhư vậy là bài hát yêu thích của bạn đã thành nhạc chuông yêu dấu trên iPhone rồi. Với cách này bạn có thể tạo mọi bài hát yêu thích làm nhạc chuông, âm báo hệ thống... rất nhanh và tiện lợi vì làm trực tiếp hoàn toàn trên iPhone.\r\n\r\nNếu các bạn thấy hữu ích thì nhớ chia sẻ cho bạn bè cùng biết để ủng hộ bài viết nhé!', 502, 0),
 (12, 1, '\"Sửa chữa\" Facebook là mục tiêu trong năm 2018 của CEO Mark Zuckerberg', 'anh12.jpg', 'Trang Reuters mới đây cho biết, Mark Zuckerberg - CEO Facebook đã chia sẻ vào hôm thứ năm (4/1) rằng: Mục tiêu trong năm 2018 của ông sẽ là đưa việc kinh doanh lên một chỗ đứng vững chắc hơn cũng như sẽ \"sửa chữa\" Facebook để phù hợp với cả thế giới.\r\n\r\n\"Thế giới đang cảm thấy lo lắng và chia rẽ, và Facebook có rất nhiều việc phải làm\", Mark đã chia sẻ thông điệp này lên trang cá nhân của mình.\r\n\r\nĐiều đó cho thấy, ngoài những mục tiêu dài hạn đã đặt ra từ lâu như học tiếng Quan Thoại (ngôn ngữ của gia đình vợ), đọc 2 cuốn sách mỗi tháng và chu du đến các tiểu bang chưa từng đến ở Mỹ thì vị CEO 33 tuổi này còn muốn đổi mới Facebook.\r\n\r\nĐược biết hiện tại ở một số quốc gia phương Tây, Facebook đang bị chỉ trích là một công cụ làm tiêu tốn thời gian và phát tán những thông điệp thù địch vô kiểm soát.\r\n\r\nTrong khi ở Đức, người ta đã bắt đầu ban hành những đạo luật yêu cầu các mạng xã hội như Facebook và Twitter phải kiểm duyệt, loại bỏ những bài đăng có tính thù địch, khiêu khích cộng đồng nếu không sẽ nhận án phạt. Thì ở Mỹ, Facebook đã bị lên án vì để Nga can thiệp vào cuộc bầu cử năm 2016 bằng công cụ này.\r\n\r\nNhư vậy có thể thấy, việc CEO Mark Zuckerberg phải đăng đàn giải bày và đặt ra mục tiêu mới để phát triển Facebook là vô cùng cần thiết.\r\n\r\nÔng cho biết, \"thách thức cá nhân trong năm 2018 sẽ là sửa chữa những vấn đề quan trọng\", \"chúng tôi sẽ không thể ngăn chặn hết những (bài đăng có tính chất) sai lầm và lạm dụng nhưng Facebook đang cố làm nhiều thứ để hạn chế điều này\".', 256, 0);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `orders`
---
-
-CREATE TABLE `orders` (
-  `id` int(11) NOT NULL,
-  `transaction_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -246,6 +234,7 @@ INSERT INTO `supplier` (`id`, `name`) VALUES
 
 CREATE TABLE `transaction` (
   `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
   `user_email` varchar(255) NOT NULL,
   `user_name` varchar(255) NOT NULL,
   `user_phone` varchar(20) NOT NULL,
@@ -256,13 +245,6 @@ CREATE TABLE `transaction` (
   `delivery_status` int(11) NOT NULL,
   `note` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Đang đổ dữ liệu cho bảng `transaction`
---
-
-INSERT INTO `transaction` (`id`, `user_email`, `user_name`, `user_phone`, `user_address`, `order_date`, `money`, `payment_status`, `delivery_status`, `note`) VALUES
-(2, 'aaa', 's', 's', 's', 0, 0, 0, 0, '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -302,14 +284,6 @@ ALTER TABLE `news`
   ADD KEY `account_id` (`account_id`);
 
 --
--- Chỉ mục cho bảng `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `orders_ibfk_1` (`transaction_id`),
-  ADD KEY `orders_ibfk_2` (`product_id`);
-
---
 -- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
@@ -328,7 +302,8 @@ ALTER TABLE `supplier`
 -- Chỉ mục cho bảng `transaction`
 --
 ALTER TABLE `transaction`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `product_id` (`product_id`);
 
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
@@ -360,11 +335,6 @@ ALTER TABLE `coupon`
 ALTER TABLE `news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
--- AUTO_INCREMENT cho bảng `orders`
---
-ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
@@ -390,18 +360,17 @@ ALTER TABLE `news`
   ADD CONSTRAINT `news_ibfk_1` FOREIGN KEY (`account_id`) REFERENCES `account` (`id`);
 
 --
--- Các ràng buộc cho bảng `orders`
---
-ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
 -- Các ràng buộc cho bảng `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`),
   ADD CONSTRAINT `product_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`);
+
+--
+-- Các ràng buộc cho bảng `transaction`
+--
+ALTER TABLE `transaction`
+  ADD CONSTRAINT `transaction_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
