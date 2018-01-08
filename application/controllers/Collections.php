@@ -35,6 +35,7 @@ class Collections extends Public_Controller
     $this->load->model('product_model');
     $input = array();
     //$input['limit'] = array(3, 0);
+    $input['order'] = array('discount','DESC');
     $product_discount = $this->product_model->get_list($input);
     $this->data['product_discount'] = $product_discount;
     $this->view("web/collections/discount");

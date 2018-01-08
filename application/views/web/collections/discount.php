@@ -63,7 +63,8 @@
 					
 					<section class="products-view products-view-grid">
 						<div class="products">
-						<?php foreach ($product_discount as $row): ?>	
+						<?php foreach ($product_discount as $row): ?>
+							<?php if($row->discount != 0) { ?>	
 							<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 item lg4" >
 								
 								
@@ -119,7 +120,7 @@
 									</div>
 								</div>
 							</div>
-						
+							<?php }?>
 						<?php endforeach; ?>	
 						</div>
 						
