@@ -29,6 +29,8 @@
             if (file_exists("upload/news/" . $news->image)) {
               $image = base_url("upload/news/" . $news->image);
             }
+            $poster = $this->account_model->get_info($news->account_id);
+            
             $avt1 = base_url("upload/common/avt1.jpg");
             $avt2 = base_url("upload/common/avt2.jpg");
             $avt3 = base_url("upload/common/avt3.jpg");
@@ -40,7 +42,7 @@
               </h1>
               <div class="post-details">
                 <span class="author">
-                  <i class="fa fa-user"></i> <?php $news->account_id;?>
+                  <i class="fa fa-user"></i> <?php echo $poster->fullname;?>
                 </span>
                 <span>
                   <i class="fa fa-calendar"></i> <?php echo mdate('%d-%m-%Y',$news->create_at); ?>
@@ -147,19 +149,20 @@
               <div class="owl-stage-outer">
                 <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 263px;">
                   <div class="owl-item active" style="width: 263px;">
-                    <div class="item">
-                  
-							      <!-- view > 400 -->
-							      <?php foreach ($list as $news): ?>
-                    <?php if($news->view > 400) { ?>
-								<div class="artitle-item item-small">
+                  <!-- view > 400 -->
+                  <?php foreach ($list as $news): ?>
+                  <?php if($news->view > 400) { ?>
+                   <div class="item">
+                   
+								  <div class="artitle-item item-small">
 									<div class="article-thumbnail">
 									<?php 
                     $title = $news->title;
 										$image = base_url("upload/news/anh0.jpg");
-                    if (file_exists("upload/news/".$news->image)) 
+                    if (file_exists("upload/news/".$news->image)) {
                       $image = base_url("upload/news/".$news->image);
-                    
+                    }
+                      
 									?>
 										<a href="<?= site_url($url);?>" title="<?php echo $title?>">
 											<picture>
@@ -186,13 +189,12 @@
 											<?php echo mdate('%d-%m-%Y',$news->create_at); ?>
 										</div>
 									</div>
+                  <?php } endforeach ?>	
 								</div>
-                <?php } endforeach ?>		
-                    </div>
+                </div>
                   </div>
                 </div>
               </div>
-
               <!-- don't need -->
               <div class="owl-nav disabled">
                 <div class="owl-prev">
@@ -206,7 +208,6 @@
             </div>
           </div>
         </div>
-
         <!-- Thẻ -->
         <div class="aside-item article-tags">
           <div class="module-header">
@@ -224,7 +225,6 @@
             </div>
           </div>
         </div>
-
         <!-- QC -->
         <div class="aside-item blog-banner">
           <div class="module-header">
@@ -238,7 +238,6 @@
             </a>
           </div>
         </div>
-
         <!-- Chi sẻ -->
         <div class="aside-item article-sharing">
           <div class="module-header">
@@ -253,7 +252,7 @@
                   title="Chia sẻ lên Facebook">
                   <i class="fa fa-facebook-official"></i>
                 </a>
-                <a target="_blank" href="//twitter.com/share?text=<?php echo $image;?>&amp;url=https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>"
+                <a target="_blank" href="//twitter.com/share?text=<?php echo $image;?>&amp;url=https://facebook.com.vn<?= site_url($url);?>"
                   class="share-twitter hv-txt-twitter btn-transition btn-border-hover" title="Chia sẻ lên Twitter">
                   <i class="fa fa-twitter"></i>
                 </a>
@@ -265,7 +264,6 @@
             </div>
           </div>
         </div>
-
         <!-- Chào mừng -->
         <div class="aside-item aside-rte">
           <div class="module-header">

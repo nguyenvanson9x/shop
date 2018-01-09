@@ -199,9 +199,7 @@
                   
 <?php foreach ($product_hot as $row ): ?>
 <?php
-
 if (now() > ($row->create_at + 7776000)) {
-
 ?>
 <div class="item">
   <div class="product-box product-grid-item">
@@ -300,10 +298,10 @@ if (now() > ($row->create_at + 7776000)) {
                   </div>
                   <div class="item_sum">
                     <label class="item_detail">
-                      Mr. Cuu:
+                      Mr. Son:
                     </label>
                     <a class="item_check" href="tel:0439999999" title="(04) 3999 9999">
-                      (04) 3999 9999
+                      (04) 0123 456 789
                     </a>
                   </div>
                 </div>
@@ -356,8 +354,8 @@ if (now() > ($row->create_at + 7776000)) {
                     <label class="item_detail">
                       
                     </label>
-                    <a class="item_check" href="mailto:anonymous@mail.vn" title="support@bizweb.vn">
-                      anonymous@mail.vn
+                    <a class="item_check" href="mailto:nguyentuan96ttbn@gmail.vn" title="support@mobileshop.vn">
+                      nguyentuan96ttbn@mail.vn
                     </a>
                   </div>
                 </div>
@@ -380,140 +378,61 @@ if (now() > ($row->create_at + 7776000)) {
               
               <div class="owl-carousel owl-theme nav-enable nav-top" data-lg-items="1" data-md-items="1" data-sm-items="2" data-xs-items="2" data-xxs-items="1" data-nav="true" data-auto-play="true" data-auto-height="true">
                 
-                <div class="item">
-                  <div class="article-thumbnail">
-                    <a href="#" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
-                      <picture>
-                        
-                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/xa1-1.jpg?v=1515399069080"/>
-                        <img class="img-responsive" src="//bizweb.dktcdn.net/100/289/080/articles/xa1-1.jpg?v=1515399069080" alt="sony-xperia-xa1-va-xa1-ultra-nang-cap-cau-hinh-thiet-ke-vuong-van-camera-23mp">
-                        
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="article-info">
-                    <h3 class="article-name">
-                    <a href="#" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
-                      <span>Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP</span>
-                    </a>
-                    </h3>
-                    <p class="article-detail">
-                      <span>
-                        <i class="fa fa-user"></i> Bizweb
-                      </span>
-                      <span>
-                        <i class="fa fa-calendar"></i> 08/01/2018
-                      </span>
-                    </p>
-                    <div class="article-summary">
-                      
-                      <div class="article-summary-or-content text3line">
-                        Ngoài hai mẫu điện thoại XZ, Sony còn đem đến MWC 2017 hai phiên bản nâng cấp của dòng XA là XA1 và XA1 Ultra. Thừa hưởng phong cách thiết kế của dòng XZ, hai phiên bản XA mới được nâng cấp cấu hì...
-                      </div>
-                      <p class="margin-0">
-                        <a class="text-danger" href="#" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
-                          [Đọc tiếp...]
-                        </a>
-                      </p>
-                      
-                    </div>
-                  </div>
-                </div>
                 
+                <?php foreach ($hotNews as $news):?>
                 <div class="item">
                   <div class="article-thumbnail">
-                    <a href="#" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
+                    <?php 
+                      $url = "news/" . $news->id;
+                      $title = $news->title;
+                      $image = "upload/news/anh0.jpg";
+                      if (file_exists("upload/news/" . $news->image)) {
+                        $image = "upload/news/" . $news->image;
+                      }
+                      $poster = $this->account_model->get_info($news->account_id);
+                    ?>
+                    <a href="<?= site_url($url);?>" title="<?php echo $title;?>">
                       <picture>
                         
-                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537"/>
-                        <img class="img-responsive" src="//bizweb.dktcdn.net/100/289/080/articles/sony-xperia-xzs-3view.jpg?v=1515399069537" alt="sony-xperia-xzs-giong-xz-premium-nho-hon-camera-giong-nhau-man-hinh-1080p">
+                        <source media="(min-width: 1200px)" srcset="<?php echo $image;?>"/>
+                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="<?php echo $image;?>"/>
+                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="<?php echo $image;?>"/>
+                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="<?php echo $image;?>"/>
+                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="<?php echo $image;?>"/>
+                        <source media="(max-width: 319px)" srcset="<?php echo $image;?>"/>
+                        <img class="img-responsive" src="<?php echo $image;?>" alt="<?php echo $image;?>">
                         
                       </picture>
                     </a>
                   </div>
                   <div class="article-info">
                     <h3 class="article-name">
-                    <a href="#" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
-                      <span>Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p</span>
+                    <a href="<?= site_url($url);?>" title="<?php echo $title;?>">
+                      <span><?php echo $title;?></span>
                     </a>
                     </h3>
                     <p class="article-detail">
                       <span>
-                        <i class="fa fa-user"></i> Bizweb
+                        <i class="fa fa-user"></i> <?php echo $poster->fullname;?>
                       </span>
                       <span>
-                        <i class="fa fa-calendar"></i> 08/01/2018
+                        <i class="fa fa-calendar"></i> <?php echo mdate('%d-%m-%Y',$news->create_at); ?>
                       </span>
                     </p>
                     <div class="article-summary">
                       
                       <div class="article-summary-or-content text3line">
-                        Sony có thói quen giới thiệu phiên bản "mini" của những chiếc điện thoại mạnh nhất và hôm nay cũng không ngoại lệ. Sony Xperia XZs chính là phiên bản thu nhỏ của Xperia XZ Premium, vốn là chiếc má...
+                        <?php echo $news->content;?>
                       </div>
                       <p class="margin-0">
-                        <a class="text-danger" href="#" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
+                        <a class="text-danger" href="<?= site_url($url);?>" title="<?php echo $title;?>">
                           [Đọc tiếp...]
                         </a>
                       </p>
-                      
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="item">
-                  <div class="article-thumbnail">
-                    <a href="#" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
-                      <picture>
-                        
-                        <source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <source media="(min-width: 320px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <source media="(max-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/289/080/articles/galaxy-s8.jpg?v=1515399069830"/>
-                        <img class="img-responsive" src="//bizweb.dktcdn.net/100/289/080/articles/galaxy-s8.jpg?v=1515399069830" alt="galaxy-s8-se-duoc-trang-bi-cong-nghe-cam-ung-3d-tren-nut-home-ao">
-                        
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="article-info">
-                    <h3 class="article-name">
-                    <a href="#" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
-                      <span>Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo</span>
-                    </a>
-                    </h3>
-                    <p class="article-detail">
-                      <span>
-                        <i class="fa fa-user"></i> Bizweb
-                      </span>
-                      <span>
-                        <i class="fa fa-calendar"></i> 08/01/2018
-                      </span>
-                    </p>
-                    <div class="article-summary">
-                      
-                      <div class="article-summary-or-content text3line">
-                        Galaxy S8 đang cận kề ngày ra mắt và hôm nay (15/3), thêm một thông tin rò rỉ thú vị về mẫu smartphone này đã xuất hiện.
-                        Báo cáo từ The Korea Herald cho hay, Samsung sẽ trang bị tính năng 3D ...
                       </div>
-                      <p class="margin-0">
-                        <a class="text-danger" href="#" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
-                          [Đọc tiếp...]
-                        </a>
-                      </p>
-                      
                     </div>
                   </div>
+                  <?php endforeach;?>
                 </div>
                 
               </div>
@@ -624,6 +543,7 @@ if (now() > ($row->create_at + 7776000)) {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
+    </div>
   </section>
+</section>

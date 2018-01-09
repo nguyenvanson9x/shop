@@ -5,6 +5,7 @@ class News extends Public_Controller
         parent::__construct();
         // load model
         $this->load->model('news_model');
+        $this->load->model('account_model');
     }
 
     function index() {

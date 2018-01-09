@@ -17,8 +17,6 @@
 		</div>
 	</div>
 </section>
-
-
 <div class="blog-article-template"  itemscope itemtype="http://schema.org/Blog">
 	<meta itemprop="name" content="Tin tức">
 	<meta itemprop="description" content="Chủ đề không có mô tả">
@@ -40,11 +38,10 @@
 							<?php 
 							$url = "news/detail/" . $news->id;
 							$title = $news->title;
-
 							$image = "upload/news/anh0.jpg";
 							if (file_exists("upload/news/" . $news->image)) {
 								$image = "upload/news/" . $news->image;
-							}
+							}							
 							?>
 							<a href="<?= site_url($url);?>" title="<?php echo $title; ?>">
 								<picture>
@@ -106,10 +103,8 @@
 								<div class="artitle-item item-small">
 									<div class="article-thumbnail">
 									<?php 									
-
 										$url = "news/detail/" . $news->id;
 										$title = $news->title;
-
 										$image = "upload/news/anh0.jpg";
 										if (file_exists("upload/news/" . $news->image)) {
 											$image = "upload/news/" . $news->image;
@@ -150,7 +145,6 @@
 						
 					</div>
 				</div>
-
 				<!-- Tag -->
 				<div class="aside-item article-tags">
 					<div class="module-header">
