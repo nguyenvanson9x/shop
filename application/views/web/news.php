@@ -9,15 +9,9 @@
 						</a>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 					</li>
-					
-					
 					<li>
 						<strong itemprop="title">Tin tức</strong>
 					</li>
-					
-					
-					
-					
 				</ul>
 			</div>
 		</div>
@@ -84,7 +78,7 @@
 							</div>
 							</div>
 						</div>
-						<?php endforeach;?>						
+				<?php endforeach;?>						
 					</div>					
 				</div>
 			</section>
@@ -105,121 +99,59 @@
 						<div class="owl-carousel owl-theme nav-enable nav-top" data-lg-items="1" data-md-items="1" data-sm-items="2" data-xs-items="2" data-xxs-items="1" data-nav="true" data-auto-play="true">
 						
 							<div class="item">
-								
+							<?php 
+							
+							foreach ($listNews as $news):?>
+							<?php if($news->view > 400) { ?>
 								<div class="artitle-item item-small">
 									<div class="article-thumbnail">
-										<a href="/bai-viet-mau-3" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
+									<?php 									
+
+										$url = "news/detail/" . $news->id;
+										$title = $news->title;
+
+										$image = "upload/news/anh0.jpg";
+										if (file_exists("upload/news/" . $news->image)) {
+											$image = "upload/news/" . $news->image;
+										
+									}
+									?>
+										<a href="<?= site_url($url);?>" title="<?php echo $title?>">
 											<picture>
 												
-												<source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 543px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<source media="(min-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/xa1-1.jpg?v=1514102684720"/>
-												<img class="img-responsive" alt="sony-xperia-xa1-va-xa1-ultra-nang-cap-cau-hinh-thiet-ke-vuong-van-camera-23mp" src="//bizweb.dktcdn.net/100/285/622/articles/xa1-1.jpg?v=1514102684720" />
+												<source media="(min-width: 1200px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 992px) and (max-width: 1199px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 768px) and (max-width: 991px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 571px) and (max-width: 767px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 543px) and (max-width: 570px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 320px) and (max-width: 542px)" srcset="<?php echo $image; ?>"/>
+												<source media="(min-width: 319px)" srcset="<?php echo $image; ?>"/>
+												<img class="img-responsive" alt="<?php echo $title?>" src="<?php echo $image; ?>" />
 												
 											</picture>
 										</a>
 									</div>
 									<div class="article-info">
 										<h3 class="article-title text3line">
-										<a href="/bai-viet-mau-3" title="Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP">
-											Sony Xperia XA1 và XA1 Ultra: nâng cấp cấu hình, thiết kế vuông vắn, camera 23MP
+										<a href="<?= site_url($url);?>" title="<?php echo $title?>">
+											<?php echo $title?>
 										</a>
 										</h3>
 										<div class="entry-date">
-											23/02/2017
+											<?php echo mdate('%d-%m-%Y',$news->create_at); ?>
 										</div>
 									</div>
 								</div>
-								
-								
-								
-								
-								
-								
-								
-								<div class="artitle-item item-small">
-									<div class="article-thumbnail">
-										<a href="/bai-viet-mau-2" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
-											<picture>
-												
-												<source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 543px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<source media="(min-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243"/>
-												<img class="img-responsive" alt="sony-xperia-xzs-giong-xz-premium-nho-hon-camera-giong-nhau-man-hinh-1080p" src="//bizweb.dktcdn.net/100/285/622/articles/sony-xperia-xzs-3view.jpg?v=1514102685243" />
-												
-											</picture>
-										</a>
-									</div>
-									<div class="article-info">
-										<h3 class="article-title text3line">
-										<a href="/bai-viet-mau-2" title="Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p">
-											Sony Xperia XZs: Giống XZ Premium, nhỏ hơn, camera giống nhau, màn hình 1080p
-										</a>
-										</h3>
-										<div class="entry-date">
-											23/02/2017
-										</div>
-									</div>
-								</div>
-								
-								
-								
-								
-								
-								
-								
-								
-								<!-- chan le = true -->
-								
-								
-								
-								<div class="artitle-item item-small">
-									<div class="article-thumbnail">
-										<a href="/bai-viet-mau" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
-											<picture>
-												
-												<source media="(min-width: 1200px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 992px) and (max-width: 1199px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 768px) and (max-width: 991px)" srcset="//bizweb.dktcdn.net/thumb/compact/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 571px) and (max-width: 767px)" srcset="//bizweb.dktcdn.net/thumb/large/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 543px) and (max-width: 570px)" srcset="//bizweb.dktcdn.net/thumb/medium/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 320px) and (max-width: 542px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<source media="(min-width: 319px)" srcset="//bizweb.dktcdn.net/thumb/small/100/285/622/articles/galaxy-s8.jpg?v=1514102685737"/>
-												<img class="img-responsive" alt="galaxy-s8-se-duoc-trang-bi-cong-nghe-cam-ung-3d-tren-nut-home-ao" src="//bizweb.dktcdn.net/100/285/622/articles/galaxy-s8.jpg?v=1514102685737" />
-												
-											</picture>
-										</a>
-									</div>
-									<div class="article-info">
-										<h3 class="article-title text3line">
-										<a href="/bai-viet-mau" title="Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo">
-											Galaxy S8 sẽ được trang bị công nghệ cảm ứng 3D trên nút Home ảo
-										</a>
-										</h3>
-										<div class="entry-date">
-											29/05/2015
-										</div>
-									</div>
-								</div>
-								
+								<?php } ?>
+								<?php endforeach;?>	
+							
 							</div>
-							
-							
-							<!-- ADD DIV -->
-							
-							
 						</div>
 						
 					</div>
 				</div>
+
+				<!-- Tag -->
 				<div class="aside-item article-tags">
 					<div class="module-header">
 						<h2 class="module-title title-style-2">
