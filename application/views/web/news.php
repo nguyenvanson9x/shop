@@ -89,7 +89,7 @@
 				<div class="aside-item aside-articles">
 					<div class="module-header">
 						<h2 class="module-title title-style-2">
-						<a class="padding-right-55" href="tin-tuc" title="Tin tức nổi bật">
+						<a class="padding-right-55" title="Tin tức nổi bật">
 							Tin tức nổi bật
 						</a>
 						</h2>

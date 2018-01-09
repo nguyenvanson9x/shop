@@ -26,7 +26,7 @@
 					         <div class="formRow">
 	<label for="param_name" class="formLeft">Tiêu đề<span class="req">*</span></label>
 	<div class="formRight">
-		<span class="oneTwo"><input type="text" _autocheck="true" id="param_title" value="<?php echo $news->title?>" name="title"></span>
+		<span class="oneTwo"><input type="text" _autocheck="true" id="param_title" value='<?php echo $news->title;?>' name="title"/></span>
 		<span class="autocheck" name="name_autocheck"></span>
 		<div class="clear error" name="name_error"></div>
 	</div>
@@ -38,7 +38,7 @@
 	<div class="formRight">
 		<div class="left">
     		<input type="file" name="image" id="image" size="25">
-    		<img src="<?php echo base_url('upload/news/'.$news->image_link)?>" style="width:100px;height:70px">
+    		<img src="<?php echo base_url('upload/news/'.$news->image)?>" style="width:100px;height:70px">
 		</div>
 		<div class="clear error" name="image_error"></div>
 	</div>
@@ -55,7 +55,7 @@
 <div class="formRow">
 	<label for="param_meta_desc" class="formLeft">Meta description:</label>
 	<div class="formRight">
-		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_desc" name="meta_desc"><?php echo $news->meta_desc?></textarea></span>
+		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_desc" name="meta_desc"><?php echo $news->title?></textarea></span>
 		<span class="autocheck" name="meta_desc_autocheck"></span>
 		<div class="clear error" name="meta_desc_error"></div>
 	</div>
@@ -65,7 +65,7 @@
 <div class="formRow">
 	<label for="param_meta_key" class="formLeft">Meta keywords:</label>
 	<div class="formRight">
-		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_key" name="meta_key"><?php echo $news->meta_key?></textarea></span>
+		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_key" name="meta_key"><?php echo $news->title?></textarea></span>
 		<span class="autocheck" name="meta_key_autocheck"></span>
 		<div class="clear error" name="meta_key_error"></div>
 	</div>

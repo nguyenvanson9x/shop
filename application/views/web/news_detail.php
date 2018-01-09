@@ -77,7 +77,7 @@
                     <span class="article-comment-date-bull">
                       <i><?php echo mdate('%d-%m-%Y',$news->create_at); ?></i>
                     </span>
-                    <div class="article-comment-content">Sản phẩm bảo hành trong bao lâu vậy?</div>
+                    <div class="article-comment-content">Bài viết hay quá!!!</div>
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@
         <div class="aside-item aside-articles">
           <div class="module-header">
             <h2 class="module-title title-style-2">
-              <a class="padding-right-55" href="tin-tuc" title="Tin tức nổi bật">
+              <a class="padding-right-55" title="Tin tức nổi bật">
                 Tin tức nổi bật
               </a>
             </h2>
@@ -149,16 +149,13 @@
                   <div class="owl-item active" style="width: 263px;">
                     <div class="item">
                   
-							      <!-- if ($news->view > 400){ -->
+							      <!-- view > 400 -->
 							      <?php foreach ($list as $news): ?>
                     <?php if($news->view > 400) { ?>
 								<div class="artitle-item item-small">
 									<div class="article-thumbnail">
 									<?php 
-										//echo $news->view . '<br>';
-										//if($news->view < 200) break;
                     $title = $news->title;
-
 										$image = base_url("upload/news/anh0.jpg");
                     if (file_exists("upload/news/".$news->image)) 
                       $image = base_url("upload/news/".$news->image);

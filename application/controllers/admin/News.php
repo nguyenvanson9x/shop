@@ -58,8 +58,7 @@ Class News extends MY_Controller
         $this->data['message'] = $message;
         
         //load view
-        $this->data['temp'] = 'admin/news/index';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/index');
     }
     
     /*
@@ -116,8 +115,7 @@ Class News extends MY_Controller
         
         
         //load view
-        $this->data['temp'] = 'admin/news/add';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/add');
     }
     
     /*
@@ -163,14 +161,12 @@ Class News extends MY_Controller
                  //luu du lieu can them
                 $data = array(
                     'title'      => $this->input->post('title'),
-                    'meta_desc'  => $this->input->post('meta_desc'),
-                    'meta_key'   => $this->input->post('meta_key'),
                     'content'    => $this->input->post('content'),
-                    'created'    => now(),
+                    'create_at'    => now(),
                 ); 
                 if($image_link != '')
                 {
-                    $data['image_link'] = $image_link;
+                    $data['image'] = $image_link;
                 }
                
                 //them moi vao csdl
@@ -188,8 +184,7 @@ Class News extends MY_Controller
         
         
         //load view
-        $this->data['temp'] = 'admin/news/edit';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/edit');
     }
     
     /*

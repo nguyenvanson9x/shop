@@ -17,16 +17,18 @@ class News extends Public_Controller
     }
 
     function detail($id) {
-        // check id
-        // if ($id == "") {
-        //     // do something
-        //     // header('location: https://google.com');
-        // }
-        // else {
-            $news = $this->news_model->get_info($id);
-            $this->data['news'] = $news;
+        //check id
+        if ($id == "") {
+            // do something
+            header('location: https://google.com');
+        }
+        else {
+            $listnews = $this->news_model->get_info($id);
+            $this->data['news'] = $listnews;
+
+            $list = $this->news_model->get_list();
+            $this->data['list'] = $list;
             $this->view('web/news_detail');
-        // }
+        }
     }
 }
- ?>
