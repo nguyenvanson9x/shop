@@ -58,8 +58,7 @@ Class News extends MY_Controller
         $this->data['message'] = $message;
         
         //load view
-        $this->data['temp'] = 'admin/news/index';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/index');
     }
     
     /*
@@ -116,8 +115,7 @@ Class News extends MY_Controller
         
         
         //load view
-        $this->data['temp'] = 'admin/news/add';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/add');
     }
     
     /*
@@ -188,8 +186,7 @@ Class News extends MY_Controller
         
         
         //load view
-        $this->data['temp'] = 'admin/news/edit';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/news/edit');
     }
     
     /*
@@ -241,6 +238,5 @@ Class News extends MY_Controller
         
     }
 }
-
 
 

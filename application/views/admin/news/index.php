@@ -72,7 +72,7 @@
 					
 					<td>
 					<div class="image_thumb">
-						<img height="50" src="<?php echo base_url('upload/news/'.$row->image_link)?>">
+						<img height="50" src="<?php echo base_url('upload/news/'.$row->image)?>">
 						<div class="clear"></div>
 					</div>
 					
@@ -81,15 +81,15 @@
 					</a>
 					
 					<div class="f11">
-					  Xem: <?php echo $row->count_view?>					
+					  Xem: <?php echo $row->view?>					
 					 </div>
 						
 					</td>
 					
-					<td class="textC"><?php echo get_date($row->created)?></td>
+					<td class="textC"><?php echo get_date($row->create_at)?></td>
 					
 					<td class="option textC">
-						 <a title="Xem chi tiết bài viết" class="tipS" target="_blank" href="news/view/9.html">
+						 <a title="Xem chi tiết bài viết" class="tipS" target="_blank" href="<?= site_url('news/detail/' . $row->id);?>">
 								<img src="<?php echo public_url('admin/images')?>/icons/color/view.png">
 						 </a>
 						 
@@ -109,5 +109,4 @@
 	</div>
 	
 </div>
-
 

@@ -45,8 +45,7 @@ class Contact extends MY_Controller{
 		
 	 	// Hien thi view
 	 	// Hien thi view
-		$this->data['temp'] = 'admin/contact/index';
-		$this->load->view('admin/main', $this->data);
+		$this->render('admin/contact/index');
 	}
 	
   
