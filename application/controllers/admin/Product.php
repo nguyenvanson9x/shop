@@ -48,37 +48,29 @@ Class Product extends MY_Controller
         {
             $input['like'] = array('name', $name);
         }
-        $catalog_id = $this->input->get('catalog');
-        $catalog_id = intval($catalog_id);
-        if($catalog_id > 0)
+        $supplier_id = $this->input->get('supplier');
+        $supplier_id = intval($supplier_id);
+        if($supplier_id > 0)
         {
-            $input['where']['catalog_id'] = $catalog_id;
+            $input['where']['supplier_id'] = $supplier_id;
         }
         
-        //lay danh sach san pha
+        //lay danh sach san pham
         $list = $this->product_model->get_list($input);
         $this->data['list'] = $list;
        
         //lay danh sach danh muc san pham
-        $this->load->model('catalog_model');
+        $this->load->model('supplier_model');
         $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $catalogs = $this->catalog_model->get_list($input);
-        foreach ($catalogs as $row)
-        {
-            $input['where'] = array('parent_id' => $row->id);
-            $subs = $this->catalog_model->get_list($input);
-            $row->subs = $subs;
-        }
-        $this->data['catalogs'] = $catalogs;
+        $supplier = $this->supplier_model->get_list($input);
+        $this->data['supplier'] = $supplier;
         
         //lay nội dung của biến message
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         
         //load view
-        $this->data['temp'] = 'admin/product/index';
-        $this->load->view('admin/main', $this->data);
+        $this->render("admin/product/index");
     }
     
     /*
@@ -87,17 +79,10 @@ Class Product extends MY_Controller
     function add()
     {
         //lay danh sach danh muc san pham
-        $this->load->model('catalog_model');
+        $this->load->model('supplier_model');
         $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $catalogs = $this->catalog_model->get_list($input);
-        foreach ($catalogs as $row)
-        {
-            $input['where'] = array('parent_id' => $row->id);
-            $subs = $this->catalog_model->get_list($input);
-            $row->subs = $subs;
-        }
-        $this->data['catalogs'] = $catalogs;
+        $supplier = $this->supplier_model->get_list($input);
+        $this->data['supplier'] = $supplier;
         
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
@@ -106,53 +91,43 @@ Class Product extends MY_Controller
         //neu ma co du lieu post len thi kiem tra
         if($this->input->post())
         {
-            $this->form_validation->set_rules('name', 'Tên', 'required');
-            $this->form_validation->set_rules('catalog', 'Thể loại', 'required');
-            $this->form_validation->set_rules('price', 'Giá', 'required');
-            
+        
             //nhập liệu chính xác
             if($this->form_validation->run())
             {
                 //them vao csdl
                 $name        = $this->input->post('name');
-                $catalog_id  = $this->input->post('catalog');
+                $supplier_id  = $this->input->post('supplier_id');
                 $price       = $this->input->post('price');
-                $price       = str_replace(',', '', $price);
-                
-
+                $price       = str_replace(',', '', $price);                
                 $discount = $this->input->post('discount');
-                $discount = str_replace(',', '', $discount);
+                $discount = str_replace('%', '', $discount);
+                $expire_discount = $this->input->post('expire_discount');
+                $expire_discount = get_time_from_date($expire_discount);
                 
                 
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
-                $upload_path = './upload/product';
+                $upload_path = '/upload/product';
                 $upload_data = $this->upload_library->upload($upload_path, 'image');  
                 $image_link = '';
                 if(isset($upload_data['file_name']))
                 {
                     $image_link = $upload_data['file_name'];
                 }
-                //upload cac anh kem theo
-                $image_list = array();
-                $image_list = $this->upload_library->upload_file($upload_path, 'image_list');
-                $image_list = json_encode($image_list);
                 
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
-                    'catalog_id' => $catalog_id,
+                    'category_id' => $this->input->post('category_id'),
+                    'supplier_id' => $supplier_id,
                     'price'      => $price,
-                    'image_link' => $image_link,
-                    'image_list' => $image_list,
+                    'image' => $image_link,
                     'discount'   => $discount,
-                    'warranty'   => $this->input->post('warranty'),
-                    'gifts'      => $this->input->post('gifts'),
-                    'site_title' => $this->input->post('site_title'),
-                    'meta_desc'  => $this->input->post('meta_desc'),
-                    'meta_key'   => $this->input->post('meta_key'),
+                    'expire_discount'   => $expire_discount,
+                    'type' => $this->input->post('type'),
                     'content'    => $this->input->post('content'),
-                    'created'    => now(),
+                    'created_at'    => now(),
                 ); 
                 //them moi vao csdl
                 if($this->product_model->create($data))
@@ -168,9 +143,8 @@ Class Product extends MY_Controller
         }
         
         
-        //load view
-        $this->data['temp'] = 'admin/product/add';
-        $this->load->view('admin/main', $this->data);
+        //load view;
+        $this->render("admin/product/add");
     }
     
     /*
@@ -189,18 +163,11 @@ Class Product extends MY_Controller
         $this->data['product'] = $product;
        
         //lay danh sach danh muc san pham
-        $this->load->model('catalog_model');
+        $this->load->model('supplier_model');
         $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $catalogs = $this->catalog_model->get_list($input);
-        foreach ($catalogs as $row)
-        {
-            $input['where'] = array('parent_id' => $row->id);
-            $subs = $this->catalog_model->get_list($input);
-            $row->subs = $subs;
-        }
-        $this->data['catalogs'] = $catalogs;
-        
+        $supplier = $this->supplier_model->get_list($input);
+        $this->data['supplier'] = $supplier;
+
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
         $this->load->helper('form');
@@ -209,7 +176,7 @@ Class Product extends MY_Controller
         if($this->input->post())
         {
             $this->form_validation->set_rules('name', 'Tên', 'required');
-            $this->form_validation->set_rules('catalog', 'Thể loại', 'required');
+            $this->form_validation->set_rules('supplier', 'Thể loại', 'required');
             $this->form_validation->set_rules('price', 'Giá', 'required');
         
             //nhập liệu chính xác
@@ -217,49 +184,39 @@ Class Product extends MY_Controller
             {
                 //them vao csdl
                 $name        = $this->input->post('name');
-                $catalog_id  = $this->input->post('catalog');
+                $supplier_id  = $this->input->post('supplier_id');
                 $price       = $this->input->post('price');
-                $price       = str_replace(',', '', $price);
-               
+                $price       = str_replace(',', '', $price);                
                 $discount = $this->input->post('discount');
-                $discount = str_replace(',', '', $discount);
+                $discount = str_replace('%', '', $discount);
+                $expire_discount = $this->input->post('expire_discount');
+                $expire_discount = get_time_from_date($expire_discount);
                 
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
-                $upload_path = './upload/product';
+                $upload_path = '/upload/product';
                 $upload_data = $this->upload_library->upload($upload_path, 'image');
                 $image_link = '';
                 if(isset($upload_data['file_name']))
                 {
                     $image_link = $upload_data['file_name'];
                 }
-            
-                //upload cac anh kem theo
-                $image_list = array();
-                $image_list = $this->upload_library->upload_file($upload_path, 'image_list');
-                $image_list_json = json_encode($image_list);
         
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
-                    'catalog_id' => $catalog_id,
+                    'category_id' => $this->input->post('category_id'),
+                    'supplier_id' => $supplier_id,
                     'price'      => $price,
+                    'image' => $image_link,
                     'discount'   => $discount,
-                    'warranty'   => $this->input->post('warranty'),
-                    'gifts'      => $this->input->post('gifts'),
-                    'site_title' => $this->input->post('site_title'),
-                    'meta_desc'  => $this->input->post('meta_desc'),
-                    'meta_key'   => $this->input->post('meta_key'),
+                    'expire_discount'   => $expire_discount,
+                    'type' => $this->input->post('type'),
                     'content'    => $this->input->post('content'),
                 );
                 if($image_link != '')
                 {
                     $data['image_link'] = $image_link;
-                }
-                
-                if(!empty($image_list))
-                {
-                    $data['image_list'] = $image_list_json;
                 }
                 
                 //them moi vao csdl
@@ -277,8 +234,7 @@ Class Product extends MY_Controller
         
         
         //load view
-        $this->data['temp'] = 'admin/product/edit';
-        $this->load->view('admin/main', $this->data);
+        $this->render("admin/product/edit");
     }
     
     /*
@@ -321,23 +277,10 @@ Class Product extends MY_Controller
         //thuc hien xoa san pham
         $this->product_model->delete($id);
         //xoa cac anh cua san pham
-        $image_link = './upload/product/'.$product->image_link;
+        $image_link = '/upload/product/'.$product->image;
         if(file_exists($image_link))
         {
             unlink($image_link);
-        }
-        //xoa cac anh kem theo cua san pham
-        $image_list = json_decode($product->image_list);
-        if(is_array($image_list))
-        {
-            foreach ($image_list as $img)
-            {
-                $image_link = './upload/product/'.$img;
-                if(file_exists($image_link))
-                {
-                    unlink($image_link);
-                }
-            }
         }
     }
 }

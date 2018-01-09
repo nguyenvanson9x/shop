@@ -21,11 +21,13 @@ class Product extends MY_controller
     {
 
         $input = array();
+        $input['limit'] = array(10, 0);
         $product_related = $this->product_model->get_list($input);
         $this->data['product_related'] = $product_related;
-        $input['limit'] = array(15, 0);
-        $input['order'] = array('view', 'DESC');
-        $product_hot = $this->product_model->get_list($input);
+        $input2 = array();
+        $input2['limit'] = array(10, 0);
+        $input2['order'] = array('view', 'DESC');
+        $product_hot = $this->product_model->get_list($input2);
         $this->data['product_hot'] = $product_hot;
 
 

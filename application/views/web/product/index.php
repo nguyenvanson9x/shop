@@ -257,7 +257,7 @@
 								
 								
 								<?php foreach ($product_related as $row ): ?>
-								<?php if ($product->supplier_id == $row->supplier_id) { ?>
+								<?php if ($product->supplier_id == $row->supplier_id || $product->type == $row->type) { ?>
 								<div class="item">
 									<div class="product-box product-grid-item">
 										<div class="product-thumbnail">

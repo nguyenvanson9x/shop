@@ -24,7 +24,7 @@
 					<div class="tab_container">
 					     <div class="tab_content pd0" id="tab1" style="display: block;">
 					         <div class="formRow">
-	<label for="param_name" class="formLeft">Tên:<span class="req">*</span></label>
+	<label for="param_name" class="formLeft">Tên:</label>
 	<div class="formRight">
 		<span class="oneTwo"><input type="text" _autocheck="true" id="param_name" value="<?php echo $product->name?>" name="name"></span>
 		<span class="autocheck" name="name_autocheck"></span>
@@ -34,7 +34,7 @@
 </div>
 
 <div class="formRow">
-	<label class="formLeft">Hình ảnh:<span class="req">*</span></label>
+	<label class="formLeft">Hình ảnh:</label>
 	<div class="formRight">
 		<div class="left">
     		<input type="file" name="image" id="image" size="25">
@@ -53,9 +53,8 @@
 		<div class="left">
     		<input type="file" multiple="" name="image_list[]" id="image_list" size="25" >
     		<?php if(is_array($image_list)):?>
-    		<?php foreach ($image_list as $img):?>
+    		
     		<img src="<?php echo base_url('upload/product/'.$img)?>" style="width:100px;height:70px;margin:5px">
-    		<?php endforeach;?>
     		<?php endif;?>
 		</div>
 		<div class="clear error" name="image_list_error"></div>

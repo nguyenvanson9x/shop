@@ -55,7 +55,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo admin_url('catalog')?>">
+							<a href="<?php echo admin_url('supplier')?>">
 								Danh mục							
 							</a>
 						</li>
