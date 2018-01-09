@@ -62,7 +62,12 @@
 					</div>
 					<section class="products-view products-view-grid">
 						<div class="products">
-						<?php foreach ($product_hot as $row): ?>	
+						<?php foreach ($product_hot as $row): ?>
+							<?php 
+								
+								if (now() > ($row->create_at + 7776000)) {
+									
+							?>	
 							<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 item lg4" >
 								
 								
@@ -75,15 +80,27 @@
 										
 										<a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
 											<picture class="dp-flex">
+												<img class="img-responsive" src="
 												
-											
+												<?php
+													if(file_exists('upload/product/'.$row->image))
+													{
+														echo base_url('upload/product/'.$row->image);
+													}
+													else
+														{
+														echo base_url('upload/unknown.png');
+													}
+												?>
+												" alt="<?php echo $row->name; ?>"/>
+												
 												
 											</picture>
 										</a>
 									</div>
 									<div class="product-info">
 										<h3 class="product-name text1line">
-										<a href="<?php echo site_url('product/detail/'.$row->id)?> title="<?php echo $row->name; ?>">
+										<a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
 											<?php echo $row->name; ?>
 										</a>
 										</h3>
@@ -118,7 +135,7 @@
 									</div>
 								</div>
 							</div>
-						
+							<?php } ?>
 						<?php endforeach; ?>	
 						</div>
 						

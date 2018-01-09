@@ -6,6 +6,7 @@ class MY_Model extends CI_Model {
     var $key = 'id';
     var $order = '';
     var $select = '';
+    var $image = '';
     /*
     * Insert new row to database
     * $data: your data

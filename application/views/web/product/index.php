@@ -53,7 +53,19 @@
 					<div class="large-image">
 						<a href="//bizweb.dktcdn.net/thumb/1024x1024/100/289/080/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1515399087833" class="large_image_url checkurl dp-flex" data-rel="prettyPhoto[product-gallery]">
 							
-							<img id="zoom_01" class="img-responsive" src="//bizweb.dktcdn.net/thumb/grande/100/289/080/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1515399087833" alt="lg-g-pro-lite-dual">
+							<img id="zoom_01" class="img-responsive" src="
+												
+												<?php
+													if(file_exists('upload/product/'.$product->image))
+													{
+														echo base_url('upload/product/'.$product->image);
+													}
+													else
+														{
+														echo base_url('upload/unknown.png');
+													}
+												?>
+												" alt="<?php echo $product->name; ?>">
 							
 						</a>
 					</div>
@@ -97,7 +109,7 @@
 		
 			
 				<span class="special-price">
-					<span class="price" itemprop="price">6.000.000₫</span>
+					<span class="price" itemprop="price"><?php echo $product->price; ?></span>
 					<meta itemprop="priceCurrency" content="VND">
 				</span>
 				<span class="old-price">
