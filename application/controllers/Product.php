@@ -19,6 +19,16 @@ class Product extends MY_controller
     }
     function detail()
     {
+
+        $input = array();
+        $product_related = $this->product_model->get_list($input);
+        $this->data['product_related'] = $product_related;
+        $input['limit'] = array(15, 0);
+        $input['order'] = array('view', 'DESC');
+        $product_hot = $this->product_model->get_list($input);
+        $this->data['product_hot'] = $product_hot;
+
+
     	$id = $this->uri->rsegment(3);
     	$product = $this->product_model->get_info($id);
     	if(!$product) redirect();
