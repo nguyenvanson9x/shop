@@ -21,7 +21,7 @@
 					
 					<td style="width:80px;">Mã số</td>
 					<td>Họ và tên</td>
-					<td>Username</td>
+					<td>Email</td>
 					<td style="width:100px;">Hành động</td>
 				</tr>
 			</thead>
@@ -33,12 +33,12 @@
 						<td class="textC"><?php echo $row->id?></td>
 
 						<td>
-						<span title="<?php echo $row->name?>" class="tipS">
-							<?php echo $row->name?>				
+						<span title="<?php echo $row->fullname?>" class="tipS">
+							<?php echo $row->fullname?>				
 						</span></td>
 						
-						<td><span title="<?php echo $row->username?>" class="tipS">
-							<?php echo $row->username?>					
+						<td><span title="<?php echo $row->email?>" class="tipS">
+							<?php echo $row->email?>					
 						</span></td>
 						
 						

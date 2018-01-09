@@ -4,7 +4,7 @@ Class Admin extends MY_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('admin_model');
+        $this->load->model('account_model');
     }
     
     /*
@@ -13,18 +13,17 @@ Class Admin extends MY_Controller
     function index()
     {
         $input = array();
-        $list = $this->admin_model->get_list($input);
+        $list = $this->account_model->get_list($input);
         $this->data['list'] = $list;
     
-        $total = $this->admin_model->get_total();
+        $total = $this->account_model->get_total();
         $this->data['total'] = $total;
         
         //lay nội dung của biến message
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
         
-        $this->data['temp'] = 'admin/admin/index';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/admin/index');
     }
     
     /*
@@ -35,7 +34,7 @@ Class Admin extends MY_Controller
         $username = $this->input->post('username');
         $where = array('username' => $username);
         //kiêm tra xem username đã tồn tại chưa
-        if($this->admin_model->check_exists($where))
+        if($this->account_model->check_exists($where))
         {
             //trả về thông báo lỗi
             $this->form_validation->set_message(__FUNCTION__, 'Tài khoản đã tồn tại');
@@ -73,7 +72,7 @@ Class Admin extends MY_Controller
                     'username' => $username,
                     'password' => md5($password)
                 );
-                if($this->admin_model->create($data))
+                if($this->account_model->create($data))
                 { 
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'Thêm mới dữ liệu thành công');
@@ -102,7 +101,7 @@ Class Admin extends MY_Controller
         $this->load->helper('form');
         
         //lay thong cua quan trị viên
-        $info  = $this->admin_model->get_info($id);
+        $info  = $this->account_model->get_info($id);
         if(!$info)
         {
             $this->session->set_flashdata('message', 'Không tồn tại quản trị viên');
@@ -137,7 +136,7 @@ Class Admin extends MY_Controller
                     $data['password'] = md5($password);
                 }
                 
-                if($this->admin_model->update($id, $data))
+                if($this->account_model->update($id, $data))
                 {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'Cập nhật dữ liệu thành công');
@@ -161,14 +160,14 @@ Class Admin extends MY_Controller
         $id = $this->uri->rsegment('3');
         $id = intval($id);
         //lay thong tin cua quan tri vien
-        $info = $this->admin_model->get_info($id);
+        $info = $this->account_model->get_info($id);
         if(!$info)
         {
             $this->session->set_flashdata('message', 'Không tồn tại quản trị viên');
             redirect(admin_url('admin'));
         }
         //thuc hiện xóa
-        $this->admin_model->delete($id);
+        $this->account_model->delete($id);
         
         $this->session->set_flashdata('message', 'Xóa dữ liệu thành công');
         redirect(admin_url('admin'));
