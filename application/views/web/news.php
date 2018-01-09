@@ -39,6 +39,7 @@
 				<div class="module-content">
 					
 					
+<<<<<<< HEAD
 				<div class="articles-list">
 				<?php foreach ($listNews as $news):?>
 					<div class="artitle-item item-large">
@@ -86,6 +87,59 @@
 						</div>
 						<?php endforeach;?>						
 					</div>					
+=======
+					<div class="articles-list">
+					<?php foreach ($listNews as $news):?>
+						<div class="artitle-item item-large">
+							<div class="article-thumbnail">
+								<?php 
+								$url = "news/detail/" . $news->id;
+								$title = $news->title;
+
+								$image = "upload/news/1-7d48c.jpg";
+								if (file_exists("upload/news/" . $news->image)) {
+									$image = "upload/news/" . $news->image;
+								}
+								?>
+								<a href="<?= site_url($url);?>" title="<?php echo $title; ?>">
+									<picture>
+										
+										<source media="(min-width: 1200px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 992px) and (max-width: 1199px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 768px) and (max-width: 991px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 631px) and (max-width: 767px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 511px) and (max-width: 630px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 320px) and (max-width: 510px)" srcset="<?php echo $image; ?>"/>
+										<source media="(min-width: 319px)" srcset="<?php echo $image; ?>"/>
+										<img class="img-responsive" alt="<?php echo $title; ?>" src="<?php echo $image; ?>" />
+										
+									</picture>
+								</a>
+							</div>
+							<div class="article-info">
+								<h3 class="article-title text2line">
+								<a href="<?= site_url($url);?>" title="<?php echo $title; ?>">
+									<?php echo $title;?>
+								</a>
+								</h3>
+								<div class="entry-date">
+									<?php echo mdate('%d-%m-%Y',$news->create_at); ?>
+								</div>
+								<div class="article-description text3line">
+									<?php echo $news->content;?>
+								</div>
+								<div class="readmore">
+									<a href="<?= site_url($url);?>"	title="<??>">Xem thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					<?php endforeach;?>
+						
+					</div>
+					
+					
+					
+>>>>>>> a97061974c9431080a02ad90d49ce73c19c41541
 				</div>
 			</section>
 			<aside class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
