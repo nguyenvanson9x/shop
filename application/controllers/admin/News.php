@@ -161,14 +161,12 @@ Class News extends MY_Controller
                  //luu du lieu can them
                 $data = array(
                     'title'      => $this->input->post('title'),
-                    'meta_desc'  => $this->input->post('meta_desc'),
-                    'meta_key'   => $this->input->post('meta_key'),
                     'content'    => $this->input->post('content'),
-                    'created'    => now(),
+                    'create_at'    => now(),
                 ); 
                 if($image_link != '')
                 {
-                    $data['image_link'] = $image_link;
+                    $data['image'] = $image_link;
                 }
                
                 //them moi vao csdl
