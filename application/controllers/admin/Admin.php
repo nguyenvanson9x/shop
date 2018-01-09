@@ -32,7 +32,7 @@ Class Admin extends MY_Controller
     function check_username()
     {
         $username = $this->input->post('username');
-        $where = array('username' => $username);
+        $where = array('email' => $username);
         //kiêm tra xem username đã tồn tại chưa
         if($this->account_model->check_exists($where))
         {
@@ -68,8 +68,8 @@ Class Admin extends MY_Controller
                 $password = $this->input->post('password');
                 
                 $data = array(
-                    'name'     => $name,
-                    'username' => $username,
+                    'fullname'     => $name,
+                    'email' => $username,
                     'password' => md5($password)
                 );
                 if($this->account_model->create($data))
@@ -84,8 +84,7 @@ Class Admin extends MY_Controller
             }
         }
         
-        $this->data['temp'] = 'admin/admin/add';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/admin/add');
     }
     
     /*
@@ -127,8 +126,8 @@ Class Admin extends MY_Controller
                 $username = $this->input->post('username');
                
                 $data = array(
-                    'name'     => $name,
-                    'username' => $username,
+                    'fullname'     => $name,
+                    'email' => $username,
                 );
                 //neu ma thay doi mat khau thi moi gan du lieu
                 if($password)
@@ -148,8 +147,7 @@ Class Admin extends MY_Controller
             }
         }
         
-        $this->data['temp'] = 'admin/admin/edit';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/admin/edit');
     }
     
     /*
