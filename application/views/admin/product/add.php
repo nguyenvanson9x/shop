@@ -50,7 +50,7 @@
 	    <select name="supplier"  class="left" >
 			<option value=""></option>
 				
-           		<?php foreach ($supplier as $row):?>
+           		<?php foreach ($category as $row):?>
 				
            		  <option value="<?php echo $row->id?>"><?php echo $row->name?></option>
            		
@@ -79,21 +79,7 @@
 </div>
 
 <!-- Price -->
-<div class="formRow">
-	<label for="param_discount" class="formLeft">
-		Giảm giá (VND) 
-		<span></span>:
-	</label>
-	<div class="formRight">
-		<span>
-			<input type="text" class="format_number" id="param_discount" style="width:100px" name="discount">
-			<img src="<?php echo public_url('admin')?>/crown/images/icons/notifications/information.png" style="margin-bottom:-8px" class="tipS" original-title="Phần trăm giảm giá">
-		</span>
-		<span class="autocheck" name="discount_autocheck"></span>
-		<div class="clear error" name="discount_error"></div>
-	</div>
-	<div class="clear"></div>
-</div>
+
 
 
 <div class="formRow">
@@ -114,6 +100,21 @@
 	<div class="clear"></div>
 </div>
 
+<div class="formRow">
+	<label for="param_discount" class="formLeft">
+		Giảm giá (VND) 
+		<span></span>:
+	</label>
+	<div class="formRight">
+		<span>
+			<input type="text" class="format_number" id="param_discount" style="width:100px" name="discount">
+			<img src="<?php echo public_url('admin')?>/crown/images/icons/notifications/information.png" style="margin-bottom:-8px" class="tipS" original-title="Phần trăm giảm giá">
+		</span>
+		<span class="autocheck" name="discount_autocheck"></span>
+		<div class="clear error" name="discount_error"></div>
+	</div>
+	<div class="clear"></div>
+</div>
 
 <!-- expire_discount -->
 <div class="formRow">

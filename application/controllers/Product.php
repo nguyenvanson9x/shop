@@ -21,7 +21,8 @@ class Product extends MY_controller
     {
 
         $input = array();
-        $input['limit'] = array(10, 0);
+        $count = 0;
+        $this->data['count'] = $count;
         $product_related = $this->product_model->get_list($input);
         $this->data['product_related'] = $product_related;
         $input2 = array();

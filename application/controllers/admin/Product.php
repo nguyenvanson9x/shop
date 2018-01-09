@@ -83,6 +83,12 @@ Class Product extends MY_Controller
         $input = array();
         $supplier = $this->supplier_model->get_list($input);
         $this->data['supplier'] = $supplier;
+
+        //lay loai san pham
+        $this->load->model('category_model');
+        $input = array();
+        $category = $this->category_model->get_list($input);
+        $this->data['category'] = $category;
         
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
@@ -97,6 +103,7 @@ Class Product extends MY_Controller
             {
                 //them vao csdl
                 $name        = $this->input->post('name');
+                $category_id  = $this->input->post('category_id');
                 $supplier_id  = $this->input->post('supplier_id');
                 $price       = $this->input->post('price');
                 $price       = str_replace(',', '', $price);                
@@ -115,17 +122,19 @@ Class Product extends MY_Controller
                 {
                     $image_link = $upload_data['file_name'];
                 }
+                else {
+                    $image_link = '/upload/unknown.png';
+                }
                 
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
-                    'category_id' => $this->input->post('category_id'),
+                    'category_id' => $category_id,
                     'supplier_id' => $supplier_id,
                     'price'      => $price,
                     'image' => $image_link,
                     'discount'   => $discount,
                     'expire_discount'   => $expire_discount,
-                    'type' => $this->input->post('type'),
                     'content'    => $this->input->post('content'),
                     'created_at'    => now(),
                 ); 
@@ -167,6 +176,12 @@ Class Product extends MY_Controller
         $input = array();
         $supplier = $this->supplier_model->get_list($input);
         $this->data['supplier'] = $supplier;
+
+        //lay loai san pham
+        $this->load->model('category_model');
+        $input = array();
+        $category = $this->category_model->get_list($input);
+        $this->data['category'] = $category;
 
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');

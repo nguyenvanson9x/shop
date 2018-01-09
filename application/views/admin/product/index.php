@@ -115,7 +115,7 @@
 					<td class="textC"><?php echo get_date($row->create_at)?></td>
 					
 					<td class="option textC">
-						<a title="Xem chi tiết sản phẩm" class="tipS" target="_blank" href="<?php echo base_url('product/view/'.$row->id)?>">
+						<a title="Xem chi tiết sản phẩm" class="tipS" target="_blank" href="<?php echo base_url('product/detail/'.$row->id)?>">
 							<img src="<?php echo public_url('admin/images')?>/icons/color/view.png">
 						</a>
 						
