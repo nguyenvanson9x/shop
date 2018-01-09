@@ -14,9 +14,7 @@ class Product extends MY_controller
     	$this->load->model("supplier_model");
     	$catalog = $this->catalog_model->get_info($id);
     	if(!$catalog){
-    		
     		redirect();
-
     	}
     }
     function detail()
