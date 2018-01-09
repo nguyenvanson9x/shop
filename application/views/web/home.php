@@ -123,7 +123,23 @@
                       <div class="product-thumbnail">
                         
                         <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
-                          
+                          <picture class="dp-flex">
+                            <img class="img-responsive" src="
+                            
+                            <?php
+                            if(file_exists('upload/product/'.$row->image))
+                            {
+                            echo base_url('upload/product/'.$row->image);
+                            }
+                            else
+                            {
+                            echo base_url('upload/unknown.png');
+                            }
+                            ?>
+                            " alt="<?php echo $row->name; ?>"/>
+                            
+                            
+                          </picture>
                         </a>
                       </div>
                       <div class="product-info">
@@ -134,32 +150,27 @@
                         </h3>
                         
                         <div class="price-box price-loop-style">
-                          
-                          
-                          
-                          <span class="special-price">
-                            <span class="price"><?php echo $row->price; ?></span>
-                          </span>
-                          <span class="old-price">
-                            <span class="price">
-                              
-                            </span>
-                          </span>
-                          
-                          
-                          
-                        </div>
-                        
-                        <div class="product-action-btn product-action">
-                          <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9592511" enctype="multipart/form-data">
-                            <input class="hidden" type="hidden" name="variantId" value="15300050" />
-                            
-                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='<?php echo site_url('product/detail/'.$row->id)?>'" >
-                            <span><i class="fa fa-cog"></i> Chi tiết</span>
-                            </button>
-                            
-                          </form>
-                        </div>
+                      
+                      
+                      <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
+                      <span class="special-price">
+                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+                      </span>
+                      <span class="old-price">
+                        <span class="price">
+                          <?php echo number_format($row->price,0,',','.'); ?>
+                        </span>
+                      </span>
+                      <?php } else { ?>
+                        <span class="special-price">
+                        <span class="price">
+                          <?php echo number_format($row->price,0,',','.'); ?>
+                        </span>
+                      </span>
+                      <?php } ?>
+                      
+                      
+                    </div>
                       </div>
                     </div>
                   </div>
@@ -186,54 +197,70 @@
                 
                 <div class="owl-carousel owl-theme nav-enable nav-top lg4" data-lg-items="4" data-md-items="3" data-sm-items="3" data-xs-items="2" data-xxs-items="2" data-nav="true" data-auto-play="true" data-auto-height="true">
                   
-                  <?php foreach ($product_hot as $row ): ?>
-                  
-                  <div class="item">
-                    <div class="product-box product-grid-item">
-                      <div class="product-thumbnail">
-                        
-                        <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
-                          
-                        </a>
-                      </div>
-                      <div class="product-info">
-                        <h3 class="product-name text1line">
-                        <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
-                          <?php echo $row->name; ?>
-                        </a>
-                        </h3>
-                        
-                        <div class="price-box price-loop-style">
-                          
-                          
-                          
-                          <span class="special-price">
-                            <span class="price"><?php echo $row->price; ?></span>
-                          </span>
-                          <span class="old-price">
-                            <span class="price">
-                              
-                            </span>
-                          </span>
-                          
-                          
-                          
-                        </div>
-                        
-                        <div class="product-action-btn product-action">
-                          <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9592511" enctype="multipart/form-data">
-                            <input class="hidden" type="hidden" name="variantId" value="15300050" />
-                            
-                            <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='<?php echo site_url('product/detail/'.$row->id)?>'" >
-                            <span><i class="fa fa-cog"></i> Chi tiết</span>
-                            </button>
-                            
-                          </form>
-                        </div>
-                      </div>
+<?php foreach ($product_hot as $row ): ?>
+<?php
+
+if (now() > ($row->create_at + 7776000)) {
+
+?>
+<div class="item">
+  <div class="product-box product-grid-item">
+    <div class="product-thumbnail">
+      
+      <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
+        <picture class="dp-flex">
+          <img class="img-responsive" src="
+          
+          <?php
+          if(file_exists('upload/product/'.$row->image))
+          {
+          echo base_url('upload/product/'.$row->image);
+          }
+          else
+          {
+          echo base_url('upload/unknown.png');
+          }
+          ?>
+          " alt="<?php echo $row->name; ?>"/>
+          
+          
+        </picture>
+      </a>
+    </div>
+    <div class="product-info">
+      <h3 class="product-name text1line">
+      <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
+        <?php echo $row->name; ?>
+      </a>
+      </h3>
+      
+      <div class="price-box price-loop-style">
+                      
+                      
+                      <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
+                      <span class="special-price">
+                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+                      </span>
+                      <span class="old-price">
+                        <span class="price">
+                          <?php echo number_format($row->price,0,',','.'); ?>
+                        </span>
+                      </span>
+                      <?php } else { ?>
+                        <span class="special-price">
+                        <span class="price">
+                          <?php echo number_format($row->price,0,',','.'); ?>
+                        </span>
+                      </span>
+                      <?php } ?>
+                      
+                      
                     </div>
-                  </div>
-                  <?php endforeach ?>
+    </div>
+  </div>
+</div>
+<?php } ?>
+<?php endforeach ?>
                   
                 </div>
                 
@@ -535,12 +562,29 @@
             <div class="owl-carousel owl-theme nav-enable nav-top" data-lg-items="6" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xxs-items="2" data-nav="true" data-margin="0">
               
               <?php foreach ($product_intro as $row): ?>
+                <?php if($row->discount != 0) { ?>
               <div class="item">
                 <div class="product-box product-grid-item">
                   <div class="product-thumbnail">
                     
                     <a href="<?php echo site_url('product/detail/'.$row->id)?>" title="<?php echo $row->name; ?>">
-                      
+                      <picture class="dp-flex">
+                        <img class="img-responsive" src="
+                        
+                        <?php
+                        if(file_exists('upload/product/'.$row->image))
+                        {
+                        echo base_url('upload/product/'.$row->image);
+                        }
+                        else
+                        {
+                        echo base_url('upload/unknown.png');
+                        }
+                        ?>
+                        " alt="<?php echo $row->name; ?>"/>
+                        
+                        
+                      </picture>
                     </a>
                   </div>
                   <div class="product-info">
@@ -553,33 +597,29 @@
                     <div class="price-box price-loop-style">
                       
                       
-                      
+                      <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
                       <span class="special-price">
-                        <span class="price"><?php echo $row->price; ?></span>
+                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
                       </span>
                       <span class="old-price">
                         <span class="price">
-                          
+                          <?php echo number_format($row->price,0,',','.'); ?>
                         </span>
                       </span>
+                      <?php } else { ?>
+                        <span class="special-price">
+                        <span class="price">
+                          <?php echo number_format($row->price,0,',','.'); ?>
+                        </span>
+                      </span>
+                      <?php } ?>
                       
                       
-                      
-                    </div>
-                    
-                    <div class="product-action-btn product-action">
-                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9592511" enctype="multipart/form-data">
-                        <input class="hidden" type="hidden" name="variantId" value="15300050" />
-                        
-                        <button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='<?php echo site_url('product/detail/'.$row->id)?>'" >
-                        <span><i class="fa fa-cog"></i> Tuỳ chọn</span>
-                        </button>
-                        
-                      </form>
                     </div>
                   </div>
                 </div>
               </div>
+              <?php } ?>
               <?php endforeach ?>
             </div>
           </div>

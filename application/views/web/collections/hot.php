@@ -108,29 +108,24 @@
 										<div class="price-box price-loop-style">
 											
 											
-											
+											<?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
 											<span class="special-price">
-												<span class="price"><?php echo $row->price; ?></span>
+												<span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
 											</span>
 											<span class="old-price">
 												<span class="price">
-													
+													<?php echo number_format($row->price,0,',','.'); ?>
 												</span>
 											</span>
+											<?php } else { ?>
+												<span class="special-price">
+												<span class="price">
+													<?php echo number_format($row->price,0,',','.'); ?>
+												</span>
+											</span>
+											<?php } ?>
 											
 											
-											
-										</div>
-										
-										<div class="product-action-btn product-action">
-											<form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-9450253" enctype="multipart/form-data">
-												<input class="hidden" type="hidden" name="variantId" value="15082636" />
-												
-												<button class="btn btn-cart addtocart btn-transition btn_choose_product choose-pro btn-accent" title="Chọn sản phẩm"  type="button" onclick="window.location.href='<?php echo site_url('product/detail/'.$row->id)?>'" >
-												<span><i class="fa fa-cog"></i> Tuỳ chọn</span>
-												</button>
-												
-											</form>
 										</div>
 									</div>
 								</div>
