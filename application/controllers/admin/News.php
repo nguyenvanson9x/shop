@@ -238,4 +238,3 @@ Class News extends MY_Controller
 }
 
 
-
