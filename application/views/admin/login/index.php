@@ -1,6 +1,6 @@
 <html>
     <head>
-         <?php $this->load->view('admin/head');?>
+         <?php $this->load->view('layout_admin/include/head');?>
     </head>
     
     <body class="nobg loginPage" style="min-height:100%;">
@@ -36,6 +36,6 @@
         	    </div>
 	    </div>
 	 
-	 <?php $this->load->view('admin/footer')?>
+	 <?php $this->load->view('layout_admin/include/footer')?>
     </body>
 </html>
