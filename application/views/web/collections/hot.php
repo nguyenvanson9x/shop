@@ -50,7 +50,7 @@
 						<?php foreach ($product_hot as $row): ?>
 							<?php 
 								
-								if (now() > ($row->create_at + 7776000)) {
+								if (now() < ($row->create_at + 7776000)) {
 									
 							?>	
 							<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 item lg4" >
