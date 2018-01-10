@@ -16,7 +16,7 @@
 					<label for="param_code" class="formLeft">Mã khuyến mãi:</label>
 					<div class="formRight">
 						<span class="oneTwo">
-							<input type="text" _autocheck="true" id="param_code" value="" name="code">
+							<input type="text" _autocheck="true" id="param_code" value="<?= coupons::generate(8);?>" name="code">
 						</span>
 						<span class="autocheck" name="code_autocheck"></span>
 						<div class="clear error" name="code_error">

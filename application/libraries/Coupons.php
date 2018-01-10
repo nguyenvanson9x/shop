@@ -6,7 +6,7 @@
  * @author Joash Pereira
  * @date  2015-06-05
  */
-class Coupon {
+class Coupons {
     CONST MIN_LENGTH = 8;
     
     /**
