@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="hidden-xs col-sm-9 col-md-10 col-lg-10 welcome-text">
-				<span>Chào mừng bạn đến với MobileShop123 !</span>
+				<span>Chào mừng bạn đến với MobileShop!</span>
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 checkout">
 				<a href="<?= site_url('admin')?>" title="Tới trang quản trị">
@@ -19,7 +19,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 logo">
 				<a href="<?= site_url()?>" title="Trang chủ">
-					<img class="img-responsive" src="" alt="Logo">
+					<img class="img-responsive" src= "upload/logo.png" alt="Logo">
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 search-header">

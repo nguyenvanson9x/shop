@@ -355,7 +355,7 @@ if (now() > ($row->create_at + 7776000)) {
                       
                     </label>
                     <a class="item_check" href="mailto:nguyentuan96ttbn@gmail.vn" title="support@mobileshop.vn">
-                      nguyentuan96ttbn@mail.vn
+                      nguyentuan96ttbn@gmail.vn
                     </a>
                   </div>
                 </div>
