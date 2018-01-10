@@ -481,7 +481,7 @@ if (now() > ($row->create_at + 7776000)) {
             <div class="owl-carousel owl-theme nav-enable nav-top" data-lg-items="6" data-md-items="4" data-sm-items="3" data-xs-items="2" data-xxs-items="2" data-nav="true" data-margin="0">
               
               <?php foreach ($product_intro as $row): ?>
-                <?php if($row->discount != 0) { ?>
+                <?php if($row->category_id != 1 ) { ?>
               <div class="item">
                 <div class="product-box product-grid-item">
                   <div class="product-thumbnail">

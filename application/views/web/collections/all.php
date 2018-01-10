@@ -47,7 +47,7 @@
 										<div class="page-pagination pagination-wrapper">
 											<ul class="pagination">
 												
-												
+												<?php echo $this->pagination->create_links()?>
 
 												
 											</ul>

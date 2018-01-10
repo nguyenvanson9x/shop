@@ -29,6 +29,7 @@ class Home extends Public_Controller
         $this->data['hotNews'] = $this->news_model->query($sql);
       
         $input3 = array();
+        $input3['order'] = array('view','DESC');
         $product_intro = $this->product_model->get_list($input3);
         $this->data['product_intro'] = $product_intro;	
         $this->view('web/home');
