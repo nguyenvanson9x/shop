@@ -94,7 +94,7 @@
 			<div class="row">
 				<div class="col-xs-18 col-sm-18 col-md-5 col-lg-5 store-detail">
 					<a class="logo" href="/" title="MobileShop123">
-						<img class="img-responsive" src="" alt="Logo" />
+						<img class="img-responsive" src="<?= base_url('upload/logo.png') ?>" alt="Logo" />
 					</a>
 					<p class="store-description">
 						MobileShop mới được tạo nhưng đảm bảo tất cả những sản phẩm hot là không bao giờ thiếu. Chỉ có vấn đề là có trên web nhưng chưa chắc đã có trong tay. LoL

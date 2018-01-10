@@ -10,20 +10,6 @@ class Collections extends Public_Controller
     $this->load->model('product_model');
     $input = array();
     $input['order'] = array('name','INSC');
-
-    $config['base_url'] = base_url('info');
-    $config['total_rows'] = $this->Donor_model->count();
-    $config['per_page'] = 10;
-    $config['uri_segment'] = 3;
-    $choice = $config['total_rows']/$config['per_page'];
-    $config['num_links'] = round($choice);
-
-
-    $this->pagination->initialize($config);
-
-    $page =($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-    $data['data'] = $this->Donor_model->get_data([], [],$config['per_page'],$page);
-
     $product = $this->product_model->get_list($input);
     $this->data['product'] = $product;
     $this->view("web/collections/all");

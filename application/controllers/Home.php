@@ -30,6 +30,8 @@ class Home extends Public_Controller
       
         $input3 = array();
         $input3['order'] = array('view','DESC');
+        $count = 1;
+        $this->data['count'] = $count;
         $product_intro = $this->product_model->get_list($input3);
         $this->data['product_intro'] = $product_intro;	
         $this->view('web/home');
