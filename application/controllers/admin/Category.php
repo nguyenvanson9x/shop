@@ -1,10 +1,10 @@
 <?php
-Class Catalog extends MY_Controller
+Class Category extends MY_Controller
 {
     function __construct()
     {
         parent::__construct();
-        $this->load->model('catalog_model');
+        $this->load->model('category_model');
     }
     
     /*
@@ -12,7 +12,7 @@ Class Catalog extends MY_Controller
      */
     function index()
     {
-        $list = $this->catalog_model->get_list();
+        $list = $this->category_model->get_list();
         $this->data['list'] = $list;
         
         //lay nội dung của biến message
@@ -20,8 +20,7 @@ Class Catalog extends MY_Controller
         $this->data['message'] = $message;
         
         //load view
-        $this->data['temp'] = 'admin/catalog/index';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/product/category/index');
     }
     
     /*
@@ -43,17 +42,13 @@ Class Catalog extends MY_Controller
             {
                 //them vao csdl
                 $name       = $this->input->post('name');
-                $parent_id  = $this->input->post('parent_id');
-                $sort_order = $this->input->post('sort_order');
                 
                 //luu du lieu can them
                 $data = array(
                     'name'      => $name,
-                    'parent_id' => $parent_id,
-                    'sort_order' => intval($sort_order)
                 );
                 //them moi vao csdl
-                if($this->catalog_model->create($data))
+                if($this->category_model->create($data))
                 {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'Thêm mới dữ liệu thành công');
@@ -61,18 +56,11 @@ Class Catalog extends MY_Controller
                     $this->session->set_flashdata('message', 'Không thêm được');
                 }
                 //chuyen tới trang danh sách
-                redirect(admin_url('catalog'));
+                redirect(admin_url('category'));
             }
-        }
-        
-        //lay danh sach danh muc cha
-        $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $list = $this->catalog_model->get_list($input);
-        $this->data['list']  = $list;
-        
-        $this->data['temp'] = 'admin/catalog/add';
-        $this->load->view('admin/main', $this->data);
+        }    
+
+        $this->render('admin/product/category/add');
     }
     
     /*
@@ -86,12 +74,12 @@ Class Catalog extends MY_Controller
     
         //lay id danh mục
         $id = $this->uri->rsegment(3);
-        $info = $this->catalog_model->get_info($id);
+        $info = $this->category_model->get_info($id);
         if(!$info)
         {
             //tạo ra nội dung thông báo
             $this->session->set_flashdata('message', 'không tồn tại danh mục này');
-            redirect(admin_url('catalog'));
+            redirect(admin_url('category'));
         }
         $this->data['info'] = $info;
         
@@ -105,36 +93,25 @@ Class Catalog extends MY_Controller
             {
                 //them vao csdl
                 $name       = $this->input->post('name');
-                $parent_id  = $this->input->post('parent_id');
-                $sort_order = $this->input->post('sort_order');
     
                 //luu du lieu can them
                 $data = array(
                     'name'      => $name,
-                    'parent_id' => $parent_id,
-                    'sort_order' => intval($sort_order)
                 );
                 //them moi vao csdl
-                if($this->catalog_model->update($id, $data))
+                if($this->category_model->update($id, $data))
                 {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'Cập nhật dữ liệu thành công');
                 }else{
-                    $this->session->set_flashdata('message', 'Không thêm được');
+                    $this->session->set_flashdata('message', 'Không cập nhật được');
                 }
                 //chuyen tới trang danh sách
-                redirect(admin_url('catalog'));
+                redirect(admin_url('category'));
             }
         }
-    
-        //lay danh sach danh muc cha
-        $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $list = $this->catalog_model->get_list($input);
-        $this->data['list']  = $list;
-    
-        $this->data['temp'] = 'admin/catalog/edit';
-        $this->load->view('admin/main', $this->data);
+
+        $this->render('admin/product/category/edit');
     }
     
     /*
@@ -148,7 +125,7 @@ Class Catalog extends MY_Controller
         
         //tạo ra nội dung thông báo
         $this->session->set_flashdata('message', 'Xóa dữ liệu thành công');
-        redirect(admin_url('catalog'));
+        redirect(admin_url('category'));
     }
     
     /*
@@ -168,14 +145,14 @@ Class Catalog extends MY_Controller
      */
     private function _del($id, $rediect = true)
     {
-        $info = $this->catalog_model->get_info($id);
+        $info = $this->category_model->get_info($id);
         if(!$info)
         {
             //tạo ra nội dung thông báo
             $this->session->set_flashdata('message', 'không tồn tại danh mục này');
             if($rediect)
             {
-                redirect(admin_url('catalog'));
+                redirect(admin_url('category'));
             }else{
                 return false;
             }
@@ -183,21 +160,21 @@ Class Catalog extends MY_Controller
         
         //kiem tra xem danh muc nay co san pham khong
         $this->load->model('product_model');
-        $product = $this->product_model->get_info_rule(array('catalog_id' => $id), 'id');
+        $product = $this->product_model->get_info_rule(array('category_id' => $id), 'id');
         if($product)
         {
             //tạo ra nội dung thông báo
-            $this->session->set_flashdata('message', 'Danh mục '.$info->name.' có chứa sản phẩm,bạn cần xóa các sản phẩm trước khi xóa danh mục');
+            $this->session->set_flashdata('message', 'Loại '.$info->name.' có chứa sản phẩm,bạn cần xóa các sản phẩm trước khi xóa danh mục');
             if($rediect)
             {
-                redirect(admin_url('catalog'));
+                redirect(admin_url('category'));
             }else{
                 return false;
             }
         }
         
         //xoa du lieu
-        $this->catalog_model->delete($id);
+        $this->category_model->delete($id);
         
     }
 }

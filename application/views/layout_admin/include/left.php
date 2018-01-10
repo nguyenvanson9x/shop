@@ -46,7 +46,7 @@
 		
 			<a href="" class="exp inactive">
 				<span>Sản phẩm</span>
-				<strong>2</strong>
+				<strong>3</strong>
 			</a>
 			    <ul style="display: none;" class="sub">
 						<li>
@@ -55,8 +55,13 @@
 							</a>
 						</li>
 						<li>
+							<a href="<?php echo admin_url('category')?>">
+								Loại							
+							</a>
+						</li>
+						<li>
 							<a href="<?php echo admin_url('supplier')?>">
-								Danh mục							
+								Hãng							
 							</a>
 						</li>
 											

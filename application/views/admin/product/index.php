@@ -2,8 +2,10 @@
 <?php $this->load->view('admin/product/head', $this->data)?>
 <div class="line"></div>
 <div id="main_product" class="wrapper">
+	
+	<?php $this->load->view('admin/message', $this->data);?>
+
 	<div class="widget">
-		
 		<div class="title">
 			<span class="titleIcon"><input type="checkbox" name="titleCheck" id="titleCheck"></span>
 			<h6>

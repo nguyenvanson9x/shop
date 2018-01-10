@@ -25,7 +25,7 @@ class Home extends Public_Controller
     	$product_hot = $this->product_model->get_list($input2);
         $this->data['product_hot'] = $product_hot;
 
-        $sql = "SELECT * FROM news ORDER by news.view DESC LIMIT 10";
+        $sql = "SELECT * FROM news ORDER by news.view DESC LIMIT 4";
         $this->data['hotNews'] = $this->news_model->query($sql);
       
         $input3 = array();
