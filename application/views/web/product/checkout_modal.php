@@ -206,12 +206,12 @@ $token = md5($price);
             <div class="popup-radio">
               <div class="radio">
                 <label>
-                  <input checked="check" id="Gender" name="Gender" type="radio" value="M"> Anh
+                  <input checked="check" id="Gender" name="Gender" type="radio" value="Anh"> Anh
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input id="Gender" name="Gender" type="radio" value="F"> Chị
+                  <input id="Gender" name="Gender" type="radio" value="Chị"> Chị
                 </label>
               </div>
             </div>
@@ -259,9 +259,10 @@ $token = md5($price);
       <div class="alert alert-success hide">
       </div>
       <input type="hidden" id="token" value="<?= $token?>">
+      <input type="hidden" id="product_id" value="<?= $product->id?>">
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" id="order-btn">Đặt mua</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+        <input type="button" class="btn btn-default" id="order-btn" value="Đặt mua">
+        <input type="button" class="btn btn-default" data-dismiss="modal" value="Đóng">
       </div>
     </div>
   </div>
@@ -272,19 +273,32 @@ $token = md5($price);
       $('.alert-danger').addClass('hide');
       $('.alert-success').addClass('hide');
     });
+
+    var ajax_sendding = false;
+    var clicked = false;
     // Khi người dùng click Đăng ký
     $('#order-btn').click(function () {
-      console.log("Order click");
+      if (clicked == false) {
+          $("#order-btn").attr('value', 'Đang đặt hàng');
+      }
+      if (ajax_sendding == true) {
+          return false;
+      }
+      clicked = true;
+      ajax_sendding = true;
       // Lấy dữ liệu
       var data = {
+        gender: $('#Gender').val(),
         user_name: $('#user_name').val(),
         user_email: $('#user_email').val(),
         user_phone: $('#user_phone').val(),
         user_address: $('#user_address').val(),
+        product_id: $('#product_id').val(),
         coupon: $('#coupon').val(),
         token: $('#token').val(),
         price: <?= $price?>
       };
+      console.log(data);
       // Gửi ajax
       $.ajax({
         type: "post",
@@ -295,7 +309,6 @@ $token = md5($price);
           // Có lỗi, tức là key error = 1
           if (result.hasOwnProperty('error') && result.error == '1') {
             var html = '';
-            console.log(result);
             // Lặp qua các key và xử lý nối lỗi
             $.each(result, function (key, item) {
               // Tránh key error ra vì nó là key thông báo trạng thái
@@ -306,19 +319,31 @@ $token = md5($price);
             $('.alert-danger').html(html).removeClass('hide');
             $('.alert-success').addClass('hide');
           }
-          else { // Thành công
+          else { 
+            // Thành công
             $('.alert-success').html('Đặt hàng thành công!').removeClass('hide');
             $('.alert-danger').addClass('hide');
-            console.log(data);
-            // 4 giay sau sẽ tắt popup
-            setTimeout(function () {
-              $('#myModal').modal('hide');
-              // Ẩn thông báo lỗi
-              $('.alert-danger').addClass('hide');
-              $('.alert-success').addClass('hide');
-            }, 4000);
+
           }
         }
+      })
+      .done(function(data) {
+      })
+      .fail(function(data) {
+        $('.alert-danger').html('Đặt hàng không thành công').removeClass('hide');
+        $('.alert-success').addClass('hide');
+      })
+      .always(function(data) {
+        ajax_sendding = false;
+        clicked = false;
+        $("#order-btn").attr('value', 'Đặt mua');
+        // 4 giay sau sẽ tắt popup
+        setTimeout(function () {
+          $('#myModal').modal('hide');
+          // Ẩn thông báo lỗi
+          $('.alert-danger').addClass('hide');
+          $('.alert-success').addClass('hide');
+        }, 4000);
       });
     });
   });
