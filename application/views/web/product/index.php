@@ -97,7 +97,7 @@
 						</div>
 					</div>
 					<div class="form-product">
-						<form enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post" class="form-inline">
+						<form enctype="multipart/form-data" id="add-to-cart-form" method="post" class="form-inline">
 							<!-- <div class="form-group product_quantity ">
 								<label class="form-control-label">Số lượng</label>
 								<button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 1 ) result.value--;return false;"
@@ -108,9 +108,8 @@
 								 class="increase btn btn-ipnb" type="button">+</button>
 							</div> -->
 							<!-- BUTTON ACTIONS -->
-							<input class="hidden" type="hidden" name="variantId" value="15300050" />
 							<div class="button_actions">
-								<button type="submit" class="btn btn-buy btn-transition btn-cart btn_buy add_to_cart" data-toggle="modal" data-target="#myModal" title="Mua hàng">
+								<button type="button" class="btn btn-buy btn-transition btn-cart btn_buy" data-toggle="modal" data-target="#myModal" title="Mua hàng">
 									<span>
 										<i class="fa fa-shopping-cart"></i> Mua hàng
 									</span>

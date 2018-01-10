@@ -7,7 +7,7 @@ class Checkout extends Public_Controller
         $this->view('web/checkout');
     }
 
-    public function ajax() {
+    function ajax() {
         // error array
         $errors = array('error' => 0);
 
@@ -18,12 +18,13 @@ class Checkout extends Public_Controller
         $user_address   = $this->input->post('user_address');
         $coupon         = $this->input->post('coupon');
         $token          = $this->input->post('token');
-        $price          = (int)$this->input->post('price');
+        $price          = $this->input->post('price');
         $product_id     = (int)$this->input->post('product_id');
+        $used_coupon    = (int)$this->input->post('usedCoupon');
         // check security by token
-        if ($token != md5($price)) {
-            $error['error'] = 1;
-            $error['token'] = 'Invalid token';
+        if (!$token) {
+            $errors['error'] = 1;
+            $errors['token'] = 'Invalid token';
         } else {
             // simple validate data
             if (empty($user_name)){
@@ -46,8 +47,16 @@ class Checkout extends Public_Controller
                 die (json_encode($errors));
             }
             
+            
             // insert transaction info to database
             $this->load->model('transaction_model');
+            $this->load->model('coupon_model');
+            if ($used_coupon == 1 && $coupon != "") {
+                $sql = "select * from coupon where code = '" . $coupon . "' and used = 0";
+                $couponList = $this->coupon_model->query($sql);
+                if (count($couponList) > 0)
+                    $price = $price - $price * $couponList[0]->discount / 100;
+            }
             $data = array(
                 'product_id' => $product_id,
                 'user_name' => $user_name,
@@ -58,10 +67,44 @@ class Checkout extends Public_Controller
                 'order_date' => now()
             );
             
-            if(!$this->transactions_model->create($data))
+            if($this->transaction_model->create($data))
             {
+                if ($used_coupon == 1) {
+                    $sql = "update coupon set used = 1 where code = '" . $coupon . "'";
+                    $this->db->query($sql);
+                }
+            }
+            else {
                 $errors['error'] = 1;
                 $errors['order'] = "Đặt hàng không thành công";
+            }
+        }
+        die (json_encode($errors));
+    }
+
+    function coupon() {
+        $errors = array('error' => 0);
+        $errors['coupon'] = 1;
+        // get data
+        $coupon         = $this->input->post('coupon');
+        $token          = $this->input->post('token');
+        $price          = (int)$this->input->post('price');
+        if (!$token) {
+            $errors['error'] = 1;
+            $errors['token'] = 'Invalid token';
+        } else {
+            if ($coupon != "") {
+                // load model
+                $this->load->model('coupon_model');
+                $sql = "select * from coupon where code = '" . $coupon . "' and used = 0";
+                $couponList = $this->coupon_model->query($sql);
+                if (count($couponList) > 0) {
+                    $discount = $price * $couponList[0]->discount / 100;
+                    $price = $price - $discount;
+                    $errors['discount'] = $discount;
+                    $errors['coupon'] = 0;
+                }
+                $errors['price'] = $price;
             }
         }
         die (json_encode($errors));

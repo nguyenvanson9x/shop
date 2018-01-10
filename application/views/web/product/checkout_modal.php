@@ -188,7 +188,7 @@ $token = md5($price);
 
             <input type="hidden" id="hdphivanchuyen" value="0">
 
-            <div id="pnlCoupon" style="display: none;" class="price-transport">
+            <div id="pnlCoupon" class="price-transport hide">
               <span id="lblDiscountType" style=" font-weight: normal; color: inherit;">Giảm giá : </span>
               <span id="txtCoupon">0đ</span>
             </div>
@@ -203,7 +203,7 @@ $token = md5($price);
             <p class="title">
               Thông tin người mua
             </p>
-            <div class="popup-radio">
+            <!-- <div class="popup-radio">
               <div class="radio">
                 <label>
                   <input checked="check" id="Gender" name="Gender" type="radio" value="Anh"> Anh
@@ -214,7 +214,7 @@ $token = md5($price);
                   <input id="Gender" name="Gender" type="radio" value="Chị"> Chị
                 </label>
               </div>
-            </div>
+            </div> -->
             <div class="row">
               <div class="col-sm-12">
                 <input class="input" id="user_name" maxlength="50" name="user_name" placeholder="Họ tên của bạn (bắt buộc)" type="text" value="">
@@ -246,7 +246,7 @@ $token = md5($price);
                 </div>
                 <div class="verdes-element">
                   <a href="javascript:UseCoupon();" id="btnUseCoupon" class="button button-blue">Sử dụng</a>
-                  <a href="javascript:UnUseCoupon();" id="btnUnUseCoupon" style="display: none;" class="button button-red">Hủy</a>
+                  <a href="javascript:UnUseCoupon();" id="btnUnUseCoupon" class="button button-red hide">Hủy</a>
                 </div>
               </div>
               <div style="margin-top: 5px;color: #cc3333; font-style: italic; text-align: right;display:none" id="voucher-notice">*Nhấn "Sử dụng" để nhận ưu đãi giảm giá</div>
@@ -268,6 +268,8 @@ $token = md5($price);
   </div>
 </div>
 <script type="text/javascript">
+  var price_old = <?= $price?>;
+  var used_coupon = 0;
   $(document).ready(function () {
     $('#myModal').on('hidden.bs.modal', function () {
       $('.alert-danger').addClass('hide');
@@ -276,7 +278,7 @@ $token = md5($price);
 
     var ajax_sendding = false;
     var clicked = false;
-    // Khi người dùng click Đăng ký
+    // Khi người dùng click Order
     $('#order-btn').click(function () {
       if (clicked == false) {
           $("#order-btn").attr('value', 'Đang đặt hàng');
@@ -287,8 +289,9 @@ $token = md5($price);
       clicked = true;
       ajax_sendding = true;
       // Lấy dữ liệu
+      var p = $('#pnTotalOrder').html();
+      p = p.substring(0, p.length - 1);
       var data = {
-        gender: $('#Gender').val(),
         user_name: $('#user_name').val(),
         user_email: $('#user_email').val(),
         user_phone: $('#user_phone').val(),
@@ -296,9 +299,9 @@ $token = md5($price);
         product_id: $('#product_id').val(),
         coupon: $('#coupon').val(),
         token: $('#token').val(),
+        usedCoupon: used_coupon,
         price: <?= $price?>
       };
-      console.log(data);
       // Gửi ajax
       $.ajax({
         type: "post",
@@ -347,4 +350,51 @@ $token = md5($price);
       });
     });
   });
+
+  function UseCoupon() {
+    if ($('#coupon').val())
+      used_coupon = 1;
+    // Lấy dữ liệu
+    var data = {
+      coupon: $('#coupon').val(),
+      token: $('#token').val(),
+      price: <?= $price?>
+    };
+    if ($('#coupon').val() != '')
+      // Gửi ajax
+    $.ajax({
+      type: "post",
+      dataType: "JSON",
+      url: "<?= site_url('checkout/coupon'); ?>",
+      data: data,
+      success: function (result) {
+        // Có lỗi, tức là key error = 1
+        if (result.hasOwnProperty('error') && result.error == '1') {
+        }
+        else { 
+          // Thành công
+          $('#txtCoupon').html(result.discount);
+          $('#pnTotalOrder').html(result.price + 'đ');
+          $('#pnlCoupon').removeClass('hide');
+          $('#btnUnUseCoupon').removeClass('hide');
+          $('#btnUseCoupon').addClass('hide');
+        }
+      }
+    })
+    .done(function(data) {
+    })
+    .fail(function(data) {
+    })
+    .always(function(data) {
+    });
+  }
+
+  function UnUseCoupon() {
+    if (used_coupon != 0)
+      used_coupon = 0;
+    $('#pnTotalOrder').html(price_old + 'đ');
+    $('#pnlCoupon').addClass('hide');
+    $('#btnUseCoupon').removeClass('hide');
+    $('#btnUnUseCoupon').addClass('hide');
+  }
 </script>
