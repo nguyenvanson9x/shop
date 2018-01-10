@@ -158,6 +158,7 @@
                       <?php foreach ($list as $news): ?>
                       <?php if($news->view > 400): ?>
                       <?php 
+                      $url = "news/detail/" . $news->id;
                         $title = $news->title;
                         $image = base_url("upload/news/anh0.jpg");
                         if (file_exists("upload/news/".$news->image)) {
