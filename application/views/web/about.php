@@ -28,7 +28,12 @@
 					<h1 class="title-head">Giới thiệu</h1>
 				</div>
 				<div class="module-content">
-					<p>Đây là trang giới thiệu.</p>
+					<p>Website được xây dựng trên nền tảng CodeIgniter với hai ngôn ngữ thông dụng là html và php.
+					Với giao diện thân thiện và dễ sử dụng, hiện tại Mobile Shop đã đáp ứng được tương đối cơ bản về nhu cầu mua hàng của người tiêu dùng.</p>
+				
+					<p> Đội ngũ coder gồm 3 thành viên, bước đầu xây dựng thành công website và hiểu được quy trình tạo nên trang web.
+						 Trang web còn khá nhiều hạn chế như chưa có chức năng bình luận, chức năng đăng nhập cho thành viên, các chức năng phản hồi, chăm sóc khách hàng,...
+					</p>
 				</div>
 			</div>
 		</div>
