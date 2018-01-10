@@ -47,8 +47,6 @@
 										<div class="page-pagination pagination-wrapper">
 											<ul class="pagination">
 												
-
-												
 											</ul>
 										</div>
 										

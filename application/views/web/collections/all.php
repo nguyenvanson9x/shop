@@ -66,12 +66,6 @@
 						<div class="products">
 							<?php foreach ($product as $row): ?>
 							<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 item lg4" >
-								
-								
-								
-								
-								
-								
 								<div class="product-box product-grid-item">
 									<div class="product-thumbnail">
 										
