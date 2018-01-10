@@ -36,8 +36,8 @@
 								Giao dịch							</a>
 						</li>
 											<li>
-							<a href="<?php echo admin_url('order')?>">
-								Đơn hàng sản phẩm							</a>
+							<a href="<?php echo admin_url('coupon')?>">
+								Khuyến mãi							</a>
 						</li>
 									</ul>
 						
