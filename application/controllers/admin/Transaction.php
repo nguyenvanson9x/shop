@@ -48,27 +48,27 @@ Class Transaction extends MY_Controller
         $input['where'] = array();
         if($id > 0)
         {
-            $input['where']['id'] = $id;
+            $where['id'] = $id;
         }
         //lọc theo thành viên
-        $user = $this->input->get('user');
+        $user = $this->input->get('user_name');
         if($user)
         {
-            $where['user_id'] = $user;
+            $where['user_name'] = $user;
         }
         
         //lọc theo cổng thanh toán
-        $payment = $this->input->get('payment');
-        if($payment)
+        $payment_status = $this->input->get('payment_status');
+        if($payment_status != "")
         {
-            $where['payment'] = $payment;
+            $where['payment_status'] = $payment_status;
         }
         
         //lọc theo trạng thái thanh toán
-        $status = $this->input->get('status');
-        if($status != '')
+        $delivery_status = $this->input->get('delivery_status');
+        if($delivery_status != '')
         {
-            $where['status'] = $status;
+            $where['delivery_status'] = $delivery_status;
         }
         //lọc theo thời gian
    	    $created_to = $this->input->get('created_to');
@@ -80,18 +80,17 @@ Class Transaction extends MY_Controller
    	        //nếu dữ liệu trả về hợp lệ
 	   	    if(is_array($time))
 	   	    {	
-		   	    $where['created >='] = $time['start'];
-		   	    $where['created <='] = $time['end'];
+		   	    $where['order_date >='] = $time['start'];
+		   	    $where['order_date <='] = $time['end'];
 	   	    }
    	    }
         //gắn các điệu điện lọc
         $input['where'] = $where;
         
-        
-        //lay danh sach san pha
+        //lay danh sach giao dịch
         $list = $this->transaction_model->get_list($input);
         $this->data['list'] = $list;
-    
+
         $this->data['filter'] = $input['where'];
         $this->data['created_to'] = $created_to;
         $this->data['created']    = $created;
@@ -99,10 +98,7 @@ Class Transaction extends MY_Controller
         //lay nội dung của biến message
         $message = $this->session->flashdata('message');
         $this->data['message'] = $message;
-        
-        //load view
-        //$this->data['temp'] = 'admin/transaction/index';
-        // $this->load->view('admin/main', $this->data);
+
         $this->render("admin/transaction/index");
     }
     

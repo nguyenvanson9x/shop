@@ -26,7 +26,7 @@
 									<tr>
 										<td class="label" style="width:60px;">
 											<label for="filter_id">
-												<?php echo lang('no.'); ?>
+												Mã số
 											</label>
 										</td>
 										<td class="item">
@@ -35,15 +35,14 @@
 										</td>
 										<td class="label" style="width:60px;">
 											<label for="filter_type">
-												<?php echo lang('tran_payment'); ?>
+												Thanh toán
 											</label>
 										</td>
 										<td class="item">
-											<select name="payment">
+											<select name="payment_status">
 												<option value=""></option>
-												<option value='nganluong' <?php if(isset($filter[ 'payment']) && $filter[ 'payment']=='nganluong' ){echo 'selected';}?>>Ngân lượng</option>
-												<option value='baokim' <?php if(isset($filter[ 'payment']) && $filter[ 'payment']=='baokim' ){echo 'selected';}?>>Bảo kim</option>
-												<option value='dathang' <?php if(isset($filter[ 'payment']) && $filter[ 'payment']=='dathang' ){echo 'selected';}?>>Đặt hàng</option>
+												<option value='1' <?php if(isset($filter[ 'payment_status']) && $filter[ 'payment_status']==1 ){echo 'selected';}?>>Đã thanh toán</option>
+												<option value='0' <?php if(isset($filter[ 'payment_status']) && $filter[ 'payment_status']==0 ){echo 'selected';}?>>Chưa thanh toán</option>
 											</select>
 										</td>
 										<td class="label" style="width:60px;">
@@ -63,24 +62,24 @@
 									<tr>
 										<td class="label" style="width:60px;">
 											<label for="filter_user">
-												<?php echo lang('user'); ?>
+												Khách hàng
 											</label>
 										</td>
 										<td class="item">
-											<input name="user" value="<?php if(isset($filter['user_id'])){echo $filter['user_id'];}?>" id="filter_user" class="tipS"
-											 title="<?php echo lang('note_enter_user_id')?>" type="text" />
+											<input name="user_name" value="<?php if(isset($filter['user_name'])){echo $filter['user_name'];}?>" id="filter_user" class="tipS"
+											 title="Nhập tên khách hàng" type="text" />
 										</td>
 										<td class="label">
 											<label for="filter_status">
-												<?php echo lang('tran'); ?>
+												Giao hàng
 											</label>
 										</td>
 										<td class="item">
-											<select name="status">
+											<select name="delivery_status">
 												<option></option>
-												<option value='0' <?php if(isset($filter[ 'status']) && $filter[ 'status']=='0' ){echo 'selected';}?>>Đợi xử lý</option>
-												<option value='1' <?php if(isset($filter[ 'status']) && $filter[ 'status']=='1' ){echo 'selected';}?>>Thành công</option>
-												<option value='2' <?php if(isset($filter[ 'status']) && $filter[ 'status']=='2' ){echo 'selected';}?>>Hủy bỏ</option>
+												<option value='0' <?php if(isset($filter[ 'delivery_status']) && $filter[ 'delivery_status']=='0' ){echo 'selected';}?>>Chưa giao hàng</option>
+												<option value='1' <?php if(isset($filter[ 'delivery_status']) && $filter[ 'delivery_status']=='1' ){echo 'selected';}?>>Đã giao hàng</option>
+												<option value='2' <?php if(isset($filter[ 'delivery_status']) && $filter[ 'delivery_status']=='2' ){echo 'selected';}?>>Hủy bỏ</option>
 											</select>
 										</td>
 										<td class="label">
@@ -106,17 +105,18 @@
 					<td style="width:21px;">
 						<img src="<?php echo public_url('admin/images')?>/icons/tableArrows.png">
 					</td>
-					<td style="width:60px;">Mã số</td>
-					<td>Số tiền</td>
-					<td>Cổng thanh toán</td>
-					<td>Trạng thái</td>
-					<td style="width:75px;">Ngày tạo</td>
-					<td style="width:120px;">Hành động</td>
+					<td style="width:60px;">Đơn hàng</td>
+					<td>Ngày đặt</td>
+					<td>Khách hàng</td>
+					<td>Thanh toán</td>
+					<td style="width:75px;">Giao hàng</td>
+					<td style="width:120px;">Tổng tiền</td>
+					<td>Hành động</td>
 				</tr>
 			</thead>
 			<tfoot class="auto_check_pages">
 				<tr>
-					<td colspan="7">
+					<td colspan="8">
 						<div class="list_action itemActions">
 							<a url="<?php echo admin_url('transaction/delete_all')?>" class="button blueB" id="submit" href="#submit">
 								<span style="color:white;">Xóa hết</span>
@@ -139,10 +139,10 @@
 						<?php echo $row->id?>
 					</td>
 					<td>
-						<?php echo number_format($row->money)?> đ
+						<?php echo mdate('%d-%m-%Y', $row->order_date); ?>
 					</td>
 					<td>
-						<!-- <?php echo $row->payment?> -->
+						<?php echo $row->user_name?>
 					</td>
 					<td>
 						<?php 
@@ -157,9 +157,17 @@
 					}
 					?>
 					</td>
-					<td class="textC">
-						<?php echo get_date($row->order_date)?>
+					<td>
+						<?php 
+						if ($row->delivery_status == 0)
+							echo "Chưa giao hàng";
+						else if ($row->delivery_status == 1)
+							echo "Đã giao hàng";
+						else
+							echo "Hủy bỏ"
+						?>
 					</td>
+					<td  class="textC"><?= number_format($row->money); ?></td>
 					<td class="option textC">
 						<a title="Xem chi tiết giao dịch" class="tipS lightbox" href="<?php echo admin_url('transaction/detail/'.$row->id)?>">
 							<img src="<?php echo public_url('admin/images')?>/icons/color/view.png">
