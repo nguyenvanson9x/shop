@@ -199,90 +199,79 @@
                 </div>
               </div>
             </div>
-            <!-- don't need -->
-            <div class="owl-nav disabled">
-              <div class="owl-prev">
-                <i class="fa fa-angle-left"></i>
-              </div>
-              <div class="owl-next">
-                <i class="fa fa-angle-right"></i>
-              </div>
-            </div>
-            <div class="owl-dots disabled"></div>
           </div>
         </div>
-    </div>
-    <!-- Thẻ -->
-    <div class="aside-item article-tags">
-      <div class="module-header">
-        <h2 class="module-title title-style-2">
-          <span>
-            Tags bài viết
-          </span>
-        </h2>
-        <div class="module-content">
-          <div class="bg-warning padding-15">
-            <div class="text-warning">
-              Danh mục hiện tại không có tag nào.
+        <!-- Thẻ -->
+        <div class="aside-item article-tags">
+          <div class="module-header">
+            <h2 class="module-title title-style-2">
+              <span>
+                Tags bài viết
+              </span>
+            </h2>
+            <div class="module-content">
+              <div class="bg-warning padding-15">
+                <div class="text-warning">
+                  Danh mục hiện tại không có tag nào.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- QC -->
-    <div class="aside-item blog-banner">
-      <div class="module-header">
-        <h2 class="module-title title-style-2">
-          <span>Quảng cáo</span>
-        </h2>
-      </div>
-      <div class="module-content">
-        <a href="" title="Quảng cáo">
-          <img class="img-responsive" alt="quang-cao" src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/blog_aside_banner.png?1515399077171">
-        </a>
-      </div>
-    </div>
-    <!-- Chi sẻ -->
-    <div class="aside-item article-sharing">
-      <div class="module-header">
-        <h2 class="module-title title-style-2">
-          <span>Chia sẻ bài viết</span>
-        </h2>
-      </div>
-      <div class="module-content">
-        <div class="social-media" data-permalink="https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>">
-          <div class="custom_list">
-            <a target="_blank" href="//www.facebook.com/sharer.php?u=https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>" class="share-facebook hv-txt-facebook btn-transition btn-border-hover"
-              title="Chia sẻ lên Facebook">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-            <a target="_blank" href="//twitter.com/share?text=<?php echo $image;?>&amp;url=https://facebook.com.vn<?= site_url($url);?>"
-              class="share-twitter hv-txt-twitter btn-transition btn-border-hover" title="Chia sẻ lên Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a target="_blank" href="//plus.google.com/share?url=https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>" class="share-google hv-txt-google-plus btn-transition btn-border-hover"
-              title="+1">
-              <i class="fa fa-google-plus"></i>
+        <!-- QC -->
+        <div class="aside-item blog-banner">
+          <div class="module-header">
+            <h2 class="module-title title-style-2">
+              <span>Quảng cáo</span>
+            </h2>
+          </div>
+          <div class="module-content">
+            <a href="" title="Quảng cáo">
+              <img class="img-responsive" alt="quang-cao" src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/blog_aside_banner.png?1515399077171">
             </a>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Chào mừng -->
-    <div class="aside-item aside-rte">
-      <div class="module-header">
-        <h2 class="module-title title-style-2">
-          <span>Kính chào</span>
-        </h2>
-      </div>
-      <div class="module-content">
-        <div class="rte-content">
-          Chào mừng quý khách tới với cửa hàng của chúng tôi. Hãy liên hệ theo địa chỉ cửa hàng ở bên để có thể được tư vấn và chăm
-          sóc một cách tốt nhất. Xin cảm ơn.
+        <!-- Chi sẻ -->
+        <div class="aside-item article-sharing">
+          <div class="module-header">
+            <h2 class="module-title title-style-2">
+              <span>Chia sẻ bài viết</span>
+            </h2>
+          </div>
+          <div class="module-content">
+            <div class="social-media" data-permalink="https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>">
+              <div class="custom_list">
+                <a target="_blank" href="//www.facebook.com/sharer.php?u=https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>" class="share-facebook hv-txt-facebook btn-transition btn-border-hover"
+                  title="Chia sẻ lên Facebook">
+                  <i class="fa fa-facebook-official"></i>
+                </a>
+                <a target="_blank" href="//twitter.com/share?text=<?php echo $image;?>&amp;url=https://facebook.com.vn<?= site_url($url);?>"
+                  class="share-twitter hv-txt-twitter btn-transition btn-border-hover" title="Chia sẻ lên Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a target="_blank" href="//plus.google.com/share?url=https://mobilestore123.bizwebvietnam.net<?= site_url($url);?>" class="share-google hv-txt-google-plus btn-transition btn-border-hover"
+                  title="+1">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <!-- Chào mừng -->
+        <div class="aside-item aside-rte">
+          <div class="module-header">
+            <h2 class="module-title title-style-2">
+              <span>Kính chào</span>
+            </h2>
+          </div>
+          <div class="module-content">
+            <div class="rte-content">
+              Chào mừng quý khách tới với cửa hàng của chúng tôi. Hãy liên hệ theo địa chỉ cửa hàng ở bên để có thể được tư vấn và chăm
+              sóc một cách tốt nhất. Xin cảm ơn.
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
-    </aside>
   </div>
-</div>
 </div>
