@@ -148,7 +148,7 @@
 		<div class="sidebar-menu-title module-header">
 			<div class="module-title">
 				<a href="<?= site_url()?>" class="sticky_logo">
-					<img src="" alt="Logo" />
+					<img src="<?= base_url('upload/logomin50.png') ?>" alt="Logo" />
 				</a>
 				<i class="fa fa-bars"></i>
 				<span>MENU</span>

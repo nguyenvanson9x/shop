@@ -281,11 +281,10 @@ $token = md5($price);
         user_email: $('#user_email').val(),
         user_phone: $('#user_phone').val(),
         user_address: $('#user_address').val(),
-        coupon: $('$#coupon').val(),
+        coupon: $('#coupon').val(),
         token: $('#token').val(),
         price: <?= $price?>
       };
-      console.log(data);
       // Gửi ajax
       $.ajax({
         type: "post",
@@ -296,7 +295,7 @@ $token = md5($price);
           // Có lỗi, tức là key error = 1
           if (result.hasOwnProperty('error') && result.error == '1') {
             var html = '';
-
+            console.log(result);
             // Lặp qua các key và xử lý nối lỗi
             $.each(result, function (key, item) {
               // Tránh key error ra vì nó là key thông báo trạng thái
@@ -310,7 +309,7 @@ $token = md5($price);
           else { // Thành công
             $('.alert-success').html('Đặt hàng thành công!').removeClass('hide');
             $('.alert-danger').addClass('hide');
-
+            console.log(data);
             // 4 giay sau sẽ tắt popup
             setTimeout(function () {
               $('#myModal').modal('hide');
