@@ -101,7 +101,7 @@
 				</a>
 			</li>
 			<li class="sticky_logo" onClick="window.location.href='<?= site_url()?>'">
-				<img src="<?= base_url('upload/logo.png') ?>" alt="Logo" />
+				<img src="<?= base_url('upload/logomin50.png') ?>" alt="Logo" />
 			</li>
 			<!-- <div class="cart-header">
 				<div class="top-cart-contain f-right">
