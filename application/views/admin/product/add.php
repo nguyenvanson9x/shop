@@ -46,8 +46,7 @@
 <div class="formRow">
 	<label for="param_cat" class="formLeft">Loại:</label>
 	<div class="formRight">
-	    <select name="supplier"  class="left" >
-			<option value=""></option>
+	    <select name="category"  class="left" >
 				
            		<?php foreach ($category as $row):?>
 				
@@ -85,7 +84,6 @@
 	<label for="param_cat" class="formLeft">Hãng:</label>
 	<div class="formRight">
 	    <select name="supplier"  class="left" >
-			<option value=""></option>
 				<!-- kiem tra danh muc co danh muc con hay khong -->
 				<?php foreach ($supplier as $row):?>
 				
@@ -154,7 +152,7 @@
 	        		
 	        		<div class="formSubmit">
 	           			<input type="submit" class="redB" value="Thêm mới">
-	           			<input type="reset" class="basic" value="Hủy bỏ">
+	           			<input type="reset" class="basic" value="Đặt lại">
 	           		</div>
 	        		<div class="clear"></div>
 				</div>

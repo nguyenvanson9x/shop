@@ -97,20 +97,25 @@ Class Product extends MY_Controller
         //neu ma co du lieu post len thi kiem tra
         if($this->input->post())
         {
+            $this->form_validation->set_rules('name', 'Tên', 'required');
+            $this->form_validation->set_rules('category', 'Thể loại', 'required');
+            $this->form_validation->set_rules('supplier', 'Hãng', 'required');
+            $this->form_validation->set_rules('price', 'Giá', 'required');
         
             //nhập liệu chính xác
             if($this->form_validation->run())
             {
                 //them vao csdl
                 $name        = $this->input->post('name');
-                $category_id  = $this->input->post('category_id');
-                $supplier_id  = $this->input->post('supplier_id');
                 $price       = $this->input->post('price');
                 $price       = str_replace(',', '', $price);                
                 $discount = $this->input->post('discount');
                 $discount = str_replace('%', '', $discount);
                 $expire_discount = $this->input->post('expire_discount');
+                if($expire_discount == '' || $expire_discount == 0) $expire_discount = now();
+                else 
                 $expire_discount = get_time_from_date($expire_discount);
+                
                 
                 
                 //lay ten file anh minh hoa duoc update len
@@ -122,22 +127,22 @@ Class Product extends MY_Controller
                 {
                     $image_link = $upload_data['file_name'];
                 }
-                else {
-                    $image_link = '/upload/unknown.png';
-                }
                 
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
-                    'category_id' => $category_id,
-                    'supplier_id' => $supplier_id,
+                    'category_id' => $this->input->post('category'),
+                    'supplier_id' => $this->input->post('supplier'),
                     'price'      => $price,
-                    'image' => $image_link,
                     'discount'   => $discount,
                     'expire_discount'   => $expire_discount,
                     'content'    => $this->input->post('content'),
-                    'created_at'    => now(),
+                    'create_at'    => now(),
                 ); 
+                if($image_link != '')
+                {
+                    $data['image'] = $image_link;
+                }
                 //them moi vao csdl
                 if($this->product_model->create($data))
                 {
@@ -148,6 +153,7 @@ Class Product extends MY_Controller
                 }
                 //chuyen tới trang danh sách
                 redirect(admin_url('product'));
+                $this->session->flashdata('message');
             }
         }
         
@@ -191,7 +197,8 @@ Class Product extends MY_Controller
         if($this->input->post())
         {
             $this->form_validation->set_rules('name', 'Tên', 'required');
-            $this->form_validation->set_rules('supplier', 'Thể loại', 'required');
+            $this->form_validation->set_rules('category', 'Thể loại', 'required');
+            $this->form_validation->set_rules('supplier', 'Hãng', 'required');
             $this->form_validation->set_rules('price', 'Giá', 'required');
         
             //nhập liệu chính xác
@@ -199,14 +206,16 @@ Class Product extends MY_Controller
             {
                 //them vao csdl
                 $name        = $this->input->post('name');
-                $supplier_id  = $this->input->post('supplier_id');
                 $price       = $this->input->post('price');
                 $price       = str_replace(',', '', $price);                
                 $discount = $this->input->post('discount');
                 $discount = str_replace('%', '', $discount);
                 $expire_discount = $this->input->post('expire_discount');
                 $expire_discount = get_time_from_date($expire_discount);
-                
+                if($expire_discount == '' || $expire_discount == 0) 
+                    $expire_discount = now();
+                else 
+                $expire_discount = get_time_from_date($expire_discount);
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
                 $upload_path = '/upload/product';
@@ -220,18 +229,16 @@ Class Product extends MY_Controller
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
-                    'category_id' => $this->input->post('category_id'),
-                    'supplier_id' => $supplier_id,
+                    'category_id' => $this->input->post('category'),
+                    'supplier_id' => $this->input->post('supplier'),
                     'price'      => $price,
-                    'image' => $image_link,
                     'discount'   => $discount,
                     'expire_discount'   => $expire_discount,
-                    'type' => $this->input->post('type'),
                     'content'    => $this->input->post('content'),
                 );
                 if($image_link != '')
                 {
-                    $data['image_link'] = $image_link;
+                    $data['image'] = $image_link;
                 }
                 
                 //them moi vao csdl
@@ -244,6 +251,7 @@ Class Product extends MY_Controller
                 }
                 //chuyen tới trang danh sách
                 redirect(admin_url('product'));
+                $this->session->flashdata('message');
             }
         }
         

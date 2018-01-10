@@ -42,7 +42,7 @@
 							<img id="zoom_01" class="img-responsive" src="
 									
 									<?php
-										if(file_exists('upload/product/'.$product->image))
+										if(file_exists('upload/product/'.$product->image) && $product->image != '')
 										{
 											echo base_url('upload/product/'.$product->image);
 										}
@@ -87,7 +87,13 @@
 					</label>
 					<div class="product-summary product_description">
 						<div class="rte description">
-							<?php echo $product->content; ?>
+							<?php 
+							if ($product->content !='') 
+								echo $product->content; 
+							else
+								?>Chưa có thông tin<?php
+							?>
+
 						</div>
 					</div>
 					<div class="form-product">
@@ -148,7 +154,12 @@
 					</ul>
 					<div id="tab-1" class="tab-content">
 						<div class="rte">
-							<?php echo $product->content; ?>
+							<?php 
+							if ($product->content !='') 
+								echo $product->content; 
+							else
+								?>Chưa có thông tin<?php
+							?>
 						</div>
 					</div>
 					<div id="tab-2" class="tab-content">
@@ -258,7 +269,7 @@
 												<img class="img-responsive" src="
 													
 													<?php
-													if(file_exists('upload/product/'.$row->image))
+													if(file_exists('upload/product/'.$row->image) && $row->image != '')
 													{
 													echo base_url('upload/product/'.$row->image);
 													}

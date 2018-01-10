@@ -83,16 +83,18 @@
 					
 					<td>
 						<div class="image_thumb">
-							<img height="50" src="<?php
-							if(file_exists('upload/product/'.$row->image))
-							{
-							echo base_url('upload/product/'.$row->image);
-							}
-							else
-							{
-							echo base_url('upload/unknown.png');
-							}
-							?>">
+							<img height="50" src="
+							<?php
+									if(file_exists('upload/product/'.$row->image) && $row->image != '')
+									{
+										echo base_url('upload/product/'.$row->image);
+									}
+									else
+										{
+										echo base_url('upload/unknown.png');
+									}
+												
+							?>"
 							<div class="clear"></div>
 						</div>
 						

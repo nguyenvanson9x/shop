@@ -83,7 +83,7 @@
 												<img class="img-responsive" src="
 												
 												<?php
-													if(file_exists('upload/product/'.$row->image))
+													if(file_exists('upload/product/'.$row->image) && $row->image != '')
 													{
 														echo base_url('upload/product/'.$row->image);
 													}

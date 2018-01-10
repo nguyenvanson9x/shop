@@ -127,7 +127,7 @@
                             <img class="img-responsive" src="
                             
                             <?php
-                            if(file_exists('upload/product/'.$row->image))
+                            if(file_exists('upload/product/'.$row->image) && $row->image != '')
                             {
                             echo base_url('upload/product/'.$row->image);
                             }
@@ -210,7 +210,7 @@ if (now() > ($row->create_at + 7776000)) {
           <img class="img-responsive" src="
           
           <?php
-          if(file_exists('upload/product/'.$row->image))
+          if(file_exists('upload/product/'.$row->image) && $row->image != '')
           {
           echo base_url('upload/product/'.$row->image);
           }
@@ -491,7 +491,7 @@ if (now() > ($row->create_at + 7776000)) {
                         <img class="img-responsive" src="
                         
                         <?php
-                        if(file_exists('upload/product/'.$row->image))
+                        if(file_exists('upload/product/'.$row->image) && $row->image != '')
                         {
                         echo base_url('upload/product/'.$row->image);
                         }

@@ -16,7 +16,6 @@
 					
 				    <ul class="tabs">
 		                <li class="activeTab"><a href="#tab1">Thông tin chung</a></li>
-		                <li class=""><a href="#tab2">SEO Onpage</a></li>
 		                <li class=""><a href="#tab3">Bài viết</a></li>
 		                
 					</ul>
@@ -39,7 +38,7 @@
 		<div class="left">
     		<input type="file" name="image" id="image" size="25">
     		<img src="<?php
-          if(file_exists('upload/product/'.$product->image))
+          if(file_exists('upload/product/'.$product->image) && $product->image != '')
           {
           echo base_url('upload/product/'.$product->image);
           }
@@ -57,8 +56,7 @@
 <div class="formRow">
 	<label for="param_cat" class="formLeft">Loại:</label>
 	<div class="formRight">
-	    <select name="supplier"  class="left" >
-			<option value=""></option>
+	    <select name="category"  class="left" >
 				<!-- kiem tra danh muc co danh muc con hay khong -->
 				<?php foreach ($category as $row):?>
 				
@@ -97,7 +95,6 @@
 	<label for="param_cat" class="formLeft">Hãng:</label>
 	<div class="formRight">
 	    <select name="supplier"  class="left" >
-			<option value=""></option>
 				<!-- kiem tra danh muc co danh muc con hay khong -->
 				<?php foreach ($supplier as $row):?>
 				
@@ -144,18 +141,6 @@
 						 </div>
 						 
 						 <div class="tab_content pd0" id="tab2" style="display: none;">
-						     			
-<div class="formRow">
-	<label for="param_site_title" class="formLeft">Title:</label>
-	<div class="formRight">
-		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_site_title" name="site_title"><?php echo $product->site_title?></textarea></span>
-		<span class="autocheck" name="site_title_autocheck"></span>
-		<div class="clear error" name="site_title_error"></div>
-	</div>
-	<div class="clear"></div>
-</div>
-
-
 
 						     <div class="formRow hide"></div>
 						 </div>
@@ -177,7 +162,7 @@
 	        		
 	        		<div class="formSubmit">
 	           			<input type="submit" class="redB" value="Cập nhật">
-	           			<input type="reset" class="basic" value="Hủy bỏ">
+	           			<input type="reset" class="basic" value="Đặt lại">
 	           		</div>
 	        		<div class="clear"></div>
 				</div>
