@@ -16,7 +16,6 @@
 					
 				    <ul class="tabs">
 		                <li class="activeTab"><a href="#tab1">Thông tin chung</a></li>
-		                <li class=""><a href="#tab2">SEO Onpage</a></li>
 		                <li class=""><a href="#tab3">Bài viết</a></li>
 		                
 					</ul>
@@ -133,17 +132,8 @@
 						 
 						 <div class="tab_content pd0" id="tab2" style="display: none;">
 						     			
-<div class="formRow">
-	<label for="param_site_title" class="formLeft">Title:</label>
-	<div class="formRight">
-		<span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_site_title" name="site_title"></textarea></span>
-		<span class="autocheck" name="site_title_autocheck"></span>
-		<div class="clear error" name="site_title_error"></div>
-	</div>
-	<div class="clear"></div>
-</div>
 
-<
+
 						     <div class="formRow hide"></div>
 						 </div>
 						 

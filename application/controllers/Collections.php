@@ -4,7 +4,6 @@ class Collections extends Public_Controller
 {
   function index() {
     header("location: collections/");
-
   }
 
   function all() {

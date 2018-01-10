@@ -21,6 +21,7 @@ class Home extends Public_Controller
     	$product_new = $this->product_model->get_list($input);
     	$this->data['product_new'] = $product_new;
         $input2['order'] = array('view', 'DESC');
+        $input2['limit'] = array(8, 0);
     	$product_hot = $this->product_model->get_list($input2);
         $this->data['product_hot'] = $product_hot;
 

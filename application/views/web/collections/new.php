@@ -47,23 +47,7 @@
 										<div class="page-pagination pagination-wrapper">
 											<ul class="pagination">
 												
-												
-												
-												
-												<li class="active"><span>1</span></li>
-												
-												
-												
-												
-												<li><a href="/frontpage?page=2">2</a></li>
-												
-												
-												
-												<li>
-													<a class="last hidden-xs" aria-label="Next" href="/frontpage?page=2">
-														<span aria-hidden="true"><i class="fa fa-caret-right"></i></span>
-													</a>
-												</li>
+
 												
 											</ul>
 										</div>
@@ -165,23 +149,7 @@
 									<div class="page-pagination pagination-wrapper">
 										<ul class="pagination">
 											
-											
-											
-											
-											<li class="active"><span>1</span></li>
-											
-											
-											
-											
-											<li><a href="/frontpage?page=2">2</a></li>
-											
-											
-											
-											<li>
-												<a class="last hidden-xs" aria-label="Next" href="/frontpage?page=2">
-													<span aria-hidden="true"><i class="fa fa-caret-right"></i></span>
-												</a>
-											</li>
+
 											
 										</ul>
 									</div>
