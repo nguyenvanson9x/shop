@@ -426,7 +426,7 @@ if (now() < ($row->create_at + 7776000)) {
           <div class="module-content">
             <a href="#" title="">
               <figure>
-                <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/index_large_banner.png?1515399077171" class="img-responsive" alt="MobileShop">
+                <img src="upload/banner.jpg" class="img-responsive" alt="MobileShop">
               </figure>
             </a>
           </div>
