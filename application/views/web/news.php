@@ -4,7 +4,7 @@
 			<div class="col-xs-12">
 				<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 					<li class="home">
-						<a itemprop="url" href="/" title="Trang chủ">
+						<a itemprop="url" href="<?= site_url();?>" title="Trang chủ">
 							<span itemprop="title">Trang chủ</span>
 						</a>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -99,7 +99,7 @@
 							<?php 
 							
 							foreach ($listNews as $news):?>
-							<?php if($news->view > 400) { ?>
+							<?php if($news->view > 400):?>
 								<div class="artitle-item item-small">
 									<div class="article-thumbnail">
 									<?php 									
@@ -137,8 +137,8 @@
 										</div>
 									</div>
 								</div>
-								<?php } ?>
-								<?php endforeach;?>	
+							<?php endif;?>
+							<?php endforeach;?>	
 							
 							</div>
 						</div>

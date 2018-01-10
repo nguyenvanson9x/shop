@@ -6,9 +6,9 @@
 				<span>Chào mừng bạn đến với MobileShop123 !</span>
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 checkout">
-				<a href="<?= site_url('checkout')?>" title="Tới trang thanh toán">
-					<i class="fa fa-shopping-cart"></i>
-					<span>Thanh toán</span>
+				<a href="<?= site_url('admin')?>" title="Tới trang quản trị">
+					<i class="fa fa-tachometer"></i>
+					<span>Quản trị</span>
 				</a>
 			</div>
 		</div>
@@ -37,11 +37,11 @@
 					</form>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 account">
+			<!-- <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 account">
 				<a href="<?= site_url('account/login')?>">Đăng nhập</a>
 				<span>hoặc</span>
 				<a href="<?= site_url('account/register')?>">Đăng ký</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
@@ -103,7 +103,7 @@
 			<li class="sticky_logo" onClick="window.location.href='<?= site_url()?>'">
 				<img src="" alt="Logo" />
 			</li>
-			<div class="cart-header">
+			<!-- <div class="cart-header">
 				<div class="top-cart-contain f-right">
 					<div class="mini-cart text-xs-center">
 						<div class="heading-cart">
@@ -141,7 +141,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</ul>
 	</nav>
 	<div class="sidebar-menu sidebar_menu site-nav-mobile menu-header hidden-md hidden-lg">
@@ -153,9 +153,9 @@
 				<i class="fa fa-bars"></i>
 				<span>MENU</span>
 			</div>
-			<a class="mobile-cart" href="<?= site_url('cart')?>">
+			<!-- <a class="mobile-cart" href="<?= site_url('cart')?>">
 				<span class="cart-count-mobile">0</span>
-			</a>
+			</a> -->
 		</div>
 		<div class="sidebar-menu-content">
 			<div class="sidebar-linklists">

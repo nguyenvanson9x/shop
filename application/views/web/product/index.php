@@ -4,13 +4,13 @@
 			<div class="col-xs-12">
 				<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 					<li class="home">
-						<a itemprop="url" href="/" title="Trang chủ">
+						<a itemprop="url" href="<?= site_url();?>" title="Trang chủ">
 							<span itemprop="title">Trang chủ</span>
 						</a>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 					</li>
 					<li>
-						<a itemprop="url" href="/san-pham-noi-bat">
+						<a itemprop="url" href="<?= site_url('collections/all');?>">
 							<span itemprop="title">Sản phẩm</span>
 						</a>
 						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
