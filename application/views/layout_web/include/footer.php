@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="footer">
-	<div class="brands">
+	<!-- <div class="brands">
 		<div class="container">
 			<div class="row">
 				<div class="owl-carousel owl-theme nav-enable nav-center" data-lg-items="6" data-md-items="5" data-sm-items="4" data-xs-items="3"
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="subscribe_and_socials">
 		<div class="container">
 			<div class="row">
@@ -94,12 +94,12 @@
 			<div class="row">
 				<div class="col-xs-18 col-sm-18 col-md-5 col-lg-5 store-detail">
 					<a class="logo" href="/" title="MobileShop123">
-						<img class="img-responsive" src="<?= base_url('upload/logo.png') ?>" alt="Logo" />
+						<img class="img-responsive" src="<?= base_url('upload/logo-nentrang.png') ?>" alt="Logo" />
 					</a>
 					<p class="store-description">
-						MobileShop mới được tạo nhưng đảm bảo tất cả những sản phẩm hot là không bao giờ thiếu. Chỉ có vấn đề là có trên web nhưng chưa chắc đã có trong tay. LoL
+						MobileShop mới được tạo nhưng đảm bảo tất cả những sản phẩm hot là không bao giờ thiếu. Bạn chỉ việc ngắm và đặt hàng, việc còn lại để chúng tôi xem đơn hàng và giải quyết.
 					</p>
-					<div class="foo-content payment-methods">
+					<!-- <div class="foo-content payment-methods">
 						<ul class="list-menu">
 							<li class="payment_method">
 								<img src="" alt="mobileshop123" title="MobileShop123" class="img-responsive" />
@@ -111,7 +111,7 @@
 								<img src="" alt="mobileshop123" title="MobileShop123" class="img-responsive" />
 							</li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 col">
 					<h4 class="foo-title">
@@ -154,7 +154,7 @@
 								<span class="foo-icon">
 									<i class="fa fa-map-marker"></i>
 								</span>
-								<span class="foo-detail foo-address">Ở một nơi xa xôi mà phải dùng cánh cửa thần kỳ của Doraemon mới tới được.</span>
+								<span class="foo-detail foo-address">Tầng 5 nhà T5 - ĐH Khoa học tự nhiên (ĐHQGHN)</span>
 							</li>
 							<li>
 								<span class="foo-icon">
@@ -169,7 +169,7 @@
 									<i class="fa fa-envelope"></i>
 								</span>
 								<span class="foo-detail">
-									<a href="mailto:anonymous@mail.vn">anonymous@mail.vn</a>
+									<a href="mailto:support@mobileshop.vn">support@mobileshop.vn</a>
 								</span>
 							</li>
 						</ul>
