@@ -119,6 +119,7 @@ Class Admin extends MY_Controller
                 $this->form_validation->set_rules('password', 'Mật khẩu', 'required|min_length[6]');
                 $this->form_validation->set_rules('re_password', 'Nhập lại mật khẩu', 'matches[password]');
             }
+            
             if($this->form_validation->run())
             {
                 //them vao csdl

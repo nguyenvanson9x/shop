@@ -158,11 +158,17 @@
     width: 100%
   }
 </style>
-
+<?php
+$image = base_url('upload/unknown.png');
+if(file_exists('upload/product/'.$product->image)) {
+  $image = base_url('upload/product/'.$product->image);
+}
+$price = ($product->price-($product->price*$product->discount/100));
+$token = md5($price);
+?>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog product-pop-up" style="width:768px; height:100%">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
@@ -174,16 +180,7 @@
           <div class="col-md-5 col-sm-5 col-xs-12">
             <div class="product-pop-up-img">
               <figure data-feedback="fb:likes, fb:comments">
-                <img src="<?php
-													if(file_exists('upload/product/'.$product->image))
-													{
-													echo base_url('upload/product/'.$product->image);
-													}
-													else
-													{
-													echo base_url('upload/unknown.png');
-													}
-													?>" alt="<?php echo $product->name;?>" class="img-responsive center-block">
+                <img src="<?php echo $image; ?>" alt="<?php echo $product->name;?>" class="img-responsive center-block">
               </figure>
 
             </div>
@@ -198,10 +195,9 @@
             <div class="price-total">
               <p>Tổng số tiền phải thanh toán</p>
               <span id="pnTotalOrder">
-              <?php echo number_format(($product->price-($product->price*$product->discount/100)),0,',','.'); ?>đ
+              <?php echo number_format($price,0,',','.'); ?>đ
               </span>
             </div>
-            <input value="HH0009909" id="ProductCodePos" name="ProductCodePos" type="hidden">
           </div>
           <div class="col-md-7 col-sm-7 col-xs-12">
             <p class="title">
@@ -221,22 +217,19 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <input class="input" id="Fullname" maxlength="50" name="Fullname" placeholder="Họ tên của bạn (bắt buộc)" type="text" value="">
+                <input class="input" id="user_name" maxlength="50" name="user_name" placeholder="Họ tên của bạn (bắt buộc)" type="text" value="">
               </div>
               <div class="col-sm-6">
-                <input class="input" id="Phone" name="Phone" placeholder="Số di động (Bắt buộc)" type="text" value="">
+                <input class="input" id="user_phone" name="Phone" placeholder="Số di động (Bắt buộc)" type="text" value="">
               </div>
               <div class="col-sm-6">
-                <input class="input" id="Email" name="Email" placeholder="Email" type="text" value="">
+                <input class="input" id="user_email" name="Email" placeholder="Email" type="text" value="">
               </div>
             </div>
             <div id="form-recievedtype">
               <div class="row">
                 <div class="col-sm-12">
-
-                  <input class="input" id="Address" maxlength="256" name="Address" placeholder="Nhập địa chỉ để nhận hàng" type="text" value="">
-
-                  <input id="BranchsName" name="BranchsName" type="hidden" value="">
+                  <input class="input" id="user_address" maxlength="256" name="Address" placeholder="Nhập địa chỉ để nhận hàng" type="text" value="">
                 </div>
               </div>
             </div>
@@ -248,11 +241,10 @@
 
               <div class="verdes">
                 <div class="verdes-element full">
-                  <input class="input" id="CouponCode" maxlength="50" name="CouponCode" placeholder="Nhập mã khuyến mãi để được giảm giá" type="text"
+                  <input class="input" id="coupon" maxlength="50" name="CouponCode" placeholder="Nhập mã khuyến mãi để được giảm giá" type="text"
                     value="">
                 </div>
                 <div class="verdes-element">
-
                   <a href="javascript:UseCoupon();" id="btnUseCoupon" class="button button-blue">Sử dụng</a>
                   <a href="javascript:UnUseCoupon();" id="btnUnUseCoupon" style="display: none;" class="button button-red">Hủy</a>
                 </div>
@@ -263,13 +255,12 @@
         </div>
       </div>
       <div class="alert alert-danger hide">
-
       </div>
       <div class="alert alert-success hide">
-
       </div>
+      <input type="hidden" id="token" value="<?= $token?>">
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" id="register-btn">Đặt mua</button>
+        <button type="button" class="btn btn-default" id="order-btn">Đặt mua</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
       </div>
     </div>
@@ -282,27 +273,29 @@
       $('.alert-success').addClass('hide');
     });
     // Khi người dùng click Đăng ký
-    $('#register-btn').click(function () {
-
+    $('#order-btn').click(function () {
+      console.log("Order click");
       // Lấy dữ liệu
       var data = {
-        username: $('#username').val(),
-        password: $('#password').val(),
-        email: $('#email').val(),
-        fullname: $('#fullname').val()
+        user_name: $('#user_name').val(),
+        user_email: $('#user_email').val(),
+        user_phone: $('#user_phone').val(),
+        user_address: $('#user_address').val(),
+        coupon: $('#coupon').val(),
+        token: $('#token').val(),
+        price: <?= $price?>
       };
-
       // Gửi ajax
       $.ajax({
         type: "post",
         dataType: "JSON",
-        url: "register.php",
+        url: "<?= site_url('checkout/ajax'); ?>",
         data: data,
         success: function (result) {
           // Có lỗi, tức là key error = 1
           if (result.hasOwnProperty('error') && result.error == '1') {
             var html = '';
-
+            console.log(result);
             // Lặp qua các key và xử lý nối lỗi
             $.each(result, function (key, item) {
               // Tránh key error ra vì nó là key thông báo trạng thái
@@ -314,9 +307,9 @@
             $('.alert-success').addClass('hide');
           }
           else { // Thành công
-            $('.alert-success').html('Đăng ký thành công!').removeClass('hide');
+            $('.alert-success').html('Đặt hàng thành công!').removeClass('hide');
             $('.alert-danger').addClass('hide');
-
+            console.log(data);
             // 4 giay sau sẽ tắt popup
             setTimeout(function () {
               $('#myModal').modal('hide');
