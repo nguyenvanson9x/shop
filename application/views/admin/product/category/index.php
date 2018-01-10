@@ -25,9 +25,9 @@
 			<thead>
 				<tr>
 					<td style="width:10px;"><img src="<?php echo public_url('admin')?>/images/icons/tableArrows.png" /></td>
-					<td style="width:80px;">Mã số</td>
+					<td style="width:200px;">Mã số</td>
 					<td>Tên danh mục</td>
-					<td style="width:100px;">Hành động</td>
+					<td style="width:200px;">Hành động</td>
 				</tr>
 			</thead>
 			

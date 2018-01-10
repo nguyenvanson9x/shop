@@ -42,14 +42,10 @@ Class Supplier extends MY_Controller
             {
                 //them vao csdl
                 $name       = $this->input->post('name');
-                $parent_id  = $this->input->post('parent_id');
-                $sort_order = $this->input->post('sort_order');
                 
                 //luu du lieu can them
                 $data = array(
                     'name'      => $name,
-                    'parent_id' => $parent_id,
-                    'sort_order' => intval($sort_order)
                 );
                 //them moi vao csdl
                 if($this->supplier_model->create($data))
@@ -60,18 +56,10 @@ Class Supplier extends MY_Controller
                     $this->session->set_flashdata('message', 'Không thêm được');
                 }
                 //chuyen tới trang danh sách
-                redirect(admin_url('product/supplier'));
+                redirect(admin_url('supplier'));
             }
         }
-        
-        //lay danh sach danh muc cha
-        $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $list = $this->supplier_model->get_list($input);
-        $this->data['list']  = $list;
-        
-        $this->data['temp'] = 'admin/supplier/add';
-        $this->load->view('admin/main', $this->data);
+        $this->render('admin/product/supplier/add');
     }
     
     /*
@@ -104,14 +92,10 @@ Class Supplier extends MY_Controller
             {
                 //them vao csdl
                 $name       = $this->input->post('name');
-                $parent_id  = $this->input->post('parent_id');
-                $sort_order = $this->input->post('sort_order');
     
                 //luu du lieu can them
                 $data = array(
                     'name'      => $name,
-                    'parent_id' => $parent_id,
-                    'sort_order' => intval($sort_order)
                 );
                 //them moi vao csdl
                 if($this->supplier_model->update($id, $data))
@@ -126,14 +110,8 @@ Class Supplier extends MY_Controller
             }
         }
     
-        //lay danh sach danh muc cha
-        $input = array();
-        $input['where'] = array('parent_id' => 0);
-        $list = $this->supplier_model->get_list($input);
-        $this->data['list']  = $list;
-    
 
-        $this->render('product/supplier');
+        $this->render('admin/product/supplier/edit');
     }
     
     /*

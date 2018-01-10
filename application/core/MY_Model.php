@@ -27,8 +27,10 @@ class MY_Model extends CI_Model {
             return FALSE;
         $where = array();
         $where[$this->key] = $id;
-        $this->update_rule($where, $data);
-        return false;
+        if($this->update_rule($where, $data))
+        return TRUE;
+        else
+            return FALSE;
     }
     
     /*
