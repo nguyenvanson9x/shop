@@ -14,9 +14,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileStore123">
+              <a href="#" class="clearfix" title="MobileShop">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_1_image.png?1515399077171" alt="MobileStore123">
+                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_1_image.png?1515399077171" alt="MobileShop">
                 </figure>
               </a>
             </div>
@@ -28,9 +28,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileStore123">
+              <a href="#" class="clearfix" title="MobileShop">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_2_image.png?1515399077171" alt="MobileStore123">
+                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_2_image.png?1515399077171" alt="MobileShop">
                 </figure>
               </a>
             </div>
@@ -42,9 +42,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileStore123">
+              <a href="#" class="clearfix" title="MobileShop">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_3_image.png?1515399077171" alt="MobileStore123">
+                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_3_image.png?1515399077171" alt="MobileShop">
                 </figure>
               </a>
             </div>
@@ -64,7 +64,7 @@
               <div class="item banner-item">
                 <a href="#" title="">
                   <figure>
-                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_1_image.png?1515399077171" alt="MobileStore123">
+                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_1_image.png?1515399077171" alt="MobileShop">
                   </figure>
                 </a>
               </div>
@@ -80,7 +80,7 @@
               <div class="item banner-item">
                 <a href="#" title="">
                   <figure>
-                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_2_image.png?1515399077171" alt="MobileStore123">
+                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_2_image.png?1515399077171" alt="MobileShop">
                   </figure>
                 </a>
               </div>
@@ -234,40 +234,35 @@ if (now() > ($row->create_at + 7776000)) {
       
       <div class="price-box price-loop-style">
                       
+          
+          <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
+          <span class="special-price">
+            <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+          </span>
+          <span class="old-price">
+            <span class="price">
+              <?php echo number_format($row->price,0,',','.'); ?>
+            </span>
+          </span>
+          <?php } else { ?>
+            <span class="special-price">
+            <span class="price">
+              <?php echo number_format($row->price,0,',','.'); ?>
+            </span>
+          </span>
+          <?php } ?>
                       
-                      <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
-                      <span class="special-price">
-                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
-                      </span>
-                      <span class="old-price">
-                        <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
-                        </span>
-                      </span>
-                      <?php } else { ?>
-                        <span class="special-price">
-                        <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
-                        </span>
-                      </span>
-                      <?php } ?>
-                      
-                      
-                    </div>
-    </div>
-  </div>
-</div>
-<?php } ?>
-<?php endforeach ?>
-                  
-                </div>
-                
+            </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+        <?php endforeach ?>
+          
+        </div>
               </div>
             </div>
           </div>
-          
-          
-          
           
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-pull-9 col-md-pull-9">
@@ -281,13 +276,6 @@ if (now() > ($row->create_at + 7776000)) {
             </div>
             <div class="module-content">
               
-              
-              
-              
-              
-              
-              
-              
               <div class="item">
                 <div class="item_image">
                   <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/item_1_image.png?1515399077171" class="img-responsive" alt="tu-van-ban-hang-1">
@@ -300,20 +288,12 @@ if (now() > ($row->create_at + 7776000)) {
                     <label class="item_detail">
                       Mr. Son:
                     </label>
-                    <a class="item_check" href="tel:0439999999" title="(04) 3999 9999">
+                    <a class="item_check" href="tel:040123456789" title="(04)0123 456 789">
                       (04) 0123 456 789
                     </a>
                   </div>
                 </div>
               </div>
-              
-              
-              
-              
-              
-              
-              
-              
               
               <div class="item">
                 <div class="item_image">
@@ -333,14 +313,6 @@ if (now() > ($row->create_at + 7776000)) {
                   </div>
                 </div>
               </div>
-              
-              
-              
-              
-              
-              
-              
-              
               
               <div class="item">
                 <div class="item_image">
@@ -454,7 +426,7 @@ if (now() > ($row->create_at + 7776000)) {
           <div class="module-content">
             <a href="#" title="">
               <figure>
-                <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/index_large_banner.png?1515399077171" class="img-responsive" alt="MobileStore123">
+                <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/index_large_banner.png?1515399077171" class="img-responsive" alt="MobileShop">
               </figure>
             </a>
           </div>

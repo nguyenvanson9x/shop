@@ -159,10 +159,15 @@
 						</div>
 					</div>
 					<div id="tab-2" class="tab-content">
-						Nội dung tùy chỉnh
+						Cảm ơn bạn đã ghé thăm Mobile Shop.
 					</div>
 					<div id="tab-3" class="tab-content">
-						Nội dung tùy chỉnh
+						<p>Để đặt mua hàng, bạn hãy lựa chọn sản phẩm muốn mua và chọn nút MUA HÀNG bên cạnh sản phẩm. 
+							Bạn có thể nhấn vào logo của website hoặc vào trang <a href = "<?php base_url() . './product';?>"> Sản phẩm </a>để xem thêm nhiều hơn.</p>
+
+						<p>
+							Sau khi chọn Mua hàng, bạn hãy nhập thông tin cá nhân để Mobile Shop có thể liên hệ với bạn trong thời gian sớm nhất. 
+							Hãy luôn ủng hộ Mobile Shop để có thêm nhiều ưu đãi sắp tới nhé.</p?
 					</div>
 				</div>
 			</div>
