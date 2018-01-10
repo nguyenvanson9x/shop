@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 09, 2018 lúc 05:11 PM
+-- Thời gian đã tạo: Th1 10, 2018 lúc 05:39 AM
 -- Phiên bản máy phục vụ: 10.1.26-MariaDB
 -- Phiên bản PHP: 7.1.9
 
@@ -64,6 +64,7 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `visible`) VALUES
+(0, 'Unknown', 0),
 (1, 'Smartphone', 0),
 (2, 'External memory', 0),
 (3, 'Selfie stick', 0),
@@ -158,13 +159,13 @@ CREATE TABLE `product` (
   `category_id` int(11) NOT NULL,
   `supplier_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `content` longtext NOT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  `content` longtext,
   `discount` int(11) NOT NULL,
   `expire_discount` int(11) NOT NULL,
   `price` int(20) NOT NULL,
   `create_at` int(11) NOT NULL,
-  `view` int(11) NOT NULL
+  `view` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -194,15 +195,15 @@ INSERT INTO `product` (`id`, `category_id`, `supplier_id`, `name`, `image`, `con
 (28, 4, 2, 'Pin sạc dự phòng 5.000 mAh eValu Roller 2', 'anha.jpg', 'Thiết kế rất nhỏ gọn, tích hợp thêm đèn pin chiếu sáng.\r\nSạc 2 lần thiết bị pin dưới 1.500 mAh, 1 lần dưới 3.500 mAh.\r\nDễ dàng kiểm tra lại được dung lượng pin còn lại trong sạc.\r\nSử dụng lõi pin Li-Ion an toàn.\r\nSạc được cho mọi điện thoại và máy tính bảng.\r\nBộ sản phẩm gồm: pin sạc.\r\n\r\nThông số kỹ thuật\r\nHiệu suất sạc: 65%\r\nĐèn LED báo hiệu: Có\r\nThời gian sạc: 3 - 4 giờ (dùng Adapter 2.1A)\r\nNguồn vào: 5V - 2.1A\r\nLõi pin: Pin Li-Ion\r\nCổng ra USB 1: 5V - 2.1A\r\nKích thước: Dài 8.9 cm - ngang 4.9 cm - dày 2.1 cm\r\nTrọng lượng: 128 g', 0, 0, 0, 0, 0),
 (29, 3, 1, 'Gậy chụp ảnh Bluetooth Cosano HD-P7', 'anhb.jpg', 'Gậy kết nối bluetooth với điện thoại để chụp ảnh.\r\nDùng được cho Android 2.0 và iOS 5 trở lên..\r\nThời gian sạc chỉ gần 1 tiếng như dùng được hơn 20 tiếng.\r\nĐộ dài gậy lên đến 80 cm, chụp nhóm nhiều người dễ hơn.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Bluetooth\r\nThời gian sạc: 0.5 giờ\r\nThời gian dùng: 20 giờ\r\nĐộ dài tối thiểu: 20 cm\r\nĐộ dài tối đa: 80 cm\r\nTương thích: Điện thoại dưới 6 inch', 0, 0, 0, 0, 0),
 (30, 3, 3, 'Gậy chụp ảnh Mini Cosano CW1\r\n', 'anhc.jpg', 'Tay cầm bọc lớp cao su để hạn chế trơn trượt khi dùng.\r\nThiết kế nhỏ gọn chỉ 16 cm, dễ dàng mang theo bên mình.\r\nKhông cần hẹn giờ, chỉ cần ấn nút trên thân gậy để chụp ảnh.\r\nĐộ dài gậy có thể kéo dài lên đến 60 cm.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Dùng dây 3.5 mm\r\nĐộ dài tối thiểu: 16 cm\r\nĐộ dài tối đa: 60 cm\r\nTương thích: Điện thoại dưới 6 inch', 0, 0, 0, 0, 0),
-(31, 2, 4, 'Dây cáp Micro USB 0.2', 'anhd.jpg', 'Dùng được cho các thiết bị dùng cổng Micro USB.\r\nChất lượng tương đương với hàng chính hãng.\r\nDùng để chép dữ liệu hay sạc pin (dùng với adapter riêng).\r\nDây ngắn 20 cm thích hợp để dùng với pin sạc dự phòng hay kết nối máy tính...\r\n\r\nThông số kỹ thuật\r\nJack cắm: Micro USB\r\nTính năng: Sạc, Truyền dữ liệu\r\nDòng sạc tối đa: 2A\r\nĐộ dài dây: 20 cm', 0, 0, 0, 0, 0),
+(31, 2, 4, 'Dây cáp Micro USB 0.2', 'anhd.jpg', '<p>\r\n	D&ugrave;ng được cho c&aacute;c thiết bị d&ugrave;ng cổng Micro USB. Chất lượng tương đương với h&agrave;ng ch&iacute;nh h&atilde;ng. D&ugrave;ng để ch&eacute;p dữ liệu hay sạc pin (d&ugrave;ng với adapter ri&ecirc;ng). D&acirc;y ngắn 20 cm th&iacute;ch hợp để d&ugrave;ng với pin sạc dự ph&ograve;ng hay kết nối m&aacute;y t&iacute;nh... Th&ocirc;ng số kỹ thuật Jack cắm: Micro USB T&iacute;nh năng: Sạc, Truyền dữ liệu D&ograve;ng sạc tối đa: 2A Độ d&agrave;i d&acirc;y: 20 cm</p>\r\n', 0, 1515558653, 50000, 0, 0),
 (32, 4, 1, 'Pin sạc dự phòng 5.000 mAh', 'anhe.jpg', 'Thiết kế bắt mắt với họa tiết caro, lắc để hiện dung lượng pin độc đáo.\r\nSạc 2 lần thiết bị pin dưới 1.500 mAh, 1 lần dưới 3.500 mAh.\r\nDễ dàng kiểm tra lại được dung lượng pin còn lại trong sạc.\r\nSử dụng lõi pin Li-Ion an toàn.\r\nSạc được cho mọi điện thoại và máy tính bảng.\r\nBộ sản phẩm gồm: pin sạc.\r\n\r\nThông số kỹ thuật\r\nHiệu suất sạc: 65%\r\nĐèn LED báo hiệu: Có\r\nThời gian sạc: 5 - 6 giờ (dùng Adapter 1A), 2 - 3 giờ (dùng Adapter 2.1A)\r\nNguồn vào: 5V - 2A\r\nLõi pin: Pin Li-Ion\r\nCổng ra USB 1: 5V - 1A\r\nCổng ra USB 2: 5V - 2.1A\r\nKích thước: Dài 9.5 cm - ngang 4.8 cm - dày 2 cm\r\nTrọng lượng: 200 g', 5, 0, 0, 0, 0),
 (33, 3, 1, 'Gậy chụp ảnh Osmia', 'anhf.jpg', 'hân gậy họa tiết chú gấu Brown nổi tiếng ngộ nghĩnh.\r\nPhù hợp với nhiều dòng điện thoại dưới 6 inch khác nhau.\r\nKhông cần hẹn giờ, chỉ cần ấn nút trên thân gậy để chụp ảnh.\r\nĐộ dài gậy có thể kéo dài lên đến 80 cm.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Dùng dây 3.5 mm\r\nĐộ dài tối thiểu: 30 cm\r\nĐộ dài tối đa:	80 cm\r\nTương thích: Điện thoại dưới 6 inch', 10, 0, 0, 0, 0),
 (34, 5, 5, 'Miếng dán màn hình Nokia 6', 'anhg.jpg', 'Miếng dán có độ dày 30 micrô mét.\r\nBảo hành 3 tháng dán lại tối đa 3 lần miễn phí cho trường hợp bong tróc, trầy xước.\r\nChống trầy xước tối ưu cho màn hình điện thoại Nokia 6\r\nLàm giảm các dấu vân tay và vết ố\r\nChất liệu Nhật Bản và đóng gói tại Đài Loan.\r\n\r\n', 0, 0, 0, 0, 0),
 (35, 5, 3, 'Miếng dán màn hình Oppo F5\r\n', 'anhh.jpg', 'Miếng dán có độ dày 30 micrô mét.\r\nBảo hành 3 tháng dán lại tối đa 3 lần miễn phí cho trường hợp bong tróc, trầy xước.\r\nChống trầy xước tối ưu cho màn hình điện thoại Oppo F5\r\nLàm giảm các dấu vân tay và vết ố\r\nChất liệu Nhật Bản và đóng gói tại Đài Loan', 0, 0, 0, 0, 0),
 (36, 5, 1, 'Miếng dán lưng iPhone X', 'anhi.jpg', 'Miếng dán có độ dày 30 micrô mét.\r\nBảo hành 3 tháng dán lại tối đa 3 lần miễn phí cho trường hợp bong tróc, trầy xước.\r\nChống trầy xước tối ưu cho mặt lưng điện thoại iPhone X\r\nLàm giảm các dấu vân tay và vết ố\r\nChất liệu Nhật Bản và đóng gói tại Đài Loan\r\n\r\n', 0, 0, 0, 0, 0),
-(37, 2, 2, 'Thẻ nhớ Micro SD 8 GB', 'anhk.jpg', 'Tốc độ đọc: 30 MB/s.\r\nTốc độ ghi: 4 MB/s.\r\nChép một video 1 GB vào thẻ nhớ trong gần 4 phút rưỡi.\r\nTương thích với hầu hết tất cả thiết bị (điện thoại, máy tính bảng).\r\nLưu trữ hơn 2.600 bài hát (1 bài ~3 MB).', 0, 0, 0, 0, 0),
-(38, 2, 2, 'Thẻ nhớ Micro SD 16 GB', 'anhl.jpg', 'Thương hiệu uy tín: Transcend, Apacer, SanDisk.\r\nTốc độ đọc: 30 MB/s \r\nTốc độ ghi: 10 MB/s\r\nKhông kén thiết bị nhận, dễ dàng sử dụng.\r\nLưu trữ hơn 15.500 tấm ảnh (1 tấm ~1.5 MB).\r\nChép một video dung lượng 1 GB vào thẻ chưa tới 2 phút.\r\nTương thích với hầu hết tất cả thiết bị (điện thoại, máy tính bảng).', 0, 0, 0, 0, 0),
-(39, 2, 2, 'Thẻ nhớ Micro SD 32', 'anhm.jpg', 'Thương hiệu uy tín: Transcend, Apacer.\r\nTốc độ đọc: 30 MB/s; Tốc độ ghi: 10 MB/s.\r\nKhông kén thiết bị nhận, dễ dàng sử dụng.\r\nChép một video dung lượng 1 GB vào thẻ chưa tới 2 phút.\r\nTương thích với hầu hết tất cả thiết bị (điện thoại, máy tính bảng).', 0, 0, 0, 0, 0);
+(37, 2, 2, 'Thẻ nhớ Micro SD 8 GB', 'anhk.jpg', '<p>\r\n	Tốc độ đọc: 30 MB/s. Tốc độ ghi: 4 MB/s. Ch&eacute;p một video 1 GB v&agrave;o thẻ nhớ trong gần 4 ph&uacute;t rưỡi. Tương th&iacute;ch với hầu hết tất cả thiết bị (điện thoại, m&aacute;y t&iacute;nh bảng). Lưu trữ hơn 2.600 b&agrave;i h&aacute;t (1 b&agrave;i ~3 MB).</p>\r\n', 0, 1515555379, 100000, 0, 0),
+(38, 2, 2, 'Thẻ nhớ Micro SD 16 GB', '', '<p>\r\n	Thương hiệu uy t&iacute;n: Transcend, Apacer, SanDisk. Tốc độ đọc: 30 MB/s Tốc độ ghi: 10 MB/s Kh&ocirc;ng k&eacute;n thiết bị nhận, dễ d&agrave;ng sử dụng. Lưu trữ hơn 15.500 tấm ảnh (1 tấm ~1.5 MB). Ch&eacute;p một video dung lượng 1 GB v&agrave;o thẻ chưa tới 2 ph&uacute;t. Tương th&iacute;ch với hầu hết tất cả thiết bị (điện thoại, m&aacute;y t&iacute;nh bảng).</p>\r\n', 0, 1515555280, 150000, 0, 0),
+(39, 2, 2, 'Thẻ nhớ Micro SD 32', '', '<p>\r\n	Thương hiệu uy t&iacute;n: Transcend, Apacer. Tốc độ đọc: 30 MB/s; Tốc độ ghi: 10 MB/s. Kh&ocirc;ng k&eacute;n thiết bị nhận, dễ d&agrave;ng sử dụng. Ch&eacute;p một video dung lượng 1 GB v&agrave;o thẻ chưa tới 2 ph&uacute;t. Tương th&iacute;ch với hầu hết tất cả thiết bị (điện thoại, m&aacute;y t&iacute;nh bảng).</p>\r\n', 0, 1515555834, 200000, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -228,6 +229,7 @@ INSERT INTO `supplier` (`id`, `name`) VALUES
 (3, 'Oppo'),
 (2, 'Sam Sung'),
 (4, 'Sony'),
+(0, 'Unknown'),
 (9, 'Vivo'),
 (7, 'Xiaomi');
 
@@ -332,7 +334,7 @@ ALTER TABLE `account`
 -- AUTO_INCREMENT cho bảng `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `contact`
@@ -356,13 +358,13 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT cho bảng `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT cho bảng `transaction`
