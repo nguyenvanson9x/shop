@@ -259,7 +259,7 @@
 						<?php foreach ($product_hot as $row ): ?>
 						<?php
 								
-								if (now() > ($row->create_at + 7776000)) {
+								if (now() < ($row->create_at + 7776000)) {
 								
 								?>
 							<div class="item">
