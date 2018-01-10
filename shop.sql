@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 10, 2018 lúc 05:39 AM
+-- Thời gian đã tạo: Th1 10, 2018 lúc 07:53 AM
 -- Phiên bản máy phục vụ: 10.1.26-MariaDB
 -- Phiên bản PHP: 7.1.9
 
@@ -55,21 +55,20 @@ INSERT INTO `account` (`id`, `email`, `password`, `fullname`, `address`, `phone`
 
 CREATE TABLE `category` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `visible` int(11) NOT NULL
+  `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `category`
 --
 
-INSERT INTO `category` (`id`, `name`, `visible`) VALUES
-(0, 'Unknown', 0),
-(1, 'Smartphone', 0),
-(2, 'External memory', 0),
-(3, 'Selfie stick', 0),
-(4, 'Battery', 0),
-(5, 'Screen protector', 0);
+INSERT INTO `category` (`id`, `name`) VALUES
+(0, 'Unknown'),
+(1, 'Smartphone'),
+(2, 'External memory'),
+(3, 'Selfie stick'),
+(4, 'Battery'),
+(5, 'Screen protector');
 
 -- --------------------------------------------------------
 
@@ -192,9 +191,9 @@ INSERT INTO `product` (`id`, `category_id`, `supplier_id`, `name`, `image`, `con
 (17, 1, 5, 'Nokia 6', 'anh17.jpg', 'Nokia đã cho ra mắt chính thức Nokia 6 với cấu hình tốt trong mức giá tầm trung, thiết kế đẹp cùng bộ đôi camera chất lượng.\r\n\r\nThiết kế chắc chắn, sang trọng\r\n\r\nNokia 6 sở hữu một bộ khung từ nhôm nguyên khối vô cùng chắc chắn, thiết kế đẹp với chất lượng hoàn thiện vô cùng tốt, các góc cạnh được bo cong cho cảm giác cầm nắm thoải mái.\r\n\r\nThông số kỹ thuật\r\nMàn hình:	IPS LCD, 5.5\", Full HD\r\nHệ điều hành:	Android 7.0\r\nCamera sau:	16 MP\r\nCamera trước:	8 MP\r\nCPU:	Qualcomm Snapdragon 430 8 nhân 64 bit\r\nRAM:	3 GB\r\nBộ nhớ trong:	32 GB\r\nThẻ nhớ:	MicroSD, hỗ trợ tối đa 128 GB\r\nThẻ SIM:\r\n2 SIM Nano (SIM 2 chung khe thẻ nhớ), Hỗ trợ 4G\r\nHOTMua sim 4G Viettel (2GB data/tháng). Giá từ 75.000đ\r\nDung lượng pin:	3000 mAh\r\n', 0, 0, 0, 0, 0),
 (26, 1, 2, 'Samsung Galaxy J7 Prime', 'anh18.jpg', 'Galaxy J7 Prime xứng đáng là cái tên hàng đầu trong danh sách chọn smartphone phổ thông của giới trẻ khi nhận được nhiều đánh giá tích cực về thiết kế, thời lượng pin lâu dài và camera chụp hình chất lượng tốt.\r\n\r\nThông số kỹ thuật\r\nMàn hình:	PLS TFT LCD, 5.5\", Full HD\r\nHệ điều hành:	Android 6.0 (Marshmallow)\r\nCamera sau:	13 MP\r\nCamera trước:	8 MP\r\nCPU:	Exynos 7870 8 nhân 64-bit\r\nRAM:	3 GB\r\nBộ nhớ trong:	32 GB\r\nThẻ nhớ:	MicroSD, hỗ trợ tối đa 256 GB\r\nThẻ SIM:\r\n2 Nano SIM, Hỗ trợ 4G\r\nHOTMua sim 4G Viettel (2GB data/tháng). Giá từ 75.000đ\r\nDung lượng pin:	3300 mAh', 10, 0, 0, 0, 0),
 (27, 1, 6, 'Điện thoại HTC U Play', 'anh19.jpg', 'HTC U Play đánh dấu sự trở lại của HTC ở phân khúc tầm trung với triết lý thiết kế mới: đẹp hơn - sang trọng hơn - bóng bẩy hơn, ngoài ra trải nghiệm người dùng được nâng cấp thông qua trợ lý ảo HTC Sense Companion.\r\n\r\nThông số kỹ thuật\r\nMàn hình:	Super LCD, 5.2\", Full HD\r\nHệ điều hành:	Android 6.0 (Marshmallow)\r\nCamera sau:	16 MP\r\nCamera trước:	16 MP\r\nCPU:	MTK Helio P10 8 nhân 64-bit\r\nRAM:	3 GB\r\nBộ nhớ trong:	32 GB\r\nThẻ nhớ:	MicroSD, hỗ trợ tối đa 2 TB\r\nThẻ SIM:\r\n2 Nano SIM, Hỗ trợ 4G\r\nHOTMua sim 4G Viettel (2GB data/tháng). Giá từ 75.000đ\r\nDung lượng pin:	2500 mAh', 20, 0, 0, 0, 0),
-(28, 4, 2, 'Pin sạc dự phòng 5.000 mAh eValu Roller 2', 'anha.jpg', 'Thiết kế rất nhỏ gọn, tích hợp thêm đèn pin chiếu sáng.\r\nSạc 2 lần thiết bị pin dưới 1.500 mAh, 1 lần dưới 3.500 mAh.\r\nDễ dàng kiểm tra lại được dung lượng pin còn lại trong sạc.\r\nSử dụng lõi pin Li-Ion an toàn.\r\nSạc được cho mọi điện thoại và máy tính bảng.\r\nBộ sản phẩm gồm: pin sạc.\r\n\r\nThông số kỹ thuật\r\nHiệu suất sạc: 65%\r\nĐèn LED báo hiệu: Có\r\nThời gian sạc: 3 - 4 giờ (dùng Adapter 2.1A)\r\nNguồn vào: 5V - 2.1A\r\nLõi pin: Pin Li-Ion\r\nCổng ra USB 1: 5V - 2.1A\r\nKích thước: Dài 8.9 cm - ngang 4.9 cm - dày 2.1 cm\r\nTrọng lượng: 128 g', 0, 0, 0, 0, 0),
+(28, 4, 2, 'Pin sạc dự phòng 5.000 mAh eValu Roller 2', 'anha.jpg', '<p>\r\n	Thiết kế rất nhỏ gọn, t&iacute;ch hợp th&ecirc;m đ&egrave;n pin chiếu s&aacute;ng. Sạc 2 lần thiết bị pin dưới 1.500 mAh, 1 lần dưới 3.500 mAh. Dễ d&agrave;ng kiểm tra lại được dung lượng pin c&ograve;n lại trong sạc. Sử dụng l&otilde;i pin Li-Ion an to&agrave;n. Sạc được cho mọi điện thoại v&agrave; m&aacute;y t&iacute;nh bảng. Bộ sản phẩm gồm: pin sạc. Th&ocirc;ng số kỹ thuật Hiệu suất sạc: 65% Đ&egrave;n LED b&aacute;o hiệu: C&oacute; Thời gian sạc: 3 - 4 giờ (d&ugrave;ng Adapter 2.1A) Nguồn v&agrave;o: 5V - 2.1A L&otilde;i pin: Pin Li-Ion Cổng ra USB 1: 5V - 2.1A K&iacute;ch thước: D&agrave;i 8.9 cm - ngang 4.9 cm - d&agrave;y 2.1 cm Trọng lượng: 128 g</p>\r\n', 0, 1515565959, 250000, 0, 0),
 (29, 3, 1, 'Gậy chụp ảnh Bluetooth Cosano HD-P7', 'anhb.jpg', 'Gậy kết nối bluetooth với điện thoại để chụp ảnh.\r\nDùng được cho Android 2.0 và iOS 5 trở lên..\r\nThời gian sạc chỉ gần 1 tiếng như dùng được hơn 20 tiếng.\r\nĐộ dài gậy lên đến 80 cm, chụp nhóm nhiều người dễ hơn.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Bluetooth\r\nThời gian sạc: 0.5 giờ\r\nThời gian dùng: 20 giờ\r\nĐộ dài tối thiểu: 20 cm\r\nĐộ dài tối đa: 80 cm\r\nTương thích: Điện thoại dưới 6 inch', 0, 0, 0, 0, 0),
-(30, 3, 3, 'Gậy chụp ảnh Mini Cosano CW1\r\n', 'anhc.jpg', 'Tay cầm bọc lớp cao su để hạn chế trơn trượt khi dùng.\r\nThiết kế nhỏ gọn chỉ 16 cm, dễ dàng mang theo bên mình.\r\nKhông cần hẹn giờ, chỉ cần ấn nút trên thân gậy để chụp ảnh.\r\nĐộ dài gậy có thể kéo dài lên đến 60 cm.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Dùng dây 3.5 mm\r\nĐộ dài tối thiểu: 16 cm\r\nĐộ dài tối đa: 60 cm\r\nTương thích: Điện thoại dưới 6 inch', 0, 0, 0, 0, 0),
+(30, 3, 3, 'Gậy chụp ảnh Mini Cosano CW1', 'anhc.jpg', '<p>\r\n	Tay cầm bọc lớp cao su để hạn chế trơn trượt khi d&ugrave;ng. Thiết kế nhỏ gọn chỉ 16 cm, dễ d&agrave;ng mang theo b&ecirc;n m&igrave;nh. Kh&ocirc;ng cần hẹn giờ, chỉ cần ấn n&uacute;t tr&ecirc;n th&acirc;n gậy để chụp ảnh. Độ d&agrave;i gậy c&oacute; thể k&eacute;o d&agrave;i l&ecirc;n đến 60 cm. Đầu gậy c&oacute; thể gập mở g&oacute;c 270 độ t&ugrave;y bạn lựa chọn. Th&ocirc;ng số kỹ thuật Kiểu kết nối: D&ugrave;ng d&acirc;y 3.5 mm Độ d&agrave;i tối thiểu: 16 cm Độ d&agrave;i tối đa: 60 cm Tương th&iacute;ch: Điện thoại dưới 6 inch</p>\r\n', 0, 1515564825, 150000, 0, 0),
 (31, 2, 4, 'Dây cáp Micro USB 0.2', 'anhd.jpg', '<p>\r\n	D&ugrave;ng được cho c&aacute;c thiết bị d&ugrave;ng cổng Micro USB. Chất lượng tương đương với h&agrave;ng ch&iacute;nh h&atilde;ng. D&ugrave;ng để ch&eacute;p dữ liệu hay sạc pin (d&ugrave;ng với adapter ri&ecirc;ng). D&acirc;y ngắn 20 cm th&iacute;ch hợp để d&ugrave;ng với pin sạc dự ph&ograve;ng hay kết nối m&aacute;y t&iacute;nh... Th&ocirc;ng số kỹ thuật Jack cắm: Micro USB T&iacute;nh năng: Sạc, Truyền dữ liệu D&ograve;ng sạc tối đa: 2A Độ d&agrave;i d&acirc;y: 20 cm</p>\r\n', 0, 1515558653, 50000, 0, 0),
 (32, 4, 1, 'Pin sạc dự phòng 5.000 mAh', 'anhe.jpg', 'Thiết kế bắt mắt với họa tiết caro, lắc để hiện dung lượng pin độc đáo.\r\nSạc 2 lần thiết bị pin dưới 1.500 mAh, 1 lần dưới 3.500 mAh.\r\nDễ dàng kiểm tra lại được dung lượng pin còn lại trong sạc.\r\nSử dụng lõi pin Li-Ion an toàn.\r\nSạc được cho mọi điện thoại và máy tính bảng.\r\nBộ sản phẩm gồm: pin sạc.\r\n\r\nThông số kỹ thuật\r\nHiệu suất sạc: 65%\r\nĐèn LED báo hiệu: Có\r\nThời gian sạc: 5 - 6 giờ (dùng Adapter 1A), 2 - 3 giờ (dùng Adapter 2.1A)\r\nNguồn vào: 5V - 2A\r\nLõi pin: Pin Li-Ion\r\nCổng ra USB 1: 5V - 1A\r\nCổng ra USB 2: 5V - 2.1A\r\nKích thước: Dài 9.5 cm - ngang 4.8 cm - dày 2 cm\r\nTrọng lượng: 200 g', 5, 0, 0, 0, 0),
 (33, 3, 1, 'Gậy chụp ảnh Osmia', 'anhf.jpg', 'hân gậy họa tiết chú gấu Brown nổi tiếng ngộ nghĩnh.\r\nPhù hợp với nhiều dòng điện thoại dưới 6 inch khác nhau.\r\nKhông cần hẹn giờ, chỉ cần ấn nút trên thân gậy để chụp ảnh.\r\nĐộ dài gậy có thể kéo dài lên đến 80 cm.\r\nĐầu gậy có thể gập mở góc 270 độ tùy bạn lựa chọn.\r\n\r\nThông số kỹ thuật\r\nKiểu kết nối: Dùng dây 3.5 mm\r\nĐộ dài tối thiểu: 30 cm\r\nĐộ dài tối đa:	80 cm\r\nTương thích: Điện thoại dưới 6 inch', 10, 0, 0, 0, 0),
@@ -334,7 +333,7 @@ ALTER TABLE `account`
 -- AUTO_INCREMENT cho bảng `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `contact`
@@ -364,7 +363,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT cho bảng `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT cho bảng `transaction`
