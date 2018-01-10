@@ -67,13 +67,13 @@
 						<ul class="social-info">
 							<!-- defined style classes could be found in update_stylesheet.scss.bwt -->
 							<li>
-								<a href="https://www.facebook.com/congtyDKT" class="bg-facebook hv-txt-facebook btn-transition" title="facebook">
+								<a href="https://www.facebook.com/" class="bg-facebook hv-txt-facebook btn-transition" title="facebook">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
 							<!-- defined style classes could be found in update_stylesheet.scss.bwt -->
 							<li>
-								<a href="https://twitter.com/bizweb.vn" class="bg-twitter hv-txt-twitter btn-transition" title="twitter">
+								<a href="https://twitter.com/" class="bg-twitter hv-txt-twitter btn-transition" title="twitter">
 									<i class="fa fa-twitter"></i>
 								</a>
 							</li>
@@ -92,7 +92,7 @@
 	<div class="foo_info">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 store-detail">
+				<div class="col-xs-18 col-sm-18 col-md-5 col-lg-5 store-detail">
 					<a class="logo" href="/" title="MobileShop123">
 						<img class="img-responsive" src="" alt="Logo" />
 					</a>
@@ -101,9 +101,6 @@
 					</p>
 					<div class="foo-content payment-methods">
 						<ul class="list-menu">
-							<li class="payment_method">
-								<img src="" alt="mobileshop123" title="MobileShop123" class="img-responsive" />
-							</li>
 							<li class="payment_method">
 								<img src="" alt="mobileshop123" title="MobileShop123" class="img-responsive" />
 							</li>
@@ -123,33 +120,9 @@
 					<div class="foo-content foo-menu">
 						<ul class="list-menu">
 							<li class="foo-list-item">
-								<a href="<?= site_url()?>" title="Trang chủ">
-									<i class="fa fa-angle-right"></i>
-									<span>Trang chủ</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
-									<i class="fa fa-angle-right"></i>
-									<span>Sản phẩm</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('news')?>" title="Tin tức">
-									<i class="fa fa-angle-right"></i>
-									<span>Tin tức</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
 								<a href="<?= site_url('about')?>" title="Giới thiệu">
 									<i class="fa fa-angle-right"></i>
 									<span>Giới thiệu</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('contact')?>" title="Liên hệ">
-									<i class="fa fa-angle-right"></i>
-									<span>Liên hệ</span>
 								</a>
 							</li>
 						</ul>
@@ -162,30 +135,6 @@
 					<div class="foo-content foo-menu">
 						<ul class="list-menu">
 							<li class="foo-list-item">
-								<a href="<?= site_url()?>" title="Trang chủ">
-									<i class="fa fa-angle-right"></i>
-									<span>Trang chủ</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
-									<i class="fa fa-angle-right"></i>
-									<span>Sản phẩm</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('news')?>" title="Tin tức">
-									<i class="fa fa-angle-right"></i>
-									<span>Tin tức</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('about')?>" title="Giới thiệu">
-									<i class="fa fa-angle-right"></i>
-									<span>Giới thiệu</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
 								<a href="<?= site_url('contact')?>" title="Liên hệ">
 									<i class="fa fa-angle-right"></i>
 									<span>Liên hệ</span>
@@ -194,45 +143,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 col">
-					<h4 class="foo-title">
-						Hướng dẫn
-					</h4>
-					<div class="foo-content foo-menu">
-						<ul class="list-menu">
-							<li class="foo-list-item">
-								<a href="<?= site_url()?>" title="Trang chủ">
-									<i class="fa fa-angle-right"></i>
-									<span>Trang chủ</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('collections/all')?>" title="Sản phẩm">
-									<i class="fa fa-angle-right"></i>
-									<span>Sản phẩm</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('news')?>" title="Tin tức">
-									<i class="fa fa-angle-right"></i>
-									<span>Tin tức</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('about')?>" title="Giới thiệu">
-									<i class="fa fa-angle-right"></i>
-									<span>Giới thiệu</span>
-								</a>
-							</li>
-							<li class="foo-list-item">
-								<a href="<?= site_url('contact')?>" title="Liên hệ">
-									<i class="fa fa-angle-right"></i>
-									<span>Liên hệ</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col">
 					<h4 class="foo-title">
 						Liên hệ
@@ -263,22 +174,6 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<span>© Bản quyền thuộc về
-						<strong>Avent Team</strong>
-					</span>
-					<span class="hidden-xs"> | </span>
-					<span>Cung cấp bởi
-						<a href="//www.bizweb.vn/?utm_source=site-khach-hang&utm_campaign=referral_bizweb&utm_medium=footer&utm_content=cung-cap-boi-bizweb"
-							rel="nofollow" target="_blank">Bizweb</a>
-					</span>
 				</div>
 			</div>
 		</div>
