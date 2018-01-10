@@ -112,9 +112,9 @@ Class Product extends MY_Controller
                 $discount = $this->input->post('discount');
                 $discount = str_replace('%', '', $discount);
                 $expire_discount = $this->input->post('expire_discount');
-                if($expire_discount == '' || $expire_discount == 0) $expire_discount = now();
-                else 
                 $expire_discount = get_time_from_date($expire_discount);
+                if($expire_discount == '' || $expire_discount == 0) 
+                    $expire_discount = now();
                 
                 
                 
@@ -214,8 +214,6 @@ Class Product extends MY_Controller
                 $expire_discount = get_time_from_date($expire_discount);
                 if($expire_discount == '' || $expire_discount == 0) 
                     $expire_discount = now();
-                else 
-                $expire_discount = get_time_from_date($expire_discount);
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
                 $upload_path = '/upload/product';
@@ -245,7 +243,7 @@ Class Product extends MY_Controller
                 if($this->product_model->update($product->id, $data))
                 {
                     //tạo ra nội dung thông báo
-                    $this->session->set_flashdata('message', 'Cập nhật dữ liệu thành công');
+                    $this->session->set_flashdata('message', 'Cập nhật thành công');
                 }else{
                     $this->session->set_flashdata('message', 'Không cập nhật được');
                 }

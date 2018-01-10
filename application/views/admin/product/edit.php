@@ -57,7 +57,6 @@
 	<label for="param_cat" class="formLeft">Loại:</label>
 	<div class="formRight">
 	    <select name="category"  class="left" >
-				<!-- kiem tra danh muc co danh muc con hay khong -->
 				<?php foreach ($category as $row):?>
 				
            		  <option value="<?php echo $row->id?>" <?php if($row->id == $product->category_id) echo 'selected';?>><?php echo $row->name?></option>
@@ -130,7 +129,7 @@
 		Hạn khuyến mãi :
 	</label>
 	<div class="formRight">
-		<span class="oneFour"><input type="text" id="param_expire_discount" name="expire_discount" value="<?php echo $product->expire_discount?>"></span>
+		<span class="oneFour"><input type="text" id="param_expire_discount" name="expire_discount" value="<?php echo get_date($product->expire_discount) ?>"></span>
 		<span class="autocheck" name="expire_discount_autocheck"></span>
 		<div class="clear error" name="expire_discount_error"></div>
 	</div>
