@@ -56,22 +56,7 @@
 								</div>
 								
 							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-								<form class="form-inline form-viewpro order_bar">
-									<div class="form-group">
-										<label>Sắp xếp: </label>
-										<select class="form-control sort-by-script">
-											<option value="default">Mặc định</option>
-											<option value="price-asc">Giá tăng dần</option>
-											<option value="price-desc">Giá giảm dần</option>
-											<option value="alpha-asc">Từ A-Z</option>
-											<option value="alpha-desc">Từ Z-A</option>
-											<option value="created-asc">Cũ đến mới</option>
-											<option value="created-desc">Mới đến cũ</option>
-										</select>
-									</div>
-								</form>
-							</div>
+							
 						</div>
 					</div>
 					
