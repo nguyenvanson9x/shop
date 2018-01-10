@@ -26,9 +26,9 @@ Class Login extends MY_controller{
         $password = $this->input->post('password');
         $password = md5($password);
         
-        $this->load->model('admin_model');
-        $where = array('username' => $username , 'password' => $password);
-        if($this->admin_model->check_exists($where))
+        $this->load->model('account_model');
+        $where = array('email' => $username , 'password' => $password);
+        if($this->account_model->check_exists($where))
         {
             return true;
         }
