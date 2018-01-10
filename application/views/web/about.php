@@ -24,6 +24,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div><p>
+				<img src ="upload/about.jpg" background-size: cover;>
+				</p>
+			</div>
 				<div class="module-header">
 					<h1 class="title-head">Giới thiệu</h1>
 				</div>
