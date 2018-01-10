@@ -325,7 +325,7 @@ if (now() > ($row->create_at + 7776000)) {
                   </div>
                   <div class="item_sum">
                     <label class="item_detail">
-                      Mr. Luc:
+                      Mr. Loc:
                     </label>
                     <a class="item_check" href="tel:0436666666" title="(04) 3666 6666">
                       (04) 3666 6666
