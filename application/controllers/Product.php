@@ -36,9 +36,7 @@ class Product extends MY_controller
     	$product = $this->product_model->get_info($id);
     	if(!$product) redirect();
     	$this->data['product'] = $product;
-        $temp = $product->view + 1;
         $views = array('view' => $product->view+1);
-        $sql = 'UPDATE product SET view='.$temp .' WHERE id='.$product->id;
         if($this->product_model->update($product->id, $views))
         $this->data['views'] = $product->view;
     	$this->view('/web/product/index');
