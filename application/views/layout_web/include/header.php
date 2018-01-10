@@ -19,7 +19,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 logo">
 				<a href="<?= site_url()?>" title="Trang chủ">
-					<img class="img-responsive" src= "upload/logo.png" alt="Logo">
+					<img class="img-responsive" src= "<?= base_url('upload/logo.png') ?>" alt="Logo">
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 search-header">
@@ -101,7 +101,7 @@
 				</a>
 			</li>
 			<li class="sticky_logo" onClick="window.location.href='<?= site_url()?>'">
-				<img src="" alt="Logo" />
+				<img src="<?= base_url('upload/logo.png') ?>" alt="Logo" />
 			</li>
 			<!-- <div class="cart-header">
 				<div class="top-cart-contain f-right">
