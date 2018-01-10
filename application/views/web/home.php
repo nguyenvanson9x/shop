@@ -383,7 +383,7 @@ if (now() > ($row->create_at + 7776000)) {
                 <div class="item">
                   <div class="article-thumbnail">
                     <?php 
-                      $url = "news/" . $news->id;
+                      $url = "news/detail/" . $news->id;
                       $title = $news->title;
                       $image = "upload/news/anh0.jpg";
                       if (file_exists("upload/news/" . $news->image)) {

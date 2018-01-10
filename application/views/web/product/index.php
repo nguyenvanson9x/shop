@@ -37,7 +37,7 @@
 			<div class="details-product">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 images-pro">
 					<div class="large-image">
-						<a href="//bizweb.dktcdn.net/thumb/1024x1024/100/289/080/products/5341643lg-g-pro-lite-dual-01-1.jpg?v=1515399087833" class="large_image_url checkurl dp-flex"
+						<a href="#" class="large_image_url checkurl dp-flex"
 						 data-rel="prettyPhoto[product-gallery]">
 							<img id="zoom_01" class="img-responsive" src="
 									
@@ -87,13 +87,11 @@
 					</label>
 					<div class="product-summary product_description">
 						<div class="rte description">
-							<?php 
-							if ($product->content !='') 
-								echo $product->content; 
-							else
-								?>Chưa có thông tin<?php
-							?>
-
+						<?php if ($product->content): ?>
+									<?= $product->content; ?>
+							<?php else: ?>
+								Chưa có thông tin
+							<?php endif;?>
 						</div>
 					</div>
 					<div class="form-product">
@@ -140,11 +138,11 @@
 								<span>Chi tiết sản phẩm</span>
 							</h5>
 						</li>
-						<li class="tab-link" data-tab="tab-2">
+						<!-- <li class="tab-link" data-tab="tab-2">
 							<h5 class="tab_title">
 								<span>Thông tin thanh toán</span>
 							</h5>
-						</li>
+						</li> -->
 						<li class="tab-link" data-tab="tab-3">
 							<h5 class="tab_title">
 								<span>Hướng dẫn mua hàng</span>
@@ -153,12 +151,11 @@
 					</ul>
 					<div id="tab-1" class="tab-content">
 						<div class="rte">
-							<?php 
-							if ($product->content !='') 
-								echo $product->content; 
-							else
-								?>Chưa có thông tin<?php
-							?>
+							<?php if ($product->content): ?>
+									<?= $product->content; ?>
+							<?php else: ?>
+								Chưa có thông tin
+							<?php endif;?>
 						</div>
 					</div>
 					<div id="tab-2" class="tab-content">
