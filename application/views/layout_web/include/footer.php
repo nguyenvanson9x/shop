@@ -51,7 +51,7 @@
 					<div class="subscribe">
 						<h4>Đăng ký nhận tin</h4>
 						<div class="form-subscribe">
-							<form action="//dkt.us13.list-manage.com/subscribe/post?u=0bafe4be7e17843051883e746&amp;id=3bdd6e9e3b" method="post" id="mc-embedded-subscribe-form"
+							<form action="" method="post" id="mc-embedded-subscribe-form"
 								class="mtSubcribeForm" name="mc-embedded-subscribe-form" target="_blank">
 								<input id="email" name="EMAIL" type="email" value="" class="input_newsletter subcribe-email form-control" placeholder="Email nhận tin">
 								<button type="submit" id="subscribe" name="subscribe" class="btn btn-subscribe">
@@ -93,7 +93,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-18 col-sm-18 col-md-5 col-lg-5 store-detail">
-					<a class="logo" href="/" title="MobileShop123">
+					<a class="logo" href="<?= site_url()?>" title="MobileShop123">
 						<img class="img-responsive" src="<?= base_url('upload/logo-nentrang.png') ?>" alt="Logo" />
 					</a>
 					<p class="store-description">
