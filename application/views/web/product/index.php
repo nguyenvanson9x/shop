@@ -88,7 +88,7 @@
 					<div class="product-summary product_description">
 						<div class="rte description">
 						<?php if ($product->content): ?>
-									<?= $product->content; ?>
+									<?= substr($product->content, 0, strlen($product->content) / 2); ?>...
 							<?php else: ?>
 								Chưa có thông tin
 							<?php endif;?>
