@@ -119,7 +119,7 @@
 				</div>
 				<div class="col-xs-12 hidden-sm col-md-3 col-lg-3">
 					<div class="product-banner product-banner-2 banner-item">
-						<a href="https://www.thegioididong.com/dtdd/galaxy-a5-2017" title="Điện thoại Samsung Galaxy A5 (2017)">
+						<a href="https://www.thegioididong.com/dtdd/galaxy-a5-2017" target = "_blank" title="Điện thoại Samsung Galaxy A5 (2017)">
 						<?php $q = base_url() . $qc;?>
 							<figure>
 								<img class="img-responsive" src="<?php echo $q;?>"
