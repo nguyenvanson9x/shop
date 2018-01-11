@@ -119,7 +119,7 @@
 		Hạn khuyến mãi :
 	</label>
 	<div class="formRight">
-		<span class="oneFour"><input type="text" id="param_expire_discount" name="expire_discount"></span>
+		<span class="oneFour"><input type="text" id="param_expire_discount" name="expire_discount" class="datepicker hasDatepicker"></span>
 		<span class="autocheck" name="expire_discount_autocheck"></span>
 		<div class="clear error" name="expire_discount_error"></div>
 	</div>

@@ -216,7 +216,7 @@ Class Product extends MY_Controller
                     $expire_discount = now();
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
-                $upload_path = '/upload/product';
+                $upload_path = './upload/product';
                 $upload_data = $this->upload_library->upload($upload_path, 'image');
                 $image_link = '';
                 if(isset($upload_data['file_name']))

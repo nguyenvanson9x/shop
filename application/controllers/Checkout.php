@@ -3,11 +3,22 @@
 class Checkout extends Public_Controller
 {
     function index() {
-        $this->data['name'] = 'This is data from Home controller aaaa';
-        $this->view('web/checkout');
+        redirect(site_url());
     }
 
     function ajax() {
+        $config = array(
+            'protocol' => 'smtp',
+            'smtp_host' => 'ssl://smtp.googlemail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'caolinhchi4398@gmail.com',
+            'smtp_pass' => 'heartbreaker96',
+            'mailtype'  => 'html', 
+            'charset' => 'utf-8',
+        );
+        $this->load->library('email', $config);
+        $this->email->set_newline("\r\n");
+        $this->email->initialize($config);
         // error array
         $errors = array('error' => 0);
 
@@ -73,6 +84,13 @@ class Checkout extends Public_Controller
                     $sql = "update coupon set used = 1 where code = '" . $coupon . "'";
                     $this->db->query($sql);
                 }
+                $this->email->from('caolinhchi4398@gmail.com','HoTro');
+                $this->email->to('nguyenvanson_t59@hus.edu.vn');
+                $this->email->subject('Tieu_de_email');
+                $this->email->message('noi_dung_email');
+                // if (!$this->email->send()) {
+                //     $errors['email'] = 'sendding email fail';
+                // }
             }
             else {
                 $errors['error'] = 1;
