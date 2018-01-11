@@ -31,7 +31,8 @@ class Product extends MY_controller
         $product_hot = $this->product_model->get_list($input2);
         $this->data['product_hot'] = $product_hot;
 
-
+        $qc = 'upload/qc.jpg';
+        $this->data['qc']=$qc;
     	$id = $this->uri->rsegment(3);
     	$product = $this->product_model->get_info($id);
     	if(!$product) redirect();

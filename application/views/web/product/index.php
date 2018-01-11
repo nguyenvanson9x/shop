@@ -120,8 +120,9 @@
 				<div class="col-xs-12 hidden-sm col-md-3 col-lg-3">
 					<div class="product-banner product-banner-2 banner-item">
 						<a href="https://www.thegioididong.com/dtdd/galaxy-a5-2017" title="Điện thoại Samsung Galaxy A5 (2017)">
+						<?php $q = base_url() . $qc;?>
 							<figure>
-								<img class="img-responsive" src="upload/qc.jpg"
+								<img class="img-responsive" src="<?php echo $q;?>"
 								 alt="Điện thoại Samsung Galaxy A5 (2017)">
 							</figure>
 						</a>
