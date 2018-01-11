@@ -14,9 +14,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileShop">
+              <a href="product/detail/3.html" class="clearfix" title="Điện thoại iPhone X 256GB">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_1_image.png?1515399077171" alt="MobileShop">
+                  <img src="upload/slide1.jpg" alt="Điện thoại iPhone X 256GB">
                 </figure>
               </a>
             </div>
@@ -28,9 +28,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileShop">
+              <a href="product/detail/2.html" class="clearfix" title="Điện thoại Samsung Galaxy S8 Plus">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_2_image.png?1515399077171" alt="MobileShop">
+                  <img src="upload/slide2.jpg" alt="Điện thoại Samsung Galaxy S8 Plus">
                 </figure>
               </a>
             </div>
@@ -42,9 +42,9 @@
             
             
             <div class="item banner-item">
-              <a href="#" class="clearfix" title="MobileShop">
+              <a href="product/detail/2.html" class="clearfix" title="Điện thoại Samsung Galaxy S8 Plus">
                 <figure>
-                  <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slider_3_image.png?1515399077171" alt="MobileShop">
+                  <img src="upload/slide3.jpg" alt="Điện thoại Samsung Galaxy S8 Plus">
                 </figure>
               </a>
             </div>
@@ -62,9 +62,9 @@
             
             <div class="hidden-xs col-sm-6 col-md-12 col-lg-12 index-banner">
               <div class="item banner-item">
-                <a href="#" title="">
+                <a href="product/detail/9.html" title="Điện thoại OPPO F5 6GB">
                   <figure>
-                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_1_image.png?1515399077171" alt="MobileShop">
+                    <img src="upload/bannertop1.jpg" alt="Điện thoại OPPO F5 6GB">
                   </figure>
                 </a>
               </div>
@@ -78,9 +78,9 @@
             
             <div class="hidden-xs col-sm-6 col-md-12 col-lg-12 index-banner">
               <div class="item banner-item">
-                <a href="#" title="">
+                <a href="product/detail/31.html" title="Dây cáp Micro USB 0.2">
                   <figure>
-                    <img src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/slide_banner_2_image.png?1515399077171" alt="MobileShop">
+                    <img src="upload/bannertop2.jpg" alt="Dây cáp Micro USB 0.2">
                   </figure>
                 </a>
               </div>
