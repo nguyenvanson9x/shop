@@ -119,10 +119,10 @@
 				</div>
 				<div class="col-xs-12 hidden-sm col-md-3 col-lg-3">
 					<div class="product-banner product-banner-2 banner-item">
-						<a href="#" title="">
+						<a href="https://www.thegioididong.com/dtdd/galaxy-a5-2017" title="Điện thoại Samsung Galaxy A5 (2017)">
 							<figure>
-								<img class="img-responsive" src="//bizweb.dktcdn.net/100/289/080/themes/628775/assets/product_banner_2_image.png?1515399077171"
-								 alt="MobileStore123">
+								<img class="img-responsive" src="upload/qc.jpg"
+								 alt="Điện thoại Samsung Galaxy A5 (2017)">
 							</figure>
 						</a>
 					</div>

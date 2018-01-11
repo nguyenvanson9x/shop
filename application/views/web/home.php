@@ -424,7 +424,7 @@ if (now() < ($row->create_at + 7776000)) {
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="module-content">
-            <a href="#" title="">
+            <a href="https://www.thegioididong.com/dtdd/bkav-bphone-2" target="_blank" title="">
               <figure>
                 <img src="upload/banner.jpg" class="img-responsive" alt="MobileShop">
               </figure>
