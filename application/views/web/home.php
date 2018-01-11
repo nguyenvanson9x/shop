@@ -443,8 +443,8 @@ if (now() < ($row->create_at + 7776000)) {
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="module-header">
             <h2 class="module-title title-style-3">
-            <a title="Sản phẩm giới thiệu">
-              <span>Sản phẩm giới thiệu</span>
+            <a title="Phụ kiện">
+              <span>Phụ kiện</span>
             </a>
             </h2>
           </div>
