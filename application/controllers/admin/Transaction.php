@@ -150,131 +150,125 @@ Class Transaction extends MY_Controller
         {
             return false;
         }
-        $info->_amount = number_format($info->amount);
-        if($info->status == 0)
+        $info->_amount = number_format($info->money);
+        if($info->payment_status == 0)
         {
-            $info->_status = 'pending';//đợi xử lý
+            $info->_payment = 'pending';//chua thanh toan
         }
-        elseif($info->status == 1)
+        elseif($info->payment_status == 1)
         {
-            $info->_status = 'completed';//hoàn thành
-        }
-        elseif($info->status == 2)
-        {
-            $info->_status = 'cancel';//hủy bỏ
-        }
-        //lấy danh sách đơn hàng  của giao dịch này
-        $this->load->model('order_model');
-        $input = array();
-        $input['where'] = array('transaction_id' => $id);
-        $orders = $this->order_model->get_list($input);
-        if(!$orders)
-        {
-            return false;
-        }
-        //load model sản phẩm product_model
-        $this->load->model('product_model');
-        foreach ($orders as $row)
-        {
-            //thông tin sản phẩm
-            $product = $this->product_model->get_info($row->product_id);
-            $product->image = public_url('upload/product/'.$product->image_link);
-            $product->_url_view = site_url('product/view/'.$product->id);
-                
-            $row->_price = number_format($product->price);
-            $row->_amount = number_format($row->amount);
-            $row->product = $product;
-            $row->_can_active = true;//có thể thực hiện kích hoạt đơn hàng này hay không
-            $row->_can_cancel = TRUE;//có thể hủy đơn hàng hay không
-        
-            if($row->status == 0)
-            {
-                $row->_status     = 'pending';//đợi xử lý
-            }
-            elseif($row->status == 1)
-            {
-                $row->_status = 'completed';//Đã giao hàng
-                $row->_can_active = false;//không thể kích hoạt
-            }
-            elseif($row->status == 2)
-            {
-                $row->_status = 'cancel';//hủy bỏ
-                $row->_can_cancel = false;//không thể kích hoạt
-            }
-            //link hủy bỏ đơn hàng
-            $row->_url_cancel = admin_url('transaction/cancel/'.$row->id);
-            $row->_url_active = admin_url('transaction/active/'.$row->id);//link kích hoạt đơn hàng
+            $info->_payment = 'completed';//da thanh toan
         }
 
+        if ($info->delivery_status == 0) {
+            $info->_delivery = 'pending';
+        }
+        elseif ($info->delivery_status == 1) {
+            $info->_delivery = 'completed';
+        }
+        else {
+            $info->_delivery = 'cancel';
+        }
+        //link hủy bỏ đơn hàng
+        $info->_url_cancel = admin_url('transaction/cancel/'.$info->id);
+        //link thanh toan
+        $info->_url_payment = admin_url('transaction/payment/'.$info->id);
+        //link giao hang
+        $info->_url_deliver = admin_url('transaction/deliver/'.$info->id);
+
+        $info->_can_payment = true;//có thể thực hiện kích hoạt đơn hàng này hay không
+        $info->_can_deliver = true;
+        $info->_can_cancel = true;//có thể hủy đơn hàng hay không
+
+        if ($info->payment_status == 1) {
+            $info->_can_payment = false;
+        }
+
+        if ($info->delivery_status != 0) {
+            $info->_can_deliver = false;
+            $this->_can_cancel = false;
+        }
+
+        //load model sản phẩm product_model
+        $this->load->model('product_model');
+        $product = $this->product_model->get_info($info->product_id);
+
         $this->data['info']   = $info;
-        $this->data['orders'] = $orders;
-                // Tai file thanh phan
-        $this->load->view('admin/transaction/view', $this->data);
+        $this->data['product'] = $product;
+        // Tai file thanh phan
+        $this->load->view('admin/transaction/detail', $this->data);
     }
     
     /**
-     * Xac nhan giao dich
+     * Xac nhan thanh toan
      */
-    function active()
+    function payment()
     {
-        $this->load->model('order_model');
         //lay id cua đơn hàng ma ta muon kích hoạt
         $id = $this->uri->rsegment('3');
         //lay thong tin cua giao dịch
-        $info = $this->order_model->get_info($id);
+        $info = $this->transaction_model->get_info($id);
         if(!$info)
         {
             $this->session->set_flashdata('message', 'Không tồn tại đơn hàng này');
             redirect(admin_url('transaction'));
         }
     
-        //Cập nhật trạng thái giao hàng
+        //Cập nhật trạng thái thanh toan
         $data = array();
-        $data['status'] = 1;//đã gửi hàng
-        $this->order_model->update($id, $data);
-    
-        //tru di so luong san pham da chuyen cho khach
-        //va cong so luong san pham da ban
-        $this->load->model('product_model');
-        //lay thong san pham trong cai don hang nay
-        $product = $this->product_model->get_info($info->product_id);
-        $data = array();
-        $data['buyed'] = $product->buyed + $info->qty; //cap nhat so luong da mua
-        $this->product_model->update($product->id, $data);
+        $data['payment_status'] = 1;//đã thanh toan
+        $this->transaction_model->update($id, $data);
         	
         //gui thong bao
-        $this->session->set_flashdata('message', 'Đã cập nhật trạng thái đơn hàng thành công');
-        redirect(admin_url('order'));
+        $this->session->set_flashdata('message', 'Đã cập nhật trạng thái Thanh toán thành công');
+        redirect(admin_url('transaction'));
     }
     
+    /**
+     * Xac nhan giao hang
+     */
+    function deliver() {
+        //lay id cua đơn hàng ma ta muon hủy
+        $id = $this->uri->rsegment('3');
+        //lay thong tin cua giao dịch
+        $info = $this->transaction_model->get_info($id);
+        if(!$info)
+        {
+            $this->session->set_flashdata('message', 'Không tồn tại đơn hàng này');
+            redirect(admin_url('transaction'));
+        }
+    
+        $data = array();
+        $data['delivery_status'] = 1;//Hủy giao dịch
+        $this->transaction_model->update($id, $data);
+    
+        //gui thong bao
+        $this->session->set_flashdata('message', 'Đã cập nhật trạng thái giao hàng thành công');
+        redirect(admin_url('transaction'));
+    }
+
     /**
      * Huy bo giao dich
      */
     function cancel()
     {
-        $this->load->model('order_model');
         //lay id cua đơn hàng ma ta muon hủy
         $id = $this->uri->rsegment('3');
         //lay thong tin cua giao dịch
-        $info = $this->order_model->get_info($id);
+        $info = $this->transaction_model->get_info($id);
         if(!$info)
         {
             $this->session->set_flashdata('message', 'Không tồn tại đơn hàng này');
-            redirect(admin_url('order'));
+            redirect(admin_url('transaction'));
         }
     
         $data = array();
-        $data['status'] = 2;//Hủy giao dịch
-        $this->transaction_model->update($info->transaction_id, $data);
-    
-        //Cập nhật trạng thái hủy đơn hàng
-        $data = array();
-        $data['status'] = 2;//Hủy đơn hàng
-        $this->order_model->update($id, $data);
+        $data['delivery_status'] = 2;//Hủy giao dịch
+        $this->transaction_model->update($id, $data);
     
         //gui thong bao
         $this->session->set_flashdata('message', 'Đã hủy đơn hàng thành công');
-        redirect(admin_url('order'));
+        redirect(admin_url('transaction'));
     }
     
     /*

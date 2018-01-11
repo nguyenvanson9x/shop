@@ -1,11 +1,11 @@
 <?php
 //status
-$lang['order_status_pending']           = 'Chờ xử lý';
-$lang['order_status_completed']         = 'Đã gửi hàng';
+$lang['order_status_pending']           = 'Chưa giao hàng';
+$lang['order_status_completed']         = 'Đã giao hàng';
 $lang['order_status_cancel']            = 'Hủy';
 
-$lang['tran_status_pending']            = 'Chờ xử lý';
-$lang['tran_status_completed']          = 'Thành công';
+$lang['tran_status_pending']            = 'Chưa giao hàng';
+$lang['tran_status_completed']          = 'Đã giao hàng';
 $lang['tran_status_cancel']             = 'Hủy';
 
 
