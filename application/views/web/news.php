@@ -146,7 +146,7 @@
 					</div>
 				</div>
 				<!-- Tag -->
-				<div class="aside-item article-tags">
+				<!-- <div class="aside-item article-tags">
 					<div class="module-header">
 						<h2 class="module-title title-style-2">
 						<span>
@@ -165,7 +165,7 @@
 							
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="aside-item blog-banner">
 					<div class="module-header">
 						<h2 class="module-title title-style-2">
