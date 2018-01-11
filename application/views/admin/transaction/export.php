@@ -1,5 +1,5 @@
 <?php 
-header("Content-type: application/octet-stream");
+header("Content-type: application/octet-stream; charset=utf-8");
 header("Content-Disposition: attachment; filename=transaction.xls");
 header("Pragma: no-cache");
 header("Expires: 0");
@@ -9,12 +9,9 @@ header("Expires: 0");
 			<tr>
 				<td>STT</td>
 				<td style="width:60px;">Mã số</td>
-					<td>Số tiền</td>
-					<td>Cổng thanh toán</td>
-					<td>Trạng thái</td>
-					
-					<td style="width:75px;">Ngày tạo</td>
-			
+				<td>Số tiền</td>
+				<td>Thanh toán</td>
+				<td style="width:75px;">Ngày tạo</td>
 			</tr>
 		</thead>
 		
@@ -27,15 +24,14 @@ header("Expires: 0");
 					<td class="textC"><?php echo $row->id?></td>
 					
 					<td>
-					  <?php echo number_format($row->amount)?> đ					
+					  <?php echo number_format($row->money)?> đ					
 					 </td>
-				    <td><?php echo $row->payment?></td>
 					<td>
 					<?php 
-					if($row->status == 0)
+					if($row->payment_status == 0)
 					{
 					    echo 'Chưa thanh toán';
-					}elseif ($row->status == 1)
+					}elseif ($row->payment_status == 1)
 					{
 					    echo 'Đã thanh toán';
 					}else{
@@ -45,7 +41,7 @@ header("Expires: 0");
 					</td>
 					
 					
-					<td class="textC"><?php echo get_date($row->created)?></td>
+					<td class="textC"><?php echo get_date($row->order_date)?></td>
 					
 				</tr>
 			<?php endforeach;?>	

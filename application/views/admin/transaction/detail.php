@@ -133,7 +133,7 @@
 					</li>
 				</ul>
 				<div class='action'>
-				<?php if ($info->_can_payment): ?>
+				<?php if ($info->_can_payment && $info->delivery_status != 2): ?>
 						<a href="<?php echo $info->_url_payment; ?>" class="button blueB mr5">
 							<span>
 								Thanh toán
@@ -141,14 +141,14 @@
 						</a>
 					<?php endif; ?>
 
-					<?php if ($info->_can_deliver): ?>
+					<?php if ($info->_can_deliver && $info->delivery_status != 2): ?>
 						<a href="<?php echo $info->_url_deliver; ?>" class="button greenB mr5">
 							<span>
 								Giao hàng
 							</span>
 						</a>
 					<?php endif; ?>
-					<?php if ($info->_can_cancel): ?>
+					<?php if ($info->_can_cancel && $info->delivery_status != 2): ?>
 					<a href="<?php echo $info->_url_cancel; ?>" class="button redB mr5">
 						<span>
 							Hủy

@@ -112,16 +112,16 @@ Class Transaction extends MY_Controller
         $list = $this->transaction_model->get_list();
         foreach ($list as $row)
         {
-            $row->_amount = number_format($row->amount);
-            if($row->status == 0)
+            $row->_amount = number_format($row->money);
+            if($row->payment_status == 0)
             {
                 $row->_status = 'pending';
             }
-            elseif($row->status == 1)
+            elseif($row->payment_status == 1)
             {
                 $row->_status = 'completed';
             }
-            elseif($row->status == 2)
+            elseif($row->payment_status == 2)
             {
                 $row->_status = 'cancel';
             }
@@ -204,6 +204,25 @@ Class Transaction extends MY_Controller
      */
     function payment()
     {
+        $this->operation('payment_status', 1, 'Đã cập nhật trạng thái Thanh toán thành công');
+    }
+    
+    /**
+     * Xac nhan giao hang
+     */
+    function deliver() {
+        $this->operation('delivery_status', 1, 'Đã cập nhật trạng thái giao hàng thành công');
+    }
+
+    /**
+     * Huy bo giao dich
+     */
+    function cancel()
+    {
+        $this->operation('delivery_status', 2, 'Đã hủy đơn hàng thành công');
+    }
+    
+    private function operation($field, $value, $message) {
         //lay id cua đơn hàng ma ta muon kích hoạt
         $id = $this->uri->rsegment('3');
         //lay thong tin cua giao dịch
@@ -214,63 +233,17 @@ Class Transaction extends MY_Controller
             redirect(admin_url('transaction'));
         }
     
-        //Cập nhật trạng thái thanh toan
+        //Cập nhật trạng thái
         $data = array();
-        $data['payment_status'] = 1;//đã thanh toan
+        $data[$field] = $value;
+        $data['update_at'] = now();
+        $data['note'] = 'Lần cuối thay đổi: ' . mdate('%d-%m-%Y %h:%i:%s', now());
         $this->transaction_model->update($id, $data);
         	
         //gui thong bao
-        $this->session->set_flashdata('message', 'Đã cập nhật trạng thái Thanh toán thành công');
+        $this->session->set_flashdata('message', $message);
         redirect(admin_url('transaction'));
     }
-    
-    /**
-     * Xac nhan giao hang
-     */
-    function deliver() {
-        //lay id cua đơn hàng ma ta muon hủy
-        $id = $this->uri->rsegment('3');
-        //lay thong tin cua giao dịch
-        $info = $this->transaction_model->get_info($id);
-        if(!$info)
-        {
-            $this->session->set_flashdata('message', 'Không tồn tại đơn hàng này');
-            redirect(admin_url('transaction'));
-        }
-    
-        $data = array();
-        $data['delivery_status'] = 1;//Hủy giao dịch
-        $this->transaction_model->update($id, $data);
-    
-        //gui thong bao
-        $this->session->set_flashdata('message', 'Đã cập nhật trạng thái giao hàng thành công');
-        redirect(admin_url('transaction'));
-    }
-
-    /**
-     * Huy bo giao dich
-     */
-    function cancel()
-    {
-        //lay id cua đơn hàng ma ta muon hủy
-        $id = $this->uri->rsegment('3');
-        //lay thong tin cua giao dịch
-        $info = $this->transaction_model->get_info($id);
-        if(!$info)
-        {
-            $this->session->set_flashdata('message', 'Không tồn tại đơn hàng này');
-            redirect(admin_url('transaction'));
-        }
-    
-        $data = array();
-        $data['delivery_status'] = 2;//Hủy giao dịch
-        $this->transaction_model->update($id, $data);
-    
-        //gui thong bao
-        $this->session->set_flashdata('message', 'Đã hủy đơn hàng thành công');
-        redirect(admin_url('transaction'));
-    }
-    
     /*
      * Xoa du lieu
      */
@@ -280,7 +253,7 @@ Class Transaction extends MY_Controller
         $this->_del($id);
     
         //tạo ra nội dung thông báo
-        $this->session->set_flashdata('message', 'không tồn tại giao dịch này');
+        $this->session->set_flashdata('message', 'Xóa giao dịch thành công');
         redirect(admin_url('transaction'));
     }
     
