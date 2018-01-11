@@ -99,7 +99,7 @@
 
 <div class="formRow">
 	<label for="param_discount" class="formLeft">
-		Giảm giá (VND) 
+		Giảm giá (%) 
 		<span></span>:
 	</label>
 	<div class="formRight">
