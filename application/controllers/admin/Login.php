@@ -1,6 +1,6 @@
 <?php
 Class Login extends MY_controller{
-    
+    private $email = '';
     function index()
     {
         $this->load->library('form_validation');
@@ -10,7 +10,10 @@ Class Login extends MY_controller{
             $this->form_validation->set_rules('login' ,'login', 'callback_check_login');
             if($this->form_validation->run())
             {
-                $this->session->set_userdata('login', true);
+                $this->load->model('account_model');
+                $sql = "select * from account where email = '" . $this->email . "'";
+                $acc = $this->account_model->query($sql);
+                $this->session->set_userdata('login', $acc[0]->fullname);
                 redirect(admin_url('home'));
             }
         }
@@ -26,6 +29,7 @@ Class Login extends MY_controller{
         $password = $this->input->post('password');
         $password = md5($password);
         
+        $this->email = $username;
         $this->load->model('account_model');
         $where = array('email' => $username , 'password' => $password);
         if($this->account_model->check_exists($where))

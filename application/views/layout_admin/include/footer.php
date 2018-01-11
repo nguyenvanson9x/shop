@@ -3,7 +3,7 @@
 <div id="footer">
 		<div class="wrapper">
 		
-		<p>Bản quyền &copy; 2012-2016 hocphp.info </p>
+		<p>Bản quyền &copy; MobileShop </p>
 		 
 		</div>
 		
