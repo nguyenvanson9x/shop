@@ -17,7 +17,7 @@ Class Home extends MY_Controller
             'order_date <=' => $time['end'],
             'order_date >=' => $time['start'],
             'payment_status' => 1);
-        $amount_to_day = $this->transaction_model->get_sum('id', $where);
+        $amount_to_day = $this->transaction_model->get_sum('money', $where);
         $this->data['amount_to_day'] = $amount_to_day;
         //tong thu theo thang nay
         $thangnay = get_date(now());

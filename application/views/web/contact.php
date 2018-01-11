@@ -31,7 +31,7 @@
 					<h1 class="title-head">Liên hệ</h1>
 				</div>
 				<div class="module-content">
-					<form accept-charset='UTF-8' action='/contact' id='contact' method='post'>
+					<form accept-charset='UTF-8' action='<?= site_url('contact/add')?>' id='contact' method='post'>
 <input name='FormType' type='hidden' value='contact' />
 <input name='utf8' type='hidden' value='true' />
 					

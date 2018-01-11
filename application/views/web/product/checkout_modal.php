@@ -223,7 +223,7 @@ $token = md5($price);
                 <input class="input" id="user_phone" name="Phone" placeholder="Số di động (Bắt buộc)" type="text" value="">
               </div>
               <div class="col-sm-6">
-                <input class="input" id="user_email" name="Email" placeholder="Email" type="text" value="">
+                <input class="input" id="user_email" name="Email" placeholder="Email" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" value="">
               </div>
             </div>
             <div id="form-recievedtype">
