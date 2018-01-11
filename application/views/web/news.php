@@ -173,8 +173,8 @@
 						</h2>
 					</div>
 					<div class="module-content">
-						<a href="" title="Quảng cáo">
-							<img class="img-responsive" alt="quang-cao" src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/blog_aside_banner.png?1514103963009">
+						<a href="https://www.xbox.com/vi-VN/" title="Xbox">
+							<img class="img-responsive" alt="Xbox" src="//bizweb.dktcdn.net/100/285/622/themes/624602/assets/blog_aside_banner.png?1514103963009">
 						</a>
 					</div>
 				</div>

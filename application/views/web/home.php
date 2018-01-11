@@ -154,17 +154,17 @@
                       
                       <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
                       <span class="special-price">
-                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?> đ</span>
                       </span>
                       <span class="old-price">
                         <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
+                          <?php echo number_format($row->price,0,',','.'); ?> đ
                         </span>
                       </span>
                       <?php } else { ?>
                         <span class="special-price">
                         <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
+                          <?php echo number_format($row->price,0,',','.'); ?> đ
                         </span>
                       </span>
                       <?php } ?>
@@ -237,17 +237,17 @@ if (now() < ($row->create_at + 7776000)) {
           
           <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
           <span class="special-price">
-            <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+            <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?> đ</span>
           </span>
           <span class="old-price">
             <span class="price">
-              <?php echo number_format($row->price,0,',','.'); ?>
+              <?php echo number_format($row->price,0,',','.'); ?> đ
             </span>
           </span>
           <?php } else { ?>
             <span class="special-price">
             <span class="price">
-              <?php echo number_format($row->price,0,',','.'); ?>
+              <?php echo number_format($row->price,0,',','.'); ?> đ
             </span>
           </span>
           <?php } ?>
@@ -492,17 +492,17 @@ if (now() < ($row->create_at + 7776000)) {
                       
                       <?php if ($row->discount != 0 && $row->expire_discount > now()) {?>
                       <span class="special-price">
-                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?></span>
+                        <span class="price"><?php echo number_format(($row->price-($row->price*$row->discount/100)),0,',','.'); ?> đ</span>
                       </span>
                       <span class="old-price">
                         <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
+                          <?php echo number_format($row->price,0,',','.'); ?> đ
                         </span>
                       </span>
                       <?php } else { ?>
                         <span class="special-price">
                         <span class="price">
-                          <?php echo number_format($row->price,0,',','.'); ?>
+                          <?php echo number_format($row->price,0,',','.'); ?> đ
                         </span>
                       </span>
                       <?php } ?>
